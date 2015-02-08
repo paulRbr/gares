@@ -1,0 +1,5254 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+X-Powered-By: Express
+Server: Cowboy
+X-Content-Type-Options: nosniff
+Content-Type: application/json; charset=utf-8
+Content-Length: 135045
+Etag: W/"V7kJgUq/vDLw0GM377CM7A=="
+Vary: Accept-Encoding
+Date: Sun, 08 Feb 2015 22:40:02 GMT
+Via: 1.1 vegur, 1.1 vegur
+
+{
+  "name": "Liste de gares de gares-en-mouvement",
+  "count": 871,
+  "frequency": "Daily",
+  "version": 1,
+  "newdata": false,
+  "lastrunstatus": "success",
+  "lastsuccess": "Wed Feb 04 2015 16:52:38 GMT+0000 (UTC)",
+  "thisversionstatus": "success",
+  "nextrun": "Mon Feb 09 2015 16:58:36 GMT+0000 (UTC)",
+  "thisversionrun": "Wed Feb 04 2015 16:52:38 GMT+0000 (UTC)",
+  "results": {
+    "collection1": [
+      {
+        "station": {
+          "name": "Abancourt",
+          "slug": "frabt"
+        }
+      },
+      {
+        "station": {
+          "name": "Abbeville",
+          "slug": "frxab"
+        }
+      },
+      {
+        "station": {
+          "name": "Aéroport CDG 2 TGV",
+          "slug": "frmlw"
+        }
+      },
+      {
+        "station": {
+          "name": "Agde",
+          "slug": "frxag"
+        }
+      },
+      {
+        "station": {
+          "name": "Agen",
+          "slug": "fragf"
+        }
+      },
+      {
+        "station": {
+          "name": "Aiguebelette le Lac",
+          "slug": "frhol"
+        }
+      },
+      {
+        "station": {
+          "name": "Aiguebelle",
+          "slug": "fragb"
+        }
+      },
+      {
+        "station": {
+          "name": "Ailly Sur Somme",
+          "slug": "frais"
+        }
+      },
+      {
+        "station": {
+          "name": "Aime la Plagne",
+          "slug": "frqai"
+        }
+      },
+      {
+        "station": {
+          "name": "Aix en Provence",
+          "slug": "frqxb"
+        }
+      },
+      {
+        "station": {
+          "name": "Aix en Provence TGV",
+          "slug": "fraie"
+        }
+      },
+      {
+        "station": {
+          "name": "Aix les Bains le Revard",
+          "slug": "frxai"
+        }
+      },
+      {
+        "station": {
+          "name": "Alai",
+          "slug": "frcby"
+        }
+      },
+      {
+        "station": {
+          "name": "Albens",
+          "slug": "frale"
+        }
+      },
+      {
+        "station": {
+          "name": "Albertville",
+          "slug": "frxav"
+        }
+      },
+      {
+        "station": {
+          "name": "Albigny-Neuville",
+          "slug": "frhcj"
+        }
+      },
+      {
+        "station": {
+          "name": "Albi Madeleine",
+          "slug": "frama"
+        }
+      },
+      {
+        "station": {
+          "name": "Albi ville",
+          "slug": "frafj"
+        }
+      },
+      {
+        "station": {
+          "name": "Alençon",
+          "slug": "frxan"
+        }
+      },
+      {
+        "station": {
+          "name": "Alès",
+          "slug": "frxas"
+        }
+      },
+      {
+        "station": {
+          "name": "Allassac",
+          "slug": "fralc"
+        }
+      },
+      {
+        "station": {
+          "name": "Altkirch",
+          "slug": "frbji"
+        }
+      },
+      {
+        "station": {
+          "name": "Ambérieu",
+          "slug": "framb"
+        }
+      },
+      {
+        "station": {
+          "name": "Amboise",
+          "slug": "frxam"
+        }
+      },
+      {
+        "station": {
+          "name": "Amiens",
+          "slug": "frqam"
+        }
+      },
+      {
+        "station": {
+          "name": "Amplepuis",
+          "slug": "frhce"
+        }
+      },
+      {
+        "station": {
+          "name": "Ancenis",
+          "slug": "frefn"
+        }
+      },
+      {
+        "station": {
+          "name": "Anchamps",
+          "slug": "frbep"
+        }
+      },
+      {
+        "station": {
+          "name": "Andrezieux",
+          "slug": "frhhs"
+        }
+      },
+      {
+        "station": {
+          "name": "Angers St Laud",
+          "slug": "fracl"
+        }
+      },
+      {
+        "station": {
+          "name": "Angoulême",
+          "slug": "frang"
+        }
+      },
+      {
+        "station": {
+          "name": "Annecy",
+          "slug": "frncy"
+        }
+      },
+      {
+        "station": {
+          "name": "Annemasse",
+          "slug": "frqnj"
+        }
+      },
+      {
+        "station": {
+          "name": "Anse",
+          "slug": "frhcm"
+        }
+      },
+      {
+        "station": {
+          "name": "Antibes",
+          "slug": "frxat"
+        }
+      },
+      {
+        "station": {
+          "name": "Arcachon",
+          "slug": "frxac"
+        }
+      },
+      {
+        "station": {
+          "name": "Arches",
+          "slug": "frarh"
+        }
+      },
+      {
+        "station": {
+          "name": "Argelès sur Mer",
+          "slug": "frarm"
+        }
+      },
+      {
+        "station": {
+          "name": "Argentan",
+          "slug": "frart"
+        }
+      },
+      {
+        "station": {
+          "name": "Argenton sur Creuse",
+          "slug": "frfmt"
+        }
+      },
+      {
+        "station": {
+          "name": "Arles",
+          "slug": "frhza"
+        }
+      },
+      {
+        "station": {
+          "name": "Arras",
+          "slug": "frqrv"
+        }
+      },
+      {
+        "station": {
+          "name": "Arvant",
+          "slug": "frarv"
+        }
+      },
+      {
+        "station": {
+          "name": "Assier",
+          "slug": "frfsd"
+        }
+      },
+      {
+        "station": {
+          "name": "Aubergenville-Elisabethville",
+          "slug": "frdgf"
+        }
+      },
+      {
+        "station": {
+          "name": "Aubin",
+          "slug": "frfsq"
+        }
+      },
+      {
+        "station": {
+          "name": "Aubrives",
+          "slug": "frbdj"
+        }
+      },
+      {
+        "station": {
+          "name": "Auch",
+          "slug": "frauh"
+        }
+      },
+      {
+        "station": {
+          "name": "Aulnat Aéroport",
+          "slug": "frtkn"
+        }
+      },
+      {
+        "station": {
+          "name": "Aulnoye Aymeries",
+          "slug": "frxoy"
+        }
+      },
+      {
+        "station": {
+          "name": "Aumont Aubrac",
+          "slug": "frinc"
+        }
+      },
+      {
+        "station": {
+          "name": "Auray",
+          "slug": "frxuy"
+        }
+      },
+      {
+        "station": {
+          "name": "Aurec",
+          "slug": "frhiq"
+        }
+      },
+      {
+        "station": {
+          "name": "Aurillac",
+          "slug": "fraur"
+        }
+      },
+      {
+        "station": {
+          "name": "Auterive",
+          "slug": "frfpw"
+        }
+      },
+      {
+        "station": {
+          "name": "Auxerre Saint Gervais",
+          "slug": "frasg"
+        }
+      },
+      {
+        "station": {
+          "name": "Auxonne",
+          "slug": "frgws"
+        }
+      },
+      {
+        "station": {
+          "name": "Avignon Centre",
+          "slug": "fraes"
+        }
+      },
+      {
+        "station": {
+          "name": "Avignon Sud",
+          "slug": "frihw"
+        }
+      },
+      {
+        "station": {
+          "name": "Avignon TGV",
+          "slug": "fravg"
+        }
+      },
+      {
+        "station": {
+          "name": "Ax les Thermes",
+          "slug": "frxlt"
+        }
+      },
+      {
+        "station": {
+          "name": "Azerailles",
+          "slug": "frasl"
+        }
+      },
+      {
+        "station": {
+          "name": "Baccarat",
+          "slug": "frasm"
+        }
+      },
+      {
+        "station": {
+          "name": "Balbigny",
+          "slug": "frhja"
+        }
+      },
+      {
+        "station": {
+          "name": "Banassac la Canourgue",
+          "slug": "frinh"
+        }
+      },
+      {
+        "station": {
+          "name": "Banyuls sur Mer",
+          "slug": "frxbu"
+        }
+      },
+      {
+        "station": {
+          "name": "Bar le Duc",
+          "slug": "frxbd"
+        }
+      },
+      {
+        "station": {
+          "name": "Barr",
+          "slug": "frbxr"
+        }
+      },
+      {
+        "station": {
+          "name": "Bartenheim",
+          "slug": "frbjf"
+        }
+      },
+      {
+        "station": {
+          "name": "Bas-Monistrol",
+          "slug": "frhit"
+        }
+      },
+      {
+        "station": {
+          "name": "Bayeux",
+          "slug": "frbyx"
+        }
+      },
+      {
+        "station": {
+          "name": "Bayon",
+          "slug": "frars"
+        }
+      },
+      {
+        "station": {
+          "name": "Bayonne",
+          "slug": "frxby"
+        }
+      },
+      {
+        "station": {
+          "name": "Bazancourt",
+          "slug": "frrbo"
+        }
+      },
+      {
+        "station": {
+          "name": "Beaugency",
+          "slug": "freue"
+        }
+      },
+      {
+        "station": {
+          "name": "Beaumont le Roger",
+          "slug": "frdgr"
+        }
+      },
+      {
+        "station": {
+          "name": "Beaune",
+          "slug": "frxbv"
+        }
+      },
+      {
+        "station": {
+          "name": "Beauvais",
+          "slug": "frbva"
+        }
+      },
+      {
+        "station": {
+          "name": "Bédarieux",
+          "slug": "frimh"
+        }
+      },
+      {
+        "station": {
+          "name": "Belfort",
+          "slug": "frbor"
+        }
+      },
+      {
+        "station": {
+          "name": "Belfort Montbéliard TGV",
+          "slug": "frtja"
+        }
+      },
+      {
+        "station": {
+          "name": "Bellegarde",
+          "slug": "frxbf"
+        }
+      },
+      {
+        "station": {
+          "name": "Belleville sur Sâone",
+          "slug": "frhco"
+        }
+      },
+      {
+        "station": {
+          "name": "Benfeld",
+          "slug": "frbxk"
+        }
+      },
+      {
+        "station": {
+          "name": "Bergerac",
+          "slug": "fregc"
+        }
+      },
+      {
+        "station": {
+          "name": "Bernay",
+          "slug": "frxbx"
+        }
+      },
+      {
+        "station": {
+          "name": "Besançon Franche-Comté TGV",
+          "slug": "frtjb"
+        }
+      },
+      {
+        "station": {
+          "name": "Besançon Viotte",
+          "slug": "frabg"
+        }
+      },
+      {
+        "station": {
+          "name": "Bessay",
+          "slug": "frgsu"
+        }
+      },
+      {
+        "station": {
+          "name": "Béthune",
+          "slug": "frxbh"
+        }
+      },
+      {
+        "station": {
+          "name": "Beynost",
+          "slug": "frhfg"
+        }
+      },
+      {
+        "station": {
+          "name": "Béziers",
+          "slug": "frbzr"
+        }
+      },
+      {
+        "station": {
+          "name": "Biarritz",
+          "slug": "frbiq"
+        }
+      },
+      {
+        "station": {
+          "name": "Biganos - Facture",
+          "slug": "frfac"
+        }
+      },
+      {
+        "station": {
+          "name": "Bischoffsheim",
+          "slug": "frbxv"
+        }
+      },
+      {
+        "station": {
+          "name": "Bischwiller",
+          "slug": "frbwq"
+        }
+      },
+      {
+        "station": {
+          "name": "Blainville-Damelevières",
+          "slug": "frblv"
+        }
+      },
+      {
+        "station": {
+          "name": "Blois Chambord",
+          "slug": "frxbq"
+        }
+      },
+      {
+        "station": {
+          "name": "Bogny sur Meuse",
+          "slug": "frbdb"
+        }
+      },
+      {
+        "station": {
+          "name": "Bonneville",
+          "slug": "frhtv"
+        }
+      },
+      {
+        "station": {
+          "name": "Bonnières",
+          "slug": "frdqm"
+        }
+      },
+      {
+        "station": {
+          "name": "Bons en Chablais",
+          "slug": "frhsl"
+        }
+      },
+      {
+        "station": {
+          "name": "Bonson",
+          "slug": "frhht"
+        }
+      },
+      {
+        "station": {
+          "name": "Boran sur Oise",
+          "slug": "frcgm"
+        }
+      },
+      {
+        "station": {
+          "name": "Bordeaux St-Jean",
+          "slug": "frboj"
+        }
+      },
+      {
+        "station": {
+          "name": "Boulogne Ville",
+          "slug": "fraeb"
+        }
+      },
+      {
+        "station": {
+          "name": "Bourg en Bresse",
+          "slug": "frxbk"
+        }
+      },
+      {
+        "station": {
+          "name": "Bourges",
+          "slug": "frbou"
+        }
+      },
+      {
+        "station": {
+          "name": "Bourgoin Jallieu",
+          "slug": "frhey"
+        }
+      },
+      {
+        "station": {
+          "name": "Bourg St Maurice",
+          "slug": "frqbm"
+        }
+      },
+      {
+        "station": {
+          "name": "Boussens",
+          "slug": "frbss"
+        }
+      },
+      {
+        "station": {
+          "name": "Boutheon",
+          "slug": "frhhk"
+        }
+      },
+      {
+        "station": {
+          "name": "Bram",
+          "slug": "frfut"
+        }
+      },
+      {
+        "station": {
+          "name": "Brassac les Mines - Sainte-Florine",
+          "slug": "frhle"
+        }
+      },
+      {
+        "station": {
+          "name": "Brax Léguevin",
+          "slug": "frfrf"
+        }
+      },
+      {
+        "station": {
+          "name": "Bréauté-Beuzeville",
+          "slug": "frbtb"
+        }
+      },
+      {
+        "station": {
+          "name": "Breil sur Roya",
+          "slug": "frbrr"
+        }
+      },
+      {
+        "station": {
+          "name": "Breitenbach",
+          "slug": "frbkv"
+        }
+      },
+      {
+        "station": {
+          "name": "Brest",
+          "slug": "frbes"
+        }
+      },
+      {
+        "station": {
+          "name": "Bréval",
+          "slug": "frddm"
+        }
+      },
+      {
+        "station": {
+          "name": "Briançon",
+          "slug": "frxbc"
+        }
+      },
+      {
+        "station": {
+          "name": "Briare",
+          "slug": "frgsc"
+        }
+      },
+      {
+        "station": {
+          "name": "Brignais",
+          "slug": "frhep"
+        }
+      },
+      {
+        "station": {
+          "name": "Brignoud",
+          "slug": "frhvv"
+        }
+      },
+      {
+        "station": {
+          "name": "Brioude",
+          "slug": "frhlf"
+        }
+      },
+      {
+        "station": {
+          "name": "Briouze",
+          "slug": "fradv"
+        }
+      },
+      {
+        "station": {
+          "name": "Brive La Gaillarde",
+          "slug": "frbve"
+        }
+      },
+      {
+        "station": {
+          "name": "Brumath",
+          "slug": "frbuf"
+        }
+      },
+      {
+        "station": {
+          "name": "Bruyères sur Oise",
+          "slug": "frcgn"
+        }
+      },
+      {
+        "station": {
+          "name": "Bueil",
+          "slug": "frbue"
+        }
+      },
+      {
+        "station": {
+          "name": "Busigny",
+          "slug": "frbsy"
+        }
+      },
+      {
+        "station": {
+          "name": "Caen",
+          "slug": "frcfr"
+        }
+      },
+      {
+        "station": {
+          "name": "Cahors",
+          "slug": "frzao"
+        }
+      },
+      {
+        "station": {
+          "name": "Calais Frethun",
+          "slug": "frsth"
+        }
+      },
+      {
+        "station": {
+          "name": "Calais Ville",
+          "slug": "fraea"
+        }
+      },
+      {
+        "station": {
+          "name": "Cambrai",
+          "slug": "frafx"
+        }
+      },
+      {
+        "station": {
+          "name": "Campagnac Saint-Geniez",
+          "slug": "frinj"
+        }
+      },
+      {
+        "station": {
+          "name": "Cannes",
+          "slug": "frjca"
+        }
+      },
+      {
+        "station": {
+          "name": "Capdenac",
+          "slug": "frcdc"
+        }
+      },
+      {
+        "station": {
+          "name": "Carbonne",
+          "slug": "frfpb"
+        }
+      },
+      {
+        "station": {
+          "name": "Carcassonne",
+          "slug": "frccf"
+        }
+      },
+      {
+        "station": {
+          "name": "Carentan",
+          "slug": "frdtk"
+        }
+      },
+      {
+        "station": {
+          "name": "Carignan Gare",
+          "slug": "frbdz"
+        }
+      },
+      {
+        "station": {
+          "name": "Carmaux",
+          "slug": "frfwa"
+        }
+      },
+      {
+        "station": {
+          "name": "Casino Lacroix Laval",
+          "slug": "frclv"
+        }
+      },
+      {
+        "station": {
+          "name": "Castelnaudary",
+          "slug": "frcty"
+        }
+      },
+      {
+        "station": {
+          "name": "Castres",
+          "slug": "frmzq"
+        }
+      },
+      {
+        "station": {
+          "name": "Caudry",
+          "slug": "frdaz"
+        }
+      },
+      {
+        "station": {
+          "name": "Caussade (Tarn-et-Garonne)",
+          "slug": "frfta"
+        }
+      },
+      {
+        "station": {
+          "name": "Cazères sur Garonne",
+          "slug": "frfpc"
+        }
+      },
+      {
+        "station": {
+          "name": "Ceilhes-Roqueredonde",
+          "slug": "frimc"
+        }
+      },
+      {
+        "station": {
+          "name": "Cerbère",
+          "slug": "frxce"
+        }
+      },
+      {
+        "station": {
+          "name": "Cessieu",
+          "slug": "frhfa"
+        }
+      },
+      {
+        "station": {
+          "name": "Châbons",
+          "slug": "frhvj"
+        }
+      },
+      {
+        "station": {
+          "name": "Chagny",
+          "slug": "frcgy"
+        }
+      },
+      {
+        "station": {
+          "name": "Challans",
+          "slug": "frcls"
+        }
+      },
+      {
+        "station": {
+          "name": "Chalonnes",
+          "slug": "frehh"
+        }
+      },
+      {
+        "station": {
+          "name": "Chalons en Champagne",
+          "slug": "frxcr"
+        }
+      },
+      {
+        "station": {
+          "name": "Chalon sur Saône",
+          "slug": "frxcd"
+        }
+      },
+      {
+        "station": {
+          "name": "Chambéry - Challes Les Eaux",
+          "slug": "frcmf"
+        }
+      },
+      {
+        "station": {
+          "name": "Chamonix-Mont-Blanc",
+          "slug": "frxcf"
+        }
+      },
+      {
+        "station": {
+          "name": "Chamousset",
+          "slug": "frhof"
+        }
+      },
+      {
+        "station": {
+          "name": "Champagne Ardenne TGV",
+          "slug": "freah"
+        }
+      },
+      {
+        "station": {
+          "name": "Chantilly-Gouvieux",
+          "slug": "frxcv"
+        }
+      },
+      {
+        "station": {
+          "name": "Chaponost",
+          "slug": "frcrr"
+        }
+      },
+      {
+        "station": {
+          "name": "Charbonnières les Bains",
+          "slug": "frhcw"
+        }
+      },
+      {
+        "station": {
+          "name": "Charleville Mézières",
+          "slug": "frxcz"
+        }
+      },
+      {
+        "station": {
+          "name": "Chartres",
+          "slug": "frqtj"
+        }
+      },
+      {
+        "station": {
+          "name": "Chasse sur Rhône",
+          "slug": "frcsr"
+        }
+      },
+      {
+        "station": {
+          "name": "Château du Loir",
+          "slug": "frcdl"
+        }
+      },
+      {
+        "station": {
+          "name": "Châteauneuf sur Cher",
+          "slug": "freyc"
+        }
+      },
+      {
+        "station": {
+          "name": "Châteauroux",
+          "slug": "frchr"
+        }
+      },
+      {
+        "station": {
+          "name": "Château Thierry",
+          "slug": "frxcy"
+        }
+      },
+      {
+        "station": {
+          "name": "Châtelaillon",
+          "slug": "freil"
+        }
+      },
+      {
+        "station": {
+          "name": "Châtellerault",
+          "slug": "frxcx"
+        }
+      },
+      {
+        "station": {
+          "name": "Chatel Nomexy",
+          "slug": "fraxq"
+        }
+      },
+      {
+        "station": {
+          "name": "Chaumont",
+          "slug": "frxcw"
+        }
+      },
+      {
+        "station": {
+          "name": "Chauny",
+          "slug": "frcoa"
+        }
+      },
+      {
+        "station": {
+          "name": "Chazay-Marcilly",
+          "slug": "frhcq"
+        }
+      },
+      {
+        "station": {
+          "name": "Chemillé",
+          "slug": "frehk"
+        }
+      },
+      {
+        "station": {
+          "name": "Cherbourg",
+          "slug": "frack"
+        }
+      },
+      {
+        "station": {
+          "name": "Chindrieux",
+          "slug": "frhnx"
+        }
+      },
+      {
+        "station": {
+          "name": "Cholet",
+          "slug": "frcet"
+        }
+      },
+      {
+        "station": {
+          "name": "Chorges",
+          "slug": "frigs"
+        }
+      },
+      {
+        "station": {
+          "name": "Civrieux d'Azergues",
+          "slug": "frhdf"
+        }
+      },
+      {
+        "station": {
+          "name": "Clermont de l'Oise",
+          "slug": "frcqz"
+        }
+      },
+      {
+        "station": {
+          "name": "Clermont Ferrand",
+          "slug": "frcfe"
+        }
+      },
+      {
+        "station": {
+          "name": "Clermont La Pardieu",
+          "slug": "frfdm"
+        }
+      },
+      {
+        "station": {
+          "name": "Clermont-La Rotonde",
+          "slug": "frhcl"
+        }
+      },
+      {
+        "station": {
+          "name": "Clisson",
+          "slug": "frcli"
+        }
+      },
+      {
+        "station": {
+          "name": "Cluses",
+          "slug": "frhtz"
+        }
+      },
+      {
+        "station": {
+          "name": "Coarraze Nay",
+          "slug": "frgfb"
+        }
+      },
+      {
+        "station": {
+          "name": "Cognac",
+          "slug": "frcng"
+        }
+      },
+      {
+        "station": {
+          "name": "Collioure",
+          "slug": "frxcu"
+        }
+      },
+      {
+        "station": {
+          "name": "Collonges Fontaines",
+          "slug": "frcof"
+        }
+      },
+      {
+        "station": {
+          "name": "Colmar",
+          "slug": "fraej"
+        }
+      },
+      {
+        "station": {
+          "name": "Colmar-Mésanges",
+          "slug": "frbiu"
+        }
+      },
+      {
+        "station": {
+          "name": "Colmar-Saint-Joseph",
+          "slug": "frbiv"
+        }
+      },
+      {
+        "station": {
+          "name": "Colomiers",
+          "slug": "frfqb"
+        }
+      },
+      {
+        "station": {
+          "name": "Colomiers Lycée-International",
+          "slug": "frfrp"
+        }
+      },
+      {
+        "station": {
+          "name": "Commentry",
+          "slug": "frgag"
+        }
+      },
+      {
+        "station": {
+          "name": "Compiègne",
+          "slug": "frxcp"
+        }
+      },
+      {
+        "station": {
+          "name": "Conches",
+          "slug": "frdgp"
+        }
+      },
+      {
+        "station": {
+          "name": "Condat le Lardin",
+          "slug": "frfjk"
+        }
+      },
+      {
+        "station": {
+          "name": "Corrèze",
+          "slug": "frfip"
+        }
+      },
+      {
+        "station": {
+          "name": "Cosne sur Loire",
+          "slug": "frgsh"
+        }
+      },
+      {
+        "station": {
+          "name": "Coutances",
+          "slug": "frdtc"
+        }
+      },
+      {
+        "station": {
+          "name": "Coutras",
+          "slug": "frcou"
+        }
+      },
+      {
+        "station": {
+          "name": "Couzon au Mont d'Or",
+          "slug": "frhci"
+        }
+      },
+      {
+        "station": {
+          "name": "Cransac",
+          "slug": "frfsr"
+        }
+      },
+      {
+        "station": {
+          "name": "Crêches sur Saône",
+          "slug": "frhgv"
+        }
+      },
+      {
+        "station": {
+          "name": "Creil",
+          "slug": "frcsf"
+        }
+      },
+      {
+        "station": {
+          "name": "Crepieux la Pape",
+          "slug": "frhfc"
+        }
+      },
+      {
+        "station": {
+          "name": "Crest",
+          "slug": "frcre"
+        }
+      },
+      {
+        "station": {
+          "name": "Croix - Wasquehal",
+          "slug": "frckh"
+        }
+      },
+      {
+        "station": {
+          "name": "Culmont - Chalindrey",
+          "slug": "frccy"
+        }
+      },
+      {
+        "station": {
+          "name": "Culoz",
+          "slug": "frcuz"
+        }
+      },
+      {
+        "station": {
+          "name": "Dachstein",
+          "slug": "frbyp"
+        }
+      },
+      {
+        "station": {
+          "name": "Dardilly le Jubin",
+          "slug": "frgrq"
+        }
+      },
+      {
+        "station": {
+          "name": "Dardilly les Mouilles",
+          "slug": "frgsp"
+        }
+      },
+      {
+        "station": {
+          "name": "Dax",
+          "slug": "fracg"
+        }
+      },
+      {
+        "station": {
+          "name": "Decize",
+          "slug": "frgth"
+        }
+      },
+      {
+        "station": {
+          "name": "Dettwiller",
+          "slug": "frbuj"
+        }
+      },
+      {
+        "station": {
+          "name": "Deville",
+          "slug": "frbdd"
+        }
+      },
+      {
+        "station": {
+          "name": "Die",
+          "slug": "frdie"
+        }
+      },
+      {
+        "station": {
+          "name": "Dieppe",
+          "slug": "frafd"
+        }
+      },
+      {
+        "station": {
+          "name": "Dijon Porte Neuve",
+          "slug": "frgvw"
+        }
+      },
+      {
+        "station": {
+          "name": "Dijon Ville",
+          "slug": "fraba"
+        }
+      },
+      {
+        "station": {
+          "name": "Dol",
+          "slug": "frdol"
+        }
+      },
+      {
+        "station": {
+          "name": "Dole Ville",
+          "slug": "frace"
+        }
+      },
+      {
+        "station": {
+          "name": "Dommartin Lissieu",
+          "slug": "frhde"
+        }
+      },
+      {
+        "station": {
+          "name": "Don Sainghin",
+          "slug": "frdon"
+        }
+      },
+      {
+        "station": {
+          "name": "Donzere",
+          "slug": "frihm"
+        }
+      },
+      {
+        "station": {
+          "name": "Dorlisheim",
+          "slug": "frbxy"
+        }
+      },
+      {
+        "station": {
+          "name": "Douai",
+          "slug": "frxdn"
+        }
+      },
+      {
+        "station": {
+          "name": "Dreuil lès Amiens",
+          "slug": "frctm"
+        }
+      },
+      {
+        "station": {
+          "name": "Dreux",
+          "slug": "frxdr"
+        }
+      },
+      {
+        "station": {
+          "name": "Dunkerque",
+          "slug": "fradi"
+        }
+      },
+      {
+        "station": {
+          "name": "Duppigheim",
+          "slug": "frbyn"
+        }
+      },
+      {
+        "station": {
+          "name": "Duttlenheim",
+          "slug": "frbyo"
+        }
+      },
+      {
+        "station": {
+          "name": "Ebersheim",
+          "slug": "frbxi"
+        }
+      },
+      {
+        "station": {
+          "name": "Echirolles",
+          "slug": "frece"
+        }
+      },
+      {
+        "station": {
+          "name": "Ecole Valentin",
+          "slug": "frzkh"
+        }
+      },
+      {
+        "station": {
+          "name": "Ecommoy",
+          "slug": "frdmm"
+        }
+      },
+      {
+        "station": {
+          "name": "Ecully la Demi Lune",
+          "slug": "frhcu"
+        }
+      },
+      {
+        "station": {
+          "name": "Egletons",
+          "slug": "frfiu"
+        }
+      },
+      {
+        "station": {
+          "name": "Elne",
+          "slug": "friog"
+        }
+      },
+      {
+        "station": {
+          "name": "Eloyes",
+          "slug": "frays"
+        }
+      },
+      {
+        "station": {
+          "name": "Embrun",
+          "slug": "frigv"
+        }
+      },
+      {
+        "station": {
+          "name": "Entzheim",
+          "slug": "frbym"
+        }
+      },
+      {
+        "station": {
+          "name": "Epernay",
+          "slug": "frxep"
+        }
+      },
+      {
+        "station": {
+          "name": "Epierre Saint-Leger",
+          "slug": "frhoh"
+        }
+      },
+      {
+        "station": {
+          "name": "Epinal",
+          "slug": "frepl"
+        }
+      },
+      {
+        "station": {
+          "name": "Epône-Mézières",
+          "slug": "frdgg"
+        }
+      },
+      {
+        "station": {
+          "name": "Erstein",
+          "slug": "frbxm"
+        }
+      },
+      {
+        "station": {
+          "name": "Estressin",
+          "slug": "frhej"
+        }
+      },
+      {
+        "station": {
+          "name": "Etaples-le Touquet",
+          "slug": "freta"
+        }
+      },
+      {
+        "station": {
+          "name": "Evian les Bains",
+          "slug": "frxeb"
+        }
+      },
+      {
+        "station": {
+          "name": "Evreux Normandie",
+          "slug": "frevx"
+        }
+      },
+      {
+        "station": {
+          "name": "Eygurande-Merlines",
+          "slug": "freyg"
+        }
+      },
+      {
+        "station": {
+          "name": "Fegersheim-Lipsheim",
+          "slug": "frbup"
+        }
+      },
+      {
+        "station": {
+          "name": "Fépin",
+          "slug": "frbeq"
+        }
+      },
+      {
+        "station": {
+          "name": "Feuquières-Broquiers",
+          "slug": "frcsj"
+        }
+      },
+      {
+        "station": {
+          "name": "Feurs",
+          "slug": "frhjb"
+        }
+      },
+      {
+        "station": {
+          "name": "Feyzin",
+          "slug": "frheg"
+        }
+      },
+      {
+        "station": {
+          "name": "Figeac",
+          "slug": "frfig"
+        }
+      },
+      {
+        "station": {
+          "name": "Firminy",
+          "slug": "frfny"
+        }
+      },
+      {
+        "station": {
+          "name": "Flers",
+          "slug": "frfls"
+        }
+      },
+      {
+        "station": {
+          "name": "Fleurieux sur l'Arbresle",
+          "slug": "frhcz"
+        }
+      },
+      {
+        "station": {
+          "name": "Foix",
+          "slug": "frxfx"
+        }
+      },
+      {
+        "station": {
+          "name": "Folligny",
+          "slug": "frfol"
+        }
+      },
+      {
+        "station": {
+          "name": "Forbach",
+          "slug": "frbqt"
+        }
+      },
+      {
+        "station": {
+          "name": "Fourchambault",
+          "slug": "frgso"
+        }
+      },
+      {
+        "station": {
+          "name": "Francheville",
+          "slug": "frdad"
+        }
+      },
+      {
+        "station": {
+          "name": "Frasne",
+          "slug": "frfra"
+        }
+      },
+      {
+        "station": {
+          "name": "Fréjus",
+          "slug": "frafn"
+        }
+      },
+      {
+        "station": {
+          "name": "Frontenex",
+          "slug": "frhow"
+        }
+      },
+      {
+        "station": {
+          "name": "Frontignan",
+          "slug": "frijk"
+        }
+      },
+      {
+        "station": {
+          "name": "Frouard",
+          "slug": "frfro"
+        }
+      },
+      {
+        "station": {
+          "name": "Fumay",
+          "slug": "frbdg"
+        }
+      },
+      {
+        "station": {
+          "name": "Futuroscope",
+          "slug": "frtgo"
+        }
+      },
+      {
+        "station": {
+          "name": "Gaillac",
+          "slug": "frfvf"
+        }
+      },
+      {
+        "station": {
+          "name": "Gaillon-Aubevoye",
+          "slug": "frdqe"
+        }
+      },
+      {
+        "station": {
+          "name": "Gannat",
+          "slug": "frgan"
+        }
+      },
+      {
+        "station": {
+          "name": "Gap",
+          "slug": "frgat"
+        }
+      },
+      {
+        "station": {
+          "name": "Gardanne",
+          "slug": "frhxp"
+        }
+      },
+      {
+        "station": {
+          "name": "Geispolsheim",
+          "slug": "frbuo"
+        }
+      },
+      {
+        "station": {
+          "name": "Genlis",
+          "slug": "frgwp"
+        }
+      },
+      {
+        "station": {
+          "name": "Génolhac",
+          "slug": "frijy"
+        }
+      },
+      {
+        "station": {
+          "name": "Gertwiller",
+          "slug": "frbxs"
+        }
+      },
+      {
+        "station": {
+          "name": "Gien",
+          "slug": "frgoh"
+        }
+      },
+      {
+        "station": {
+          "name": "Gimont-Cahuzac",
+          "slug": "frfrb"
+        }
+      },
+      {
+        "station": {
+          "name": "Gisors Embranchement",
+          "slug": "frdcp"
+        }
+      },
+      {
+        "station": {
+          "name": "Givet",
+          "slug": "frbdk"
+        }
+      },
+      {
+        "station": {
+          "name": "Givors",
+          "slug": "frhee"
+        }
+      },
+      {
+        "station": {
+          "name": "Givors Canal",
+          "slug": "fraeo"
+        }
+      },
+      {
+        "station": {
+          "name": "Goncelin",
+          "slug": "frhvx"
+        }
+      },
+      {
+        "station": {
+          "name": "Gourdon",
+          "slug": "frfsi"
+        }
+      },
+      {
+        "station": {
+          "name": "Goxwiller",
+          "slug": "frbxt"
+        }
+      },
+      {
+        "station": {
+          "name": "Graffenstaden",
+          "slug": "frbun"
+        }
+      },
+      {
+        "station": {
+          "name": "Gragnague",
+          "slug": "frfvn"
+        }
+      },
+      {
+        "station": {
+          "name": "Gramat",
+          "slug": "frfsb"
+        }
+      },
+      {
+        "station": {
+          "name": "Grand Combe La Pise",
+          "slug": "frikc"
+        }
+      },
+      {
+        "station": {
+          "name": "Grandvilliers",
+          "slug": "frcsi"
+        }
+      },
+      {
+        "station": {
+          "name": "Granville",
+          "slug": "frgfr"
+        }
+      },
+      {
+        "station": {
+          "name": "Grasse",
+          "slug": "fribl"
+        }
+      },
+      {
+        "station": {
+          "name": "Grenoble",
+          "slug": "frgnb"
+        }
+      },
+      {
+        "station": {
+          "name": "Grenoble Universités Gières",
+          "slug": "frhvs"
+        }
+      },
+      {
+        "station": {
+          "name": "Grésy sur Aix",
+          "slug": "frhtb"
+        }
+      },
+      {
+        "station": {
+          "name": "Grésy sur Isère",
+          "slug": "frhov"
+        }
+      },
+      {
+        "station": {
+          "name": "Grigny le Sablon",
+          "slug": "frheb"
+        }
+      },
+      {
+        "station": {
+          "name": "Groisy-Thorens-la-Caille",
+          "slug": "frhto"
+        }
+      },
+      {
+        "station": {
+          "name": "Guéret",
+          "slug": "frxgt"
+        }
+      },
+      {
+        "station": {
+          "name": "Guéthary",
+          "slug": "frghg"
+        }
+      },
+      {
+        "station": {
+          "name": "Guingamp",
+          "slug": "frggp"
+        }
+      },
+      {
+        "station": {
+          "name": "Gunsbach-Griesbach",
+          "slug": "frbjv"
+        }
+      },
+      {
+        "station": {
+          "name": "Habsheim",
+          "slug": "frbjc"
+        }
+      },
+      {
+        "station": {
+          "name": "Hagondange",
+          "slug": "frhgd"
+        }
+      },
+      {
+        "station": {
+          "name": "Haguenau",
+          "slug": "frhag"
+        }
+      },
+      {
+        "station": {
+          "name": "Hangest sur Somme",
+          "slug": "frcqq"
+        }
+      },
+      {
+        "station": {
+          "name": "Hayange",
+          "slug": "frbnt"
+        }
+      },
+      {
+        "station": {
+          "name": "Haybes",
+          "slug": "frbdh"
+        }
+      },
+      {
+        "station": {
+          "name": "Hazebrouck",
+          "slug": "frhzk"
+        }
+      },
+      {
+        "station": {
+          "name": "Hendaye",
+          "slug": "fraef"
+        }
+      },
+      {
+        "station": {
+          "name": "Hennebont",
+          "slug": "freck"
+        }
+      },
+      {
+        "station": {
+          "name": "Herchies",
+          "slug": "frcsd"
+        }
+      },
+      {
+        "station": {
+          "name": "Hirson",
+          "slug": "frhir"
+        }
+      },
+      {
+        "station": {
+          "name": "Hochfelden",
+          "slug": "frbuh"
+        }
+      },
+      {
+        "station": {
+          "name": "Hoerdt",
+          "slug": "frbwt"
+        }
+      },
+      {
+        "station": {
+          "name": "Holtzheim",
+          "slug": "frbyl"
+        }
+      },
+      {
+        "station": {
+          "name": "Hyères",
+          "slug": "frxhe"
+        }
+      },
+      {
+        "station": {
+          "name": "Igney",
+          "slug": "fraxr"
+        }
+      },
+      {
+        "station": {
+          "name": "Ingwiller",
+          "slug": "frbwz"
+        }
+      },
+      {
+        "station": {
+          "name": "Issoire",
+          "slug": "frhlb"
+        }
+      },
+      {
+        "station": {
+          "name": "Issoudun",
+          "slug": "frfmn"
+        }
+      },
+      {
+        "station": {
+          "name": "Is sur Tille",
+          "slug": "frgyb"
+        }
+      },
+      {
+        "station": {
+          "name": "Jarville la Malgrange",
+          "slug": "frjam"
+        }
+      },
+      {
+        "station": {
+          "name": "Jeumont",
+          "slug": "fradr"
+        }
+      },
+      {
+        "station": {
+          "name": "Joigny",
+          "slug": "frgmu"
+        }
+      },
+      {
+        "station": {
+          "name": "Joigny sur Meuse",
+          "slug": "frbda"
+        }
+      },
+      {
+        "station": {
+          "name": "Joinville",
+          "slug": "frbgn"
+        }
+      },
+      {
+        "station": {
+          "name": "Jonzac",
+          "slug": "fremr"
+        }
+      },
+      {
+        "station": {
+          "name": "Juvisy TGV",
+          "slug": "frjsy"
+        }
+      },
+      {
+        "station": {
+          "name": "Kogenheim",
+          "slug": "frbxj"
+        }
+      },
+      {
+        "station": {
+          "name": "Krimmeri Meinau",
+          "slug": "frkri"
+        }
+      },
+      {
+        "station": {
+          "name": "Kurtzenhouse",
+          "slug": "frbwr"
+        }
+      },
+      {
+        "station": {
+          "name": "La Bastide Saint-Laurent-les-Bains",
+          "slug": "frlbs"
+        }
+      },
+      {
+        "station": {
+          "name": "La Baule Escoublac",
+          "slug": "frjee"
+        }
+      },
+      {
+        "station": {
+          "name": "La Charité",
+          "slug": "frgsl"
+        }
+      },
+      {
+        "station": {
+          "name": "La Fouillouse",
+          "slug": "frhhl"
+        }
+      },
+      {
+        "station": {
+          "name": "La Frayère",
+          "slug": "frlsh"
+        }
+      },
+      {
+        "station": {
+          "name": "La Haie Fouassière",
+          "slug": "frefz"
+        }
+      },
+      {
+        "station": {
+          "name": "Laifour",
+          "slug": "frbde"
+        }
+      },
+      {
+        "station": {
+          "name": "L'Aigle",
+          "slug": "frdsq"
+        }
+      },
+      {
+        "station": {
+          "name": "Lamballe",
+          "slug": "frlam"
+        }
+      },
+      {
+        "station": {
+          "name": "Lancey",
+          "slug": "frley"
+        }
+      },
+      {
+        "station": {
+          "name": "Landerneau",
+          "slug": "frxld"
+        }
+      },
+      {
+        "station": {
+          "name": "Landry",
+          "slug": "frhpg"
+        }
+      },
+      {
+        "station": {
+          "name": "Langeac",
+          "slug": "frhli"
+        }
+      },
+      {
+        "station": {
+          "name": "Langogne",
+          "slug": "frhlm"
+        }
+      },
+      {
+        "station": {
+          "name": "Langres",
+          "slug": "frlag"
+        }
+      },
+      {
+        "station": {
+          "name": "Lannemezan",
+          "slug": "frlnz"
+        }
+      },
+      {
+        "station": {
+          "name": "Lannion",
+          "slug": "frlai"
+        }
+      },
+      {
+        "station": {
+          "name": "Laon",
+          "slug": "frdkm"
+        }
+      },
+      {
+        "station": {
+          "name": "La Possonnière",
+          "slug": "frlpo"
+        }
+      },
+      {
+        "station": {
+          "name": "Laqueuille",
+          "slug": "frlaq"
+        }
+      },
+      {
+        "station": {
+          "name": "L'Arbresle",
+          "slug": "frlbl"
+        }
+      },
+      {
+        "station": {
+          "name": "Lardenne",
+          "slug": "frfrq"
+        }
+      },
+      {
+        "station": {
+          "name": "L'Argentière les Ecrins",
+          "slug": "frihc"
+        }
+      },
+      {
+        "station": {
+          "name": "La Ricamarie",
+          "slug": "frhil"
+        }
+      },
+      {
+        "station": {
+          "name": "La Rochelle Ville",
+          "slug": "frlrh"
+        }
+      },
+      {
+        "station": {
+          "name": "Laroche Migennes",
+          "slug": "frisi"
+        }
+      },
+      {
+        "station": {
+          "name": "La Roche sur Foron",
+          "slug": "frlrf"
+        }
+      },
+      {
+        "station": {
+          "name": "La Roche sur Yon",
+          "slug": "frxro"
+        }
+      },
+      {
+        "station": {
+          "name": "La Souterraine",
+          "slug": "frlst"
+        }
+      },
+      {
+        "station": {
+          "name": "La Teste",
+          "slug": "frfcj"
+        }
+      },
+      {
+        "station": {
+          "name": "Latour de Carol Enveitg",
+          "slug": "frxte"
+        }
+      },
+      {
+        "station": {
+          "name": "La Tour de Salvagny",
+          "slug": "frhcx"
+        }
+      },
+      {
+        "station": {
+          "name": "La Tour du Pin",
+          "slug": "frhfb"
+        }
+      },
+      {
+        "station": {
+          "name": "Laval",
+          "slug": "fracr"
+        }
+      },
+      {
+        "station": {
+          "name": "La Valbonne",
+          "slug": "frqvi"
+        }
+      },
+      {
+        "station": {
+          "name": "La Verpillière",
+          "slug": "frhex"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Bosquet",
+          "slug": "frlsb"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Bousquet d'Orb",
+          "slug": "frimg"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Cateau",
+          "slug": "frcmg"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Cendre Orcet",
+          "slug": "frhkx"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Chambon Feugerolles",
+          "slug": "frhim"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Coteau",
+          "slug": "frlcu"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Creusot TGV",
+          "slug": "frxcc"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Croisic",
+          "slug": "fregu"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Grand Lemps",
+          "slug": "frhvk"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Havre",
+          "slug": "fraez"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Mans",
+          "slug": "fraet"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Meridien la Ferrière",
+          "slug": "frhcv"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Molay Littry",
+          "slug": "frdrm"
+        }
+      },
+      {
+        "station": {
+          "name": "Lens",
+          "slug": "frxle"
+        }
+      },
+      {
+        "station": {
+          "name": "Lentilly",
+          "slug": "frhcy"
+        }
+      },
+      {
+        "station": {
+          "name": "Lentilly-Charpenay",
+          "slug": "frlfj"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Pallet",
+          "slug": "frega"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Péage de Roussillon",
+          "slug": "frhen"
+        }
+      },
+      {
+        "station": {
+          "name": "Lépin le Lac la Bauche",
+          "slug": "frhom"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Pouliguen",
+          "slug": "fregs"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Puy en Velay",
+          "slug": "frlpy"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Abrets Fitilieu",
+          "slug": "frhos"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Arcs Draguignan",
+          "slug": "frxrs"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Aubrais Orléans",
+          "slug": "frlab"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Cabannes",
+          "slug": "frfqk"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Deux-Jumeaux",
+          "slug": "frgju"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Echets",
+          "slug": "frhfm"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Flacheres",
+          "slug": "frhdb"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Laumes Alésia",
+          "slug": "frgwc"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Ramassiers",
+          "slug": "frrar"
+        }
+      },
+      {
+        "station": {
+          "name": "Les Sables d'Olonne",
+          "slug": "frlso"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Toec",
+          "slug": "frtoe"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Tréport Mers les Bains",
+          "slug": "frcwv"
+        }
+      },
+      {
+        "station": {
+          "name": "Leucate la-Franqui",
+          "slug": "frilq"
+        }
+      },
+      {
+        "station": {
+          "name": "Le Valdahon",
+          "slug": "frhaw"
+        }
+      },
+      {
+        "station": {
+          "name": "Lézignan Corbières",
+          "slug": "frfux"
+        }
+      },
+      {
+        "station": {
+          "name": "Lezoux",
+          "slug": "frhls"
+        }
+      },
+      {
+        "station": {
+          "name": "L'Hospitalet pres l'Andorre",
+          "slug": "frfqg"
+        }
+      },
+      {
+        "station": {
+          "name": "Libourne",
+          "slug": "frxlr"
+        }
+      },
+      {
+        "station": {
+          "name": "Lille Europe",
+          "slug": "frlle"
+        }
+      },
+      {
+        "station": {
+          "name": "Lille Flandres",
+          "slug": "fradj"
+        }
+      },
+      {
+        "station": {
+          "name": "Limersheim",
+          "slug": "frbuq"
+        }
+      },
+      {
+        "station": {
+          "name": "Limoges Bénédictins",
+          "slug": "fragq"
+        }
+      },
+      {
+        "station": {
+          "name": "Lingolsheim",
+          "slug": "frbyk"
+        }
+      },
+      {
+        "station": {
+          "name": "Lisieux",
+          "slug": "frxlx"
+        }
+      },
+      {
+        "station": {
+          "name": "L'Isle d'Abeau",
+          "slug": "friev"
+        }
+      },
+      {
+        "station": {
+          "name": "L'Isle Jourdain",
+          "slug": "frfrd"
+        }
+      },
+      {
+        "station": {
+          "name": "Lisle sur Tarn",
+          "slug": "frfvi"
+        }
+      },
+      {
+        "station": {
+          "name": "Lison",
+          "slug": "frlsn"
+        }
+      },
+      {
+        "station": {
+          "name": "Livron",
+          "slug": "frliv"
+        }
+      },
+      {
+        "station": {
+          "name": "Logelbach",
+          "slug": "frbjr"
+        }
+      },
+      {
+        "station": {
+          "name": "Longpré les Corps Saints",
+          "slug": "frcqr"
+        }
+      },
+      {
+        "station": {
+          "name": "Longueau",
+          "slug": "frcql"
+        }
+      },
+      {
+        "station": {
+          "name": "Longueville",
+          "slug": "frlon"
+        }
+      },
+      {
+        "station": {
+          "name": "Longuyon",
+          "slug": "frlgn"
+        }
+      },
+      {
+        "station": {
+          "name": "Longwy",
+          "slug": "frlwy"
+        }
+      },
+      {
+        "station": {
+          "name": "Lons le Saunier",
+          "slug": "frxll"
+        }
+      },
+      {
+        "station": {
+          "name": "Lorient",
+          "slug": "frlrt"
+        }
+      },
+      {
+        "station": {
+          "name": "Loriol",
+          "slug": "friew"
+        }
+      },
+      {
+        "station": {
+          "name": "Lorraine TGV",
+          "slug": "fream"
+        }
+      },
+      {
+        "station": {
+          "name": "Lourdes",
+          "slug": "frlde"
+        }
+      },
+      {
+        "station": {
+          "name": "Loures Barbazan",
+          "slug": "frfpk"
+        }
+      },
+      {
+        "station": {
+          "name": "Lozanne",
+          "slug": "frloz"
+        }
+      },
+      {
+        "station": {
+          "name": "Luc en Diois",
+          "slug": "frifp"
+        }
+      },
+      {
+        "station": {
+          "name": "Luchon",
+          "slug": "frxlh"
+        }
+      },
+      {
+        "station": {
+          "name": "Luçon",
+          "slug": "frlcn"
+        }
+      },
+      {
+        "station": {
+          "name": "Lunel",
+          "slug": "frijb"
+        }
+      },
+      {
+        "station": {
+          "name": "Lunéville",
+          "slug": "frlne"
+        }
+      },
+      {
+        "station": {
+          "name": "Lure",
+          "slug": "frlur"
+        }
+      },
+      {
+        "station": {
+          "name": "Luttenbach près Munster",
+          "slug": "frbkk"
+        }
+      },
+      {
+        "station": {
+          "name": "Luzenac-Garanou",
+          "slug": "frfqi"
+        }
+      },
+      {
+        "station": {
+          "name": "Lyon Gorge de Loup",
+          "slug": "frlyl"
+        }
+      },
+      {
+        "station": {
+          "name": "Lyon Jean Macé",
+          "slug": "frhtf"
+        }
+      },
+      {
+        "station": {
+          "name": "Lyon Part Dieu",
+          "slug": "frlpd"
+        }
+      },
+      {
+        "station": {
+          "name": "Lyon Perrache",
+          "slug": "frlpe"
+        }
+      },
+      {
+        "station": {
+          "name": "Lyon Saint-Paul",
+          "slug": "frlsp"
+        }
+      },
+      {
+        "station": {
+          "name": "Lyon St Exupéry TGV",
+          "slug": "frjdq"
+        }
+      },
+      {
+        "station": {
+          "name": "Lyon Vaise",
+          "slug": "frhcd"
+        }
+      },
+      {
+        "station": {
+          "name": "Machilly",
+          "slug": "frhsk"
+        }
+      },
+      {
+        "station": {
+          "name": "Macon Loche TGV",
+          "slug": "frmlt"
+        }
+      },
+      {
+        "station": {
+          "name": "Macon Ville",
+          "slug": "frhgu"
+        }
+      },
+      {
+        "station": {
+          "name": "Magalas",
+          "slug": "frimk"
+        }
+      },
+      {
+        "station": {
+          "name": "Magland",
+          "slug": "frhub"
+        }
+      },
+      {
+        "station": {
+          "name": "Maizières les Metz",
+          "slug": "frbnp"
+        }
+      },
+      {
+        "station": {
+          "name": "Mantes la Jolie",
+          "slug": "frmte"
+        }
+      },
+      {
+        "station": {
+          "name": "Mantes Station",
+          "slug": "frddk"
+        }
+      },
+      {
+        "station": {
+          "name": "Marienthal",
+          "slug": "frbwp"
+        }
+      },
+      {
+        "station": {
+          "name": "Marignac-Saint-Béat",
+          "slug": "frfpm"
+        }
+      },
+      {
+        "station": {
+          "name": "Marigniers",
+          "slug": "frhtw"
+        }
+      },
+      {
+        "station": {
+          "name": "Marlieux Chatillon",
+          "slug": "frhfr"
+        }
+      },
+      {
+        "station": {
+          "name": "Marmande",
+          "slug": "frxmr"
+        }
+      },
+      {
+        "station": {
+          "name": "Marne la Vallée Chessy",
+          "slug": "frmlv"
+        }
+      },
+      {
+        "station": {
+          "name": "Marseille-Blancarde",
+          "slug": "frmbc"
+        }
+      },
+      {
+        "station": {
+          "name": "Marseille en Beauvaisis",
+          "slug": "frcsh"
+        }
+      },
+      {
+        "station": {
+          "name": "Marseille St Charles",
+          "slug": "frmsc"
+        }
+      },
+      {
+        "station": {
+          "name": "Marvejols",
+          "slug": "frine"
+        }
+      },
+      {
+        "station": {
+          "name": "Masseret",
+          "slug": "frfkp"
+        }
+      },
+      {
+        "station": {
+          "name": "Massiac-Blesle",
+          "slug": "frhmy"
+        }
+      },
+      {
+        "station": {
+          "name": "Massy TGV",
+          "slug": "frdju"
+        }
+      },
+      {
+        "station": {
+          "name": "Matzenheim",
+          "slug": "frbxl"
+        }
+      },
+      {
+        "station": {
+          "name": "Maubeuge",
+          "slug": "frxme"
+        }
+      },
+      {
+        "station": {
+          "name": "Melun",
+          "slug": "frmel"
+        }
+      },
+      {
+        "station": {
+          "name": "Mende",
+          "slug": "frmen"
+        }
+      },
+      {
+        "station": {
+          "name": "Menton",
+          "slug": "frxmt"
+        }
+      },
+      {
+        "station": {
+          "name": "Mérens les Vals",
+          "slug": "frfqh"
+        }
+      },
+      {
+        "station": {
+          "name": "Mérenvielle",
+          "slug": "frfre"
+        }
+      },
+      {
+        "station": {
+          "name": "Metzeral",
+          "slug": "frblf"
+        }
+      },
+      {
+        "station": {
+          "name": "Metz Ville",
+          "slug": "frade"
+        }
+      },
+      {
+        "station": {
+          "name": "Meung sur Loire",
+          "slug": "freuc"
+        }
+      },
+      {
+        "station": {
+          "name": "Meuse TGV",
+          "slug": "freaj"
+        }
+      },
+      {
+        "station": {
+          "name": "Meximieux-Pérouges",
+          "slug": "frhfj"
+        }
+      },
+      {
+        "station": {
+          "name": "Meymac",
+          "slug": "frmyc"
+        }
+      },
+      {
+        "station": {
+          "name": "Mézidon",
+          "slug": "frmez"
+        }
+      },
+      {
+        "station": {
+          "name": "Millau",
+          "slug": "frmau"
+        }
+      },
+      {
+        "station": {
+          "name": "Milly sur Thérain",
+          "slug": "frcse"
+        }
+      },
+      {
+        "station": {
+          "name": "Mionnay",
+          "slug": "frhfn"
+        }
+      },
+      {
+        "station": {
+          "name": "Miramas",
+          "slug": "frmaz"
+        }
+      },
+      {
+        "station": {
+          "name": "Miribel",
+          "slug": "frhfe"
+        }
+      },
+      {
+        "station": {
+          "name": "Modane",
+          "slug": "fragr"
+        }
+      },
+      {
+        "station": {
+          "name": "Moirans",
+          "slug": "frabz"
+        }
+      },
+      {
+        "station": {
+          "name": "Moirans la Galifette",
+          "slug": "frhwn"
+        }
+      },
+      {
+        "station": {
+          "name": "Molsheim",
+          "slug": "frmol"
+        }
+      },
+      {
+        "station": {
+          "name": "Mommenheim",
+          "slug": "frmoh"
+        }
+      },
+      {
+        "station": {
+          "name": "Monaco Monte Carlo",
+          "slug": "frxmm"
+        }
+      },
+      {
+        "station": {
+          "name": "Monsempron Libos",
+          "slug": "frmls"
+        }
+      },
+      {
+        "station": {
+          "name": "Montargis",
+          "slug": "frgnx"
+        }
+      },
+      {
+        "station": {
+          "name": "Montastruc la Conseillère",
+          "slug": "frfvm"
+        }
+      },
+      {
+        "station": {
+          "name": "Montauban Ville Bourbon",
+          "slug": "frxmw"
+        }
+      },
+      {
+        "station": {
+          "name": "Montbard",
+          "slug": "frgwe"
+        }
+      },
+      {
+        "station": {
+          "name": "Montbéliard",
+          "slug": "frxmf"
+        }
+      },
+      {
+        "station": {
+          "name": "Montbrison",
+          "slug": "frhhw"
+        }
+      },
+      {
+        "station": {
+          "name": "Montchanin",
+          "slug": "frmch"
+        }
+      },
+      {
+        "station": {
+          "name": "Montdauphin-Guillestre",
+          "slug": "frigz"
+        }
+      },
+      {
+        "station": {
+          "name": "Mont de Marsan",
+          "slug": "frxmj"
+        }
+      },
+      {
+        "station": {
+          "name": "Montélimar",
+          "slug": "frxmk"
+        }
+      },
+      {
+        "station": {
+          "name": "Montereau",
+          "slug": "frmtu"
+        }
+      },
+      {
+        "station": {
+          "name": "Monthermé",
+          "slug": "frbdc"
+        }
+      },
+      {
+        "station": {
+          "name": "Montluçon Ville",
+          "slug": "frmcu"
+        }
+      },
+      {
+        "station": {
+          "name": "Montluel",
+          "slug": "frhfi"
+        }
+      },
+      {
+        "station": {
+          "name": "Montmédy",
+          "slug": "frbti"
+        }
+      },
+      {
+        "station": {
+          "name": "Montmélian",
+          "slug": "frmml"
+        }
+      },
+      {
+        "station": {
+          "name": "Montpellier St Roch",
+          "slug": "frmpl"
+        }
+      },
+      {
+        "station": {
+          "name": "Montpon Ménestérol",
+          "slug": "frfll"
+        }
+      },
+      {
+        "station": {
+          "name": "Montrabé",
+          "slug": "frfrh"
+        }
+      },
+      {
+        "station": {
+          "name": "Montréjeau-Gourdan Polignan",
+          "slug": "frmtj"
+        }
+      },
+      {
+        "station": {
+          "name": "Montrond les Bains",
+          "slug": "frhjc"
+        }
+      },
+      {
+        "station": {
+          "name": "Morcenx",
+          "slug": "frmcx"
+        }
+      },
+      {
+        "station": {
+          "name": "Moret-Veneux les Sablons",
+          "slug": "frmor"
+        }
+      },
+      {
+        "station": {
+          "name": "Morez",
+          "slug": "frgzg"
+        }
+      },
+      {
+        "station": {
+          "name": "Morlaix",
+          "slug": "frmxn"
+        }
+      },
+      {
+        "station": {
+          "name": "Mouans Sartoux",
+          "slug": "frmse"
+        }
+      },
+      {
+        "station": {
+          "name": "Mouchard",
+          "slug": "frmcd"
+        }
+      },
+      {
+        "station": {
+          "name": "Moulins Sur Allier",
+          "slug": "frxmu"
+        }
+      },
+      {
+        "station": {
+          "name": "Mourmelon le Petit",
+          "slug": "frbfv"
+        }
+      },
+      {
+        "station": {
+          "name": "Moutiers Salins Brides-les-Bains",
+          "slug": "frqmu"
+        }
+      },
+      {
+        "station": {
+          "name": "Muhlbach sur Munster",
+          "slug": "frblc"
+        }
+      },
+      {
+        "station": {
+          "name": "Mulhouse Ville",
+          "slug": "fraek"
+        }
+      },
+      {
+        "station": {
+          "name": "Mundolsheim",
+          "slug": "frbub"
+        }
+      },
+      {
+        "station": {
+          "name": "Munster",
+          "slug": "frmus"
+        }
+      },
+      {
+        "station": {
+          "name": "Munster-Badischhof",
+          "slug": "frmub"
+        }
+      },
+      {
+        "station": {
+          "name": "Murat",
+          "slug": "frgcg"
+        }
+      },
+      {
+        "station": {
+          "name": "Muret",
+          "slug": "frfoz"
+        }
+      },
+      {
+        "station": {
+          "name": "Mussidan",
+          "slug": "frflj"
+        }
+      },
+      {
+        "station": {
+          "name": "Mutzig",
+          "slug": "frbyq"
+        }
+      },
+      {
+        "station": {
+          "name": "Nancy Ville",
+          "slug": "frenc"
+        }
+      },
+      {
+        "station": {
+          "name": "Nantes",
+          "slug": "frnte"
+        }
+      },
+      {
+        "station": {
+          "name": "Narbonne",
+          "slug": "frxna"
+        }
+      },
+      {
+        "station": {
+          "name": "Nemours Saint-Pierre",
+          "slug": "frgoa"
+        }
+      },
+      {
+        "station": {
+          "name": "Neufchateau",
+          "slug": "frnch"
+        }
+      },
+      {
+        "station": {
+          "name": "Neussargues",
+          "slug": "frneu"
+        }
+      },
+      {
+        "station": {
+          "name": "Nevers",
+          "slug": "frnvs"
+        }
+      },
+      {
+        "station": {
+          "name": "Nevers Le Banlay",
+          "slug": "frnlb"
+        }
+      },
+      {
+        "station": {
+          "name": "Nice Ville",
+          "slug": "frnic"
+        }
+      },
+      {
+        "station": {
+          "name": "Nîmes",
+          "slug": "frfni"
+        }
+      },
+      {
+        "station": {
+          "name": "Niort",
+          "slug": "frnit"
+        }
+      },
+      {
+        "station": {
+          "name": "Niversac",
+          "slug": "frnec"
+        }
+      },
+      {
+        "station": {
+          "name": "Nogent sur Seine",
+          "slug": "frapm"
+        }
+      },
+      {
+        "station": {
+          "name": "Nogent sur Vernisson",
+          "slug": "frgog"
+        }
+      },
+      {
+        "station": {
+          "name": "Notre Dame de Briancon",
+          "slug": "frhpb"
+        }
+      },
+      {
+        "station": {
+          "name": "Nouvion sur Meuse",
+          "slug": "frbdp"
+        }
+      },
+      {
+        "station": {
+          "name": "Nouzonville",
+          "slug": "frbcz"
+        }
+      },
+      {
+        "station": {
+          "name": "Noyelles sur Mer",
+          "slug": "frcwn"
+        }
+      },
+      {
+        "station": {
+          "name": "Noyon",
+          "slug": "frcht"
+        }
+      },
+      {
+        "station": {
+          "name": "Nuits Saint-Georges",
+          "slug": "frgxc"
+        }
+      },
+      {
+        "station": {
+          "name": "Nurieux",
+          "slug": "frhqn"
+        }
+      },
+      {
+        "station": {
+          "name": "Obermodern",
+          "slug": "frobm"
+        }
+      },
+      {
+        "station": {
+          "name": "Obernai",
+          "slug": "frbxu"
+        }
+      },
+      {
+        "station": {
+          "name": "Oissel",
+          "slug": "froil"
+        }
+      },
+      {
+        "station": {
+          "name": "Onzain",
+          "slug": "freul"
+        }
+      },
+      {
+        "station": {
+          "name": "Orange",
+          "slug": "frxog"
+        }
+      },
+      {
+        "station": {
+          "name": "Orléans",
+          "slug": "frafk"
+        }
+      },
+      {
+        "station": {
+          "name": "Orthez",
+          "slug": "frgfi"
+        }
+      },
+      {
+        "station": {
+          "name": "Oullins",
+          "slug": "frhdv"
+        }
+      },
+      {
+        "station": {
+          "name": "Oyonnax",
+          "slug": "froyo"
+        }
+      },
+      {
+        "station": {
+          "name": "Pagny sur Moselle",
+          "slug": "frbqa"
+        }
+      },
+      {
+        "station": {
+          "name": "Pamiers",
+          "slug": "frpms"
+        }
+      },
+      {
+        "station": {
+          "name": "Paray le Monial",
+          "slug": "frplm"
+        }
+      },
+      {
+        "station": {
+          "name": "Paris Austerlitz",
+          "slug": "frpaz"
+        }
+      },
+      {
+        "station": {
+          "name": "Paris Bercy",
+          "slug": "frpbe"
+        }
+      },
+      {
+        "station": {
+          "name": "Paris Est",
+          "slug": "frpst"
+        }
+      },
+      {
+        "station": {
+          "name": "Paris Gare de Lyon",
+          "slug": "frply"
+        }
+      },
+      {
+        "station": {
+          "name": "Paris Montparnasse",
+          "slug": "frpmo"
+        }
+      },
+      {
+        "station": {
+          "name": "Paris Nord",
+          "slug": "frpno"
+        }
+      },
+      {
+        "station": {
+          "name": "Paris St Lazare",
+          "slug": "frpsl"
+        }
+      },
+      {
+        "station": {
+          "name": "Pau",
+          "slug": "fraee"
+        }
+      },
+      {
+        "station": {
+          "name": "Penne (Lot-et-Garonne)",
+          "slug": "frffo"
+        }
+      },
+      {
+        "station": {
+          "name": "Périgueux",
+          "slug": "frabf"
+        }
+      },
+      {
+        "station": {
+          "name": "Perpignan",
+          "slug": "frpgf"
+        }
+      },
+      {
+        "station": {
+          "name": "Perrignier",
+          "slug": "frhsn"
+        }
+      },
+      {
+        "station": {
+          "name": "Pertuis",
+          "slug": "frhxn"
+        }
+      },
+      {
+        "station": {
+          "name": "Peyrehorade",
+          "slug": "frgfl"
+        }
+      },
+      {
+        "station": {
+          "name": "Pibrac",
+          "slug": "frfrg"
+        }
+      },
+      {
+        "station": {
+          "name": "Picon Busserine",
+          "slug": "frpei"
+        }
+      },
+      {
+        "station": {
+          "name": "Picquigny",
+          "slug": "frcqp"
+        }
+      },
+      {
+        "station": {
+          "name": "Pierre Bénite",
+          "slug": "frhdw"
+        }
+      },
+      {
+        "station": {
+          "name": "Pierrelatte",
+          "slug": "frihn"
+        }
+      },
+      {
+        "station": {
+          "name": "Plouaret-Trégor",
+          "slug": "frplt"
+        }
+      },
+      {
+        "station": {
+          "name": "Poitiers",
+          "slug": "frpis"
+        }
+      },
+      {
+        "station": {
+          "name": "Poliénas",
+          "slug": "frifi"
+        }
+      },
+      {
+        "station": {
+          "name": "Pompey",
+          "slug": "frats"
+        }
+      },
+      {
+        "station": {
+          "name": "Pont à Mousson",
+          "slug": "fratw"
+        }
+      },
+      {
+        "station": {
+          "name": "Pontanevaux",
+          "slug": "frhgw"
+        }
+      },
+      {
+        "station": {
+          "name": "Pontarlier",
+          "slug": "frptl"
+        }
+      },
+      {
+        "station": {
+          "name": "Pontcharra Saint-Forgeux",
+          "slug": "frhcs"
+        }
+      },
+      {
+        "station": {
+          "name": "Pontcharra sur Bréda Allevard",
+          "slug": "frhvz"
+        }
+      },
+      {
+        "station": {
+          "name": "Pontchâteau",
+          "slug": "frpct"
+        }
+      },
+      {
+        "station": {
+          "name": "Pont de Beauvoisin",
+          "slug": "frhoq"
+        }
+      },
+      {
+        "station": {
+          "name": "Pont de Dore le Chambon",
+          "slug": "frpdo"
+        }
+      },
+      {
+        "station": {
+          "name": "Pont l'Évèque",
+          "slug": "frpvq"
+        }
+      },
+      {
+        "station": {
+          "name": "Pont Rémy",
+          "slug": "frcqs"
+        }
+      },
+      {
+        "station": {
+          "name": "Pont Sainte-Maxence",
+          "slug": "frcgc"
+        }
+      },
+      {
+        "station": {
+          "name": "Pornichet",
+          "slug": "fregr"
+        }
+      },
+      {
+        "station": {
+          "name": "Porte Puymorens",
+          "slug": "frfqf"
+        }
+      },
+      {
+        "station": {
+          "name": "Portet Saint-Simon",
+          "slug": "frpss"
+        }
+      },
+      {
+        "station": {
+          "name": "Port la Nouvelle",
+          "slug": "frilp"
+        }
+      },
+      {
+        "station": {
+          "name": "Port Vendres",
+          "slug": "frxpv"
+        }
+      },
+      {
+        "station": {
+          "name": "Pougues les Eaux",
+          "slug": "frgsn"
+        }
+      },
+      {
+        "station": {
+          "name": "Pouilly sur Loire",
+          "slug": "frgsj"
+        }
+      },
+      {
+        "station": {
+          "name": "Pouxeux",
+          "slug": "frayr"
+        }
+      },
+      {
+        "station": {
+          "name": "Précy sur Oise",
+          "slug": "frcgk"
+        }
+      },
+      {
+        "station": {
+          "name": "Pringy",
+          "slug": "frhtk"
+        }
+      },
+      {
+        "station": {
+          "name": "Puyoô",
+          "slug": "frpuo"
+        }
+      },
+      {
+        "station": {
+          "name": "Questembert",
+          "slug": "fredf"
+        }
+      },
+      {
+        "station": {
+          "name": "Quimper",
+          "slug": "fruip"
+        }
+      },
+      {
+        "station": {
+          "name": "Quimperlé",
+          "slug": "freco"
+        }
+      },
+      {
+        "station": {
+          "name": "Quincieux",
+          "slug": "frhck"
+        }
+      },
+      {
+        "station": {
+          "name": "Rabastens Coufouleux",
+          "slug": "frfvj"
+        }
+      },
+      {
+        "station": {
+          "name": "Rang du Fliers - Verton - Berck",
+          "slug": "frcvu"
+        }
+      },
+      {
+        "station": {
+          "name": "Ranguin",
+          "slug": "fribm"
+        }
+      },
+      {
+        "station": {
+          "name": "Reaumont Saint-Cassien",
+          "slug": "frhvn"
+        }
+      },
+      {
+        "station": {
+          "name": "Réding",
+          "slug": "frbzm"
+        }
+      },
+      {
+        "station": {
+          "name": "Redon",
+          "slug": "frxrn"
+        }
+      },
+      {
+        "station": {
+          "name": "Régny",
+          "slug": "frhcg"
+        }
+      },
+      {
+        "station": {
+          "name": "Reignier",
+          "slug": "frhuf"
+        }
+      },
+      {
+        "station": {
+          "name": "Reims",
+          "slug": "frrhe"
+        }
+      },
+      {
+        "station": {
+          "name": "Remiremont",
+          "slug": "frrnt"
+        }
+      },
+      {
+        "station": {
+          "name": "Rennes",
+          "slug": "frrns"
+        }
+      },
+      {
+        "station": {
+          "name": "Rethel",
+          "slug": "frbdt"
+        }
+      },
+      {
+        "station": {
+          "name": "Retournac",
+          "slug": "frhms"
+        }
+      },
+      {
+        "station": {
+          "name": "Revin",
+          "slug": "frbdf"
+        }
+      },
+      {
+        "station": {
+          "name": "Riom-Châtel Guyon",
+          "slug": "frrio"
+        }
+      },
+      {
+        "station": {
+          "name": "Rive de Gier",
+          "slug": "frhhq"
+        }
+      },
+      {
+        "station": {
+          "name": "Rives",
+          "slug": "frhvm"
+        }
+      },
+      {
+        "station": {
+          "name": "Rivesaltes",
+          "slug": "friof"
+        }
+      },
+      {
+        "station": {
+          "name": "Rixheim",
+          "slug": "frbjb"
+        }
+      },
+      {
+        "station": {
+          "name": "Roanne",
+          "slug": "frrne"
+        }
+      },
+      {
+        "station": {
+          "name": "Rocamadour-Padirac",
+          "slug": "frfsa"
+        }
+      },
+      {
+        "station": {
+          "name": "Rochefort",
+          "slug": "frrco"
+        }
+      },
+      {
+        "station": {
+          "name": "Rodez",
+          "slug": "frrdz"
+        }
+      },
+      {
+        "station": {
+          "name": "Romanèche Thorins",
+          "slug": "frhgx"
+        }
+      },
+      {
+        "station": {
+          "name": "Romans Bourg de Péage",
+          "slug": "frife"
+        }
+      },
+      {
+        "station": {
+          "name": "Romilly sur Seine",
+          "slug": "frapi"
+        }
+      },
+      {
+        "station": {
+          "name": "Rosheim",
+          "slug": "frbxx"
+        }
+      },
+      {
+        "station": {
+          "name": "Rosny sur Seine",
+          "slug": "frdql"
+        }
+      },
+      {
+        "station": {
+          "name": "Rosporden",
+          "slug": "frrsp"
+        }
+      },
+      {
+        "station": {
+          "name": "Roubaix",
+          "slug": "fradp"
+        }
+      },
+      {
+        "station": {
+          "name": "Rouen Rive Droite",
+          "slug": "frurd"
+        }
+      },
+      {
+        "station": {
+          "name": "Royan",
+          "slug": "frryn"
+        }
+      },
+      {
+        "station": {
+          "name": "Royat-Chamalières",
+          "slug": "frhko"
+        }
+      },
+      {
+        "station": {
+          "name": "Rue",
+          "slug": "frrue"
+        }
+      },
+      {
+        "station": {
+          "name": "Ruffec",
+          "slug": "frfds"
+        }
+      },
+      {
+        "station": {
+          "name": "Rumilly",
+          "slug": "frhte"
+        }
+      },
+      {
+        "station": {
+          "name": "Sablé",
+          "slug": "frsab"
+        }
+      },
+      {
+        "station": {
+          "name": "Sain-Bel",
+          "slug": "frdag"
+        }
+      },
+      {
+        "station": {
+          "name": "Saincaize",
+          "slug": "frsze"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Agne",
+          "slug": "frsgn"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Amand Montrond Orval",
+          "slug": "freyf"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-André de Corcy",
+          "slug": "frhfo"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-André de Cubzac",
+          "slug": "fremz"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-André le Gaz",
+          "slug": "frsag"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Antoine",
+          "slug": "frpej"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Astier",
+          "slug": "frflf"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Avre la Chambre",
+          "slug": "frhoj"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Béron la Bridoire",
+          "slug": "frhoo"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Brieuc",
+          "slug": "frsbk"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Chamond",
+          "slug": "frhho"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Chély d'Apcher",
+          "slug": "frinb"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Christophe",
+          "slug": "frfst"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Clair les Roches",
+          "slug": "frhel"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Clement Laronxe",
+          "slug": "frasi"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Cyprien Arènes",
+          "slug": "frtar"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Denis Près Martel",
+          "slug": "frsdm"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Dié des Vosges",
+          "slug": "frxtd"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Dizier",
+          "slug": "frbgj"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Egrève-Saint-Robert",
+          "slug": "frhvr"
+        }
+      },
+      {
+        "station": {
+          "name": "Sainte-Marthe en Provence",
+          "slug": "frhyh"
+        }
+      },
+      {
+        "station": {
+          "name": "Saintes",
+          "slug": "frxst"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Etienne Bellevue",
+          "slug": "frhhi"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Etienne Carnot",
+          "slug": "frhjd"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Etienne Châteaucreux",
+          "slug": "frhhd"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Etienne la Terrasse",
+          "slug": "frhhg"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Etienne le Clapier",
+          "slug": "frhhh"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Florent sur Cher",
+          "slug": "freya"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Flour Chaudes Aigues",
+          "slug": "frimw"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Fons",
+          "slug": "frhje"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Gaudens",
+          "slug": "frfph"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Georges d'Aurac",
+          "slug": "frsga"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Georges de Luzençon",
+          "slug": "frinm"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Georges de Reneins",
+          "slug": "frhcn"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Germain au Mont d'Or",
+          "slug": "frsgo"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Germain des Fossés",
+          "slug": "frsgf"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Gervais les Bains Le Fayet",
+          "slug": "frxgf"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Gilles",
+          "slug": "frbiw"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Hilaire-Saint-Nazaire",
+          "slug": "frity"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Jean de Losne",
+          "slug": "frsjl"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Jean de Luz Ciboure",
+          "slug": "frxjz"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Jean de Maurienne Arvan",
+          "slug": "frhpn"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Jodard",
+          "slug": "frhiz"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Joseph le Castellas",
+          "slug": "frpek"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Julien en Genevois",
+          "slug": "frhsd"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Just en Chaussée",
+          "slug": "frsjs"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Leu d'Esserent",
+          "slug": "frcgj"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Lô",
+          "slug": "frslo"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Louis Haut-Rhin",
+          "slug": "frxli"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Louis la Chaussée",
+          "slug": "frbih"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Maixent",
+          "slug": "frejc"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Malo",
+          "slug": "frxsb"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint Marcel en Dombes",
+          "slug": "frhfp"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Marcellin (Isère)",
+          "slug": "frifg"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Mariens-Saint-Yzan",
+          "slug": "fremv"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Martin Bellevue",
+          "slug": "friwz"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Martin du Touch",
+          "slug": "frsma"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Maurice de Beynost",
+          "slug": "frhff"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Michel Valloire",
+          "slug": "frxvr"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Nabord",
+          "slug": "frbaw"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Nazaire",
+          "slug": "frsnr"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Omer",
+          "slug": "frxsg"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Omer en Chaussée",
+          "slug": "frcsg"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Paul de Varax",
+          "slug": "frhfs"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Pierre d'Albigny",
+          "slug": "frspa"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Pierre des Corps",
+          "slug": "frxsh"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Pierre en Faucigny",
+          "slug": "frhtt"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Pierre le Moutier",
+          "slug": "frgsr"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Pierre sur Dives",
+          "slug": "frdrq"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Pol sur Ternoise",
+          "slug": "frspt"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Priest",
+          "slug": "frhet"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Quentin",
+          "slug": "frxsj"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Quentin Fallavier",
+          "slug": "frhew"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Rambert d'Albon",
+          "slug": "frieo"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Rambert en Bugey",
+          "slug": "frhre"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Raphaël Valescure",
+          "slug": "frxsk"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Roch",
+          "slug": "frsro"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Romain de Popey",
+          "slug": "frhcr"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Romain le Puy",
+          "slug": "frhhv"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Rome de Cernon",
+          "slug": "frinn"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Sébastien Frêne Rond",
+          "slug": "frrod"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Sébastien Pas Enchantés",
+          "slug": "frpht"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Sulpice Laurière",
+          "slug": "frssl"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Sulpice (Tarn)",
+          "slug": "frsst"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Vallier sur Rhône",
+          "slug": "frieq"
+        }
+      },
+      {
+        "station": {
+          "name": "Saint-Victor Thizy",
+          "slug": "frhcf"
+        }
+      },
+      {
+        "station": {
+          "name": "Salbris",
+          "slug": "frsal"
+        }
+      },
+      {
+        "station": {
+          "name": "Salechan Siradan",
+          "slug": "frfxk"
+        }
+      },
+      {
+        "station": {
+          "name": "Sallanches Combloux Megève",
+          "slug": "frxsn"
+        }
+      },
+      {
+        "station": {
+          "name": "Salses",
+          "slug": "frioe"
+        }
+      },
+      {
+        "station": {
+          "name": "Sarrebourg",
+          "slug": "frsbg"
+        }
+      },
+      {
+        "station": {
+          "name": "Sarreguemines",
+          "slug": "frsgs"
+        }
+      },
+      {
+        "station": {
+          "name": "Sathonay-Rillieux",
+          "slug": "frhfl"
+        }
+      },
+      {
+        "station": {
+          "name": "Saujon",
+          "slug": "frenx"
+        }
+      },
+      {
+        "station": {
+          "name": "Saumur",
+          "slug": "fracn"
+        }
+      },
+      {
+        "station": {
+          "name": "Savenay",
+          "slug": "frsny"
+        }
+      },
+      {
+        "station": {
+          "name": "Saverdun",
+          "slug": "frfpu"
+        }
+      },
+      {
+        "station": {
+          "name": "Saverne",
+          "slug": "frsne"
+        }
+      },
+      {
+        "station": {
+          "name": "Sedan",
+          "slug": "frxsw"
+        }
+      },
+      {
+        "station": {
+          "name": "Sées",
+          "slug": "frdst"
+        }
+      },
+      {
+        "station": {
+          "name": "Sélestat",
+          "slug": "frxsq"
+        }
+      },
+      {
+        "station": {
+          "name": "Sens",
+          "slug": "frxsf"
+        }
+      },
+      {
+        "station": {
+          "name": "Septèmes",
+          "slug": "frhyf"
+        }
+      },
+      {
+        "station": {
+          "name": "Sérézin",
+          "slug": "frheh"
+        }
+      },
+      {
+        "station": {
+          "name": "Serquigny",
+          "slug": "frsqy"
+        }
+      },
+      {
+        "station": {
+          "name": "Servas-Lent",
+          "slug": "frhft"
+        }
+      },
+      {
+        "station": {
+          "name": "Sète",
+          "slug": "frxsy"
+        }
+      },
+      {
+        "station": {
+          "name": "Sévérac le Château",
+          "slug": "frsvc"
+        }
+      },
+      {
+        "station": {
+          "name": "Seyssel-Corbonod",
+          "slug": "frhsx"
+        }
+      },
+      {
+        "station": {
+          "name": "Sierentz",
+          "slug": "frbje"
+        }
+      },
+      {
+        "station": {
+          "name": "Simiane",
+          "slug": "frhxq"
+        }
+      },
+      {
+        "station": {
+          "name": "Souillac",
+          "slug": "frsou"
+        }
+      },
+      {
+        "station": {
+          "name": "Souppes-Château Landon",
+          "slug": "frgoc"
+        }
+      },
+      {
+        "station": {
+          "name": "Strasbourg",
+          "slug": "fraeg"
+        }
+      },
+      {
+        "station": {
+          "name": "Strasbourg Roethig",
+          "slug": "frbuk"
+        }
+      },
+      {
+        "station": {
+          "name": "Surdon",
+          "slug": "frsdn"
+        }
+      },
+      {
+        "station": {
+          "name": "Surgères",
+          "slug": "freip"
+        }
+      },
+      {
+        "station": {
+          "name": "Tain l'Hermitage Tournon",
+          "slug": "frier"
+        }
+      },
+      {
+        "station": {
+          "name": "Tarare",
+          "slug": "frhct"
+        }
+      },
+      {
+        "station": {
+          "name": "Tarascon sur Ariège",
+          "slug": "frfqm"
+        }
+      },
+      {
+        "station": {
+          "name": "Tarascon sur Rhône",
+          "slug": "frtcn"
+        }
+      },
+      {
+        "station": {
+          "name": "Tarbes",
+          "slug": "frxtb"
+        }
+      },
+      {
+        "station": {
+          "name": "Tassin",
+          "slug": "frtas"
+        }
+      },
+      {
+        "station": {
+          "name": "Tenay-Hauteville",
+          "slug": "frhrf"
+        }
+      },
+      {
+        "station": {
+          "name": "Tergnier",
+          "slug": "frtgr"
+        }
+      },
+      {
+        "station": {
+          "name": "Terrasson",
+          "slug": "frter"
+        }
+      },
+      {
+        "station": {
+          "name": "TGV Haute-Picardie",
+          "slug": "frthp"
+        }
+      },
+      {
+        "station": {
+          "name": "Thaon",
+          "slug": "fraxs"
+        }
+      },
+      {
+        "station": {
+          "name": "Thenon",
+          "slug": "frflu"
+        }
+      },
+      {
+        "station": {
+          "name": "Thionville",
+          "slug": "frxth"
+        }
+      },
+      {
+        "station": {
+          "name": "Thiviers",
+          "slug": "frfkx"
+        }
+      },
+      {
+        "station": {
+          "name": "Thonon les Bains",
+          "slug": "frxts"
+        }
+      },
+      {
+        "station": {
+          "name": "Toul",
+          "slug": "frtol"
+        }
+      },
+      {
+        "station": {
+          "name": "Toulon",
+          "slug": "frtln"
+        }
+      },
+      {
+        "station": {
+          "name": "Toulouse Matabiau",
+          "slug": "frxyt"
+        }
+      },
+      {
+        "station": {
+          "name": "Tourcoing",
+          "slug": "fradm"
+        }
+      },
+      {
+        "station": {
+          "name": "Tournemire Roquefort",
+          "slug": "frino"
+        }
+      },
+      {
+        "station": {
+          "name": "Tournus",
+          "slug": "frhgq"
+        }
+      },
+      {
+        "station": {
+          "name": "Tours",
+          "slug": "frafw"
+        }
+      },
+      {
+        "station": {
+          "name": "Tracy-Sancerre",
+          "slug": "frgsi"
+        }
+      },
+      {
+        "station": {
+          "name": "Trouville - Deauville",
+          "slug": "frtrd"
+        }
+      },
+      {
+        "station": {
+          "name": "Troyes",
+          "slug": "frqyr"
+        }
+      },
+      {
+        "station": {
+          "name": "Tulle",
+          "slug": "frxtu"
+        }
+      },
+      {
+        "station": {
+          "name": "Tullins-Fures",
+          "slug": "frifj"
+        }
+      },
+      {
+        "station": {
+          "name": "Turckheim",
+          "slug": "frbjs"
+        }
+      },
+      {
+        "station": {
+          "name": "Uckange",
+          "slug": "frbnr"
+        }
+      },
+      {
+        "station": {
+          "name": "Ussel",
+          "slug": "fruss"
+        }
+      },
+      {
+        "station": {
+          "name": "Uzerche",
+          "slug": "fraaw"
+        }
+      },
+      {
+        "station": {
+          "name": "Val De Reuil",
+          "slug": "frvdr"
+        }
+      },
+      {
+        "station": {
+          "name": "Valence",
+          "slug": "frvaf"
+        }
+      },
+      {
+        "station": {
+          "name": "Valence d'Agen",
+          "slug": "frfrk"
+        }
+      },
+      {
+        "station": {
+          "name": "Valence TGV Rhône Alpes Sud",
+          "slug": "frvla"
+        }
+      },
+      {
+        "station": {
+          "name": "Valenciennes",
+          "slug": "frxvs"
+        }
+      },
+      {
+        "station": {
+          "name": "Valleiry",
+          "slug": "frhsb"
+        }
+      },
+      {
+        "station": {
+          "name": "Vallon en Sully",
+          "slug": "frgab"
+        }
+      },
+      {
+        "station": {
+          "name": "Valognes",
+          "slug": "frdto"
+        }
+      },
+      {
+        "station": {
+          "name": "Vannes",
+          "slug": "frvne"
+        }
+      },
+      {
+        "station": {
+          "name": "Varennes sur Allier",
+          "slug": "frgsw"
+        }
+      },
+      {
+        "station": {
+          "name": "Veauche-Saint-Galmier",
+          "slug": "frhhj"
+        }
+      },
+      {
+        "station": {
+          "name": "Vendenheim",
+          "slug": "frvhm"
+        }
+      },
+      {
+        "station": {
+          "name": "Vendôme Villiers sur Loir",
+          "slug": "fresl"
+        }
+      },
+      {
+        "station": {
+          "name": "Vénissieux",
+          "slug": "frher"
+        }
+      },
+      {
+        "station": {
+          "name": "Vergèze Codognan",
+          "slug": "frijs"
+        }
+      },
+      {
+        "station": {
+          "name": "Vernaison",
+          "slug": "frhdy"
+        }
+      },
+      {
+        "station": {
+          "name": "Verneuil sur Avre",
+          "slug": "frdjm"
+        }
+      },
+      {
+        "station": {
+          "name": "Vernon",
+          "slug": "frdqc"
+        }
+      },
+      {
+        "station": {
+          "name": "Versailles Chantiers",
+          "slug": "frdht"
+        }
+      },
+      {
+        "station": {
+          "name": "Vertaizon",
+          "slug": "frhlq"
+        }
+      },
+      {
+        "station": {
+          "name": "Vertou",
+          "slug": "frefy"
+        }
+      },
+      {
+        "station": {
+          "name": "Vesoul",
+          "slug": "frxvo"
+        }
+      },
+      {
+        "station": {
+          "name": "Veynes Devoluy",
+          "slug": "frvdy"
+        }
+      },
+      {
+        "station": {
+          "name": "Vichy",
+          "slug": "frvhy"
+        }
+      },
+      {
+        "station": {
+          "name": "Vic Mireval",
+          "slug": "frijj"
+        }
+      },
+      {
+        "station": {
+          "name": "Vienne",
+          "slug": "frxvi"
+        }
+      },
+      {
+        "station": {
+          "name": "Vierzon Ville",
+          "slug": "frxvz"
+        }
+      },
+      {
+        "station": {
+          "name": "Vigeois",
+          "slug": "frfiy"
+        }
+      },
+      {
+        "station": {
+          "name": "Villars les Dombes",
+          "slug": "frhfq"
+        }
+      },
+      {
+        "station": {
+          "name": "Villedieu Les Poêles",
+          "slug": "frduo"
+        }
+      },
+      {
+        "station": {
+          "name": "Villefort",
+          "slug": "frijw"
+        }
+      },
+      {
+        "station": {
+          "name": "Villefranche de Lauragais",
+          "slug": "frfup"
+        }
+      },
+      {
+        "station": {
+          "name": "Villefranche de Rouergue",
+          "slug": "frfuo"
+        }
+      },
+      {
+        "station": {
+          "name": "Villefranche du Périgord",
+          "slug": "frfmh"
+        }
+      },
+      {
+        "station": {
+          "name": "Villefranche sur Saône",
+          "slug": "frxvf"
+        }
+      },
+      {
+        "station": {
+          "name": "Villeneuve les Maguelonne",
+          "slug": "friji"
+        }
+      },
+      {
+        "station": {
+          "name": "Vinay",
+          "slug": "frifh"
+        }
+      },
+      {
+        "station": {
+          "name": "Vincey",
+          "slug": "fraxp"
+        }
+      },
+      {
+        "station": {
+          "name": "Vions Chanaz",
+          "slug": "frhnw"
+        }
+      },
+      {
+        "station": {
+          "name": "Vire",
+          "slug": "frdux"
+        }
+      },
+      {
+        "station": {
+          "name": "Vireux Molhain",
+          "slug": "frbdi"
+        }
+      },
+      {
+        "station": {
+          "name": "Virieu le Grand-Belley",
+          "slug": "frhot"
+        }
+      },
+      {
+        "station": {
+          "name": "Virieu sur Bourbre",
+          "slug": "frhvi"
+        }
+      },
+      {
+        "station": {
+          "name": "Vitré",
+          "slug": "frxvt"
+        }
+      },
+      {
+        "station": {
+          "name": "Vitrolles Aéroport Marseille Provence",
+          "slug": "frhbo"
+        }
+      },
+      {
+        "station": {
+          "name": "Vitry le François",
+          "slug": "frbfo"
+        }
+      },
+      {
+        "station": {
+          "name": "Viviers du Lac",
+          "slug": "frhnz"
+        }
+      },
+      {
+        "station": {
+          "name": "Viviez-Décazeville",
+          "slug": "frvzd"
+        }
+      },
+      {
+        "station": {
+          "name": "Voiron",
+          "slug": "frhvo"
+        }
+      },
+      {
+        "station": {
+          "name": "Voreppe",
+          "slug": "frhvq"
+        }
+      },
+      {
+        "station": {
+          "name": "Walbach",
+          "slug": "frbjt"
+        }
+      },
+      {
+        "station": {
+          "name": "Weyersheim",
+          "slug": "frbws"
+        }
+      },
+      {
+        "station": {
+          "name": "Wihr au Val Soultzbach",
+          "slug": "frbju"
+        }
+      },
+      {
+        "station": {
+          "name": "Wingen sur Moder",
+          "slug": "frwim"
+        }
+      },
+      {
+        "station": {
+          "name": "Woippy",
+          "slug": "frbpd"
+        }
+      },
+      {
+        "station": {
+          "name": "Yvetot",
+          "slug": "fryve"
+        }
+      }
+    ]
+  }
+}
