@@ -3,6 +3,7 @@ require 'gares/version'
 
 Gem::Specification.new do |s|
   s.name        = 'gares'
+  s.licenses    = ['MIT']
   s.version     = Gares::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ['Paul Bonaud']
@@ -18,9 +19,9 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.add_dependency 'nokogiri', '~> 1.6.6'
-  s.add_dependency 'hashie'
-  s.add_dependency 'unidecoder'
+  s.add_dependency 'nokogiri', '~> 1.6'
+  s.add_dependency 'hashie', '~> 3.4'
+  s.add_dependency 'unidecoder', '~> 1.1'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'

@@ -30,7 +30,7 @@ Gares currently features the following:
     g = Gares::Search.new("Aix")
 
     g.gares.size
-    #=> 3
+    #=> 7
 
 ## Installation
 
