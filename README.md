@@ -1,5 +1,7 @@
 # Gares (en-mouvement)
 
+[![Build Status](https://travis-ci.org/paulRbr/gares.svg)](https://travis-ci.org/paulRbr/gares) [![Gem Version](https://badge.fury.io/rb/gares.svg)](http://badge.fury.io/rb/gares)
+
 ## Description
 
 The Gares gem allows you to easy access publicly available data from gares-en-mouvement.com.
