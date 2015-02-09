@@ -16,8 +16,13 @@ module Gares
       @name = name if name
     end
 
+    def services
+      @services ||= Services.new(@slug).all
+    end
+
     def horaires
-      document.at('ul.ouverture_heure').inner_html rescue nil
+      document.search('ul.ouverture_heure li').
+          map { |horaire| horaire.inner_html } rescue []
     end
 
     # Returns a string containing the name
@@ -36,7 +41,7 @@ module Gares
       @document ||= Nokogiri::HTML(Gares::Gare.find_by_slug(@slug))
     end
 
-    # Use HTTParty to fetch the raw HTML for this movie.
+    # Use HTTParty to fetch the raw HTML for this gare.
     def self.find_by_slug(slug, page = :"votre-gare")
       open("http://www.gares-en-mouvement.com/fr/#{slug}/#{page}")
     end
