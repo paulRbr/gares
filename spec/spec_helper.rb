@@ -19,8 +19,9 @@ end
 
 GARES_SAMPLES = {
   'http://www.gares-en-mouvement.com/fr/frabt/services-en-gare/vente/' => 'frabt',
+  'http://www.gares-en-mouvement.com/fr/frxag/votre-gare' => 'frxag',
   'http://www.gares-en-mouvement.com/fr/frlpd/votre-gare' => 'frlpd',
-  'http://www.gares-en-mouvement.com/fr/frhco/vore-gare/' => 'frhco',
+  'http://www.gares-en-mouvement.com/fr/frhco/votre-gare' => 'frhco',
   'https://www.kimonolabs.com/api/7jys32dy?apikey=lsOO4tNm78cH9JxqWg9gAk9l4nYaou9j&kimmodify=1' => 'search'
 }
 

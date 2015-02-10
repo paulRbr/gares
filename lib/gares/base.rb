@@ -24,6 +24,18 @@ module Gares
       document.search('ul.ouverture_heure li').
           map { |horaire| horaire.inner_html } rescue []
     end
+    alias opening_hours horaires
+
+    # Whether the gare has a defibrillator or not
+    def defibrillateur?
+      !document.at('div.defibrillateur').nil?
+    end
+    alias defibrillator? defibrillateur?
+
+    # Whether the gare is equipped with wifi or not
+    def wifi?
+      !document.at('div.wifi').nil?
+    end
 
     # Returns a string containing the name
     def name(force_refresh = false)

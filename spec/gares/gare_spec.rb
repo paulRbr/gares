@@ -21,6 +21,22 @@ describe Gares::Gare do
 
       expect(name).to eql('Lyon Part Dieu')
     end
+
+    it 'should have opengin hours' do
+      horaires = @gare.horaires
+
+      expect(horaires.first).to eql('du lundi au dimanche de 04:50 à 00:45')
+    end
+
+    context 'a gare without wifi nor defibrillator' do
+      before(:each) do
+        # Get gare de Agde
+        @gare = Gares::Gare.new('frxag')
+      end
+
+      it { expect(@gare.wifi?).to be(false) }
+      it { expect(@gare.defibrillator?).to be(false) }
+    end
   end
 
   describe 'with name that has utf-8 characters' do

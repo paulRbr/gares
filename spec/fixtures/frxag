@@ -1,7 +1,7 @@
 HTTP/1.1 200 OK
-Date: Tue, 10 Feb 2015 12:56:38 GMT
+Date: Tue, 10 Feb 2015 12:54:14 GMT
 Server: Apache
-Set-Cookie: PHPSESSID=afd59b507dd42a800ecc6230f33548d9; path=/
+Set-Cookie: PHPSESSID=7a8680503ab887748dc6841462d067b3; path=/
 Expires: Thu, 19 Nov 1981 08:52:00 GMT
 Pragma: no-cache
 Vary: Accept-Encoding,User-Agent
@@ -19,9 +19,9 @@ Content-Language: fr
     <meta name="google-site-verification" content="BPFtRTWIA3lilhZ5mQDkQ_4Wpp6z5AAiEdxELZB59-I" />
     <!-- Bing -->
     <meta name="msvalidate.01" content="8B551AF14D2565E14E06A9069D7A0091" />
-	<meta name="description" content="Site officiel de la gare SNCF de Lyon Part Dieu: Horaires d'ouverture de la gare SNCF de Lyon Part Dieu, adresse de la gare et ses coordonnées GPS" />
+	<meta name="description" content="Site officiel de la gare SNCF de Agde: Horaires d'ouverture de la gare SNCF de Agde, adresse de la gare et ses coordonnées GPS" />
 					<meta name="keywords" content="adresse gare, horaires gares SNCF, adresse gare SNCF, aller gare " />
-					<title>Horaires gare SNCF de Lyon Part Dieu</title>    <!-- Favicon -->
+					<title>Horaires gare SNCF de Agde</title>    <!-- Favicon -->
     <link rel="icon" type="image/gif" href="http://www.gares-en-mouvement.com/favicon.gif"  />
     <link href="http://www.gares-en-mouvement.com/resources/css/reset.css" rel="stylesheet" type="text/css" media="all" />
     <link href="http://www.gares-en-mouvement.com/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -184,20 +184,20 @@ Content-Language: fr
 		<a id="gare-co" href="http://www.gares-connexions.com/" target="_blank" title="La branche Gares &amp; Connexions (nouvelle fen&ecirc;tre)">La branche Gares &amp; Connexions</a><br /> 
 		<div id="langue">
 			<ul>
-			<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/votre-gare/" lang="fr"><img title="Fran&ccedil;ais" alt="Fran&ccedil;ais" src="http://www.gares-en-mouvement.com/resources/images/langue/fr.gif" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/en/frlpd/votre-gare/" lang="en"><img title="English" src="http://www.gares-en-mouvement.com/resources/images/langue/en.gif" alt="English" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/de/frlpd/votre-gare/" lang="de"><img title="Deutsch" src="http://www.gares-en-mouvement.com/resources/images/langue/de.gif" alt="Deutsch" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/it/frlpd/votre-gare/" lang="it"><img title="Italiano" src="http://www.gares-en-mouvement.com/resources/images/langue/it.gif" alt="Italiano" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/es/frlpd/votre-gare/" lang="es"><img title="Espa&ntilde;ol" src="http://www.gares-en-mouvement.com/resources/images/langue/es.gif" alt="Espa&ntilde;ol" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/nl/frlpd/votre-gare/" lang="nl"><img title="Nederlands" src="http://www.gares-en-mouvement.com/resources/images/langue/nl.gif" alt="Nederlands" width="18" height="18" /></a></li>			</ul>
+			<li><a href="http://www.gares-en-mouvement.com/fr/frxag/votre-gare/" lang="fr"><img title="Fran&ccedil;ais" alt="Fran&ccedil;ais" src="http://www.gares-en-mouvement.com/resources/images/langue/fr.gif" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/en/frxag/votre-gare/" lang="en"><img title="English" src="http://www.gares-en-mouvement.com/resources/images/langue/en.gif" alt="English" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/de/frxag/votre-gare/" lang="de"><img title="Deutsch" src="http://www.gares-en-mouvement.com/resources/images/langue/de.gif" alt="Deutsch" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/it/frxag/votre-gare/" lang="it"><img title="Italiano" src="http://www.gares-en-mouvement.com/resources/images/langue/it.gif" alt="Italiano" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/es/frxag/votre-gare/" lang="es"><img title="Espa&ntilde;ol" src="http://www.gares-en-mouvement.com/resources/images/langue/es.gif" alt="Espa&ntilde;ol" width="18" height="18" /></a></li><li><a href="http://www.gares-en-mouvement.com/nl/frxag/votre-gare/" lang="nl"><img title="Nederlands" src="http://www.gares-en-mouvement.com/resources/images/langue/nl.gif" alt="Nederlands" width="18" height="18" /></a></li>			</ul>
 		</div><!-- fin div langue -->
 		<div id="heure">
 			<script type="text/javascript">
 				$(document).ready(function(){
-					WinTime(13, 56, 38,1)
+					WinTime(13, 54, 14,1)
 				});
 			</script>
-			<noscript><span>13<abbr title="Heure">:</abbr>56</span></noscript>
+			<noscript><span>13<abbr title="Heure">:</abbr>54</span></noscript>
 		</div>
 		
-		<ul id="social"><li><a href="https://www.facebook.com/GaredeLyonPartDieu" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/f_logo.gif" alt="Logo Facebook" title="Devenez fan de notre page (nouvelle fen&ecirc;tre)"/></a></li><li><a href="http://twitter.com/infos_gares" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/t_logo.gif" alt="Logo Twitter" title="Suivez nous sur Twitter (nouvelle fen&ecirc;tre)"/></a></li></ul>		
+		<ul id="social"><li><a href="https://www.facebook.com/bonsplansdemagare" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/f_logo.gif" alt="Logo Facebook" title="Devenez fan de notre page (nouvelle fen&ecirc;tre)"/></a></li><li><a href="http://twitter.com/infos_gares" target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/t_logo.gif" alt="Logo Twitter" title="Suivez nous sur Twitter (nouvelle fen&ecirc;tre)"/></a></li></ul>		
 		<div id="welcome">
-			<h1>En direct de Lyon Part Dieu</h1>        
+			<h1>En direct de Agde</h1>        
 		</div><!-- fin div welcome -->
 		
 		
@@ -220,35 +220,19 @@ R&eacute;guli&egrave;rement, des nouvelles gares sont consultables sur le site :
         
     <ul class="menu" id="menu">
     
-	<li class="accueil border_top2"><a href="http://www.gares-en-mouvement.com/fr/frlpd/accueil/">Accueil gare</a></li>
-<li class="active_menu"><a href="http://www.gares-en-mouvement.com/fr/frlpd/votre-gare/" title="Votre gare (page actuelle)">Votre gare</a></li>
-<li>Comment venir et repartir de la gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frlpd/acces-gare/transport/" title="Comment venir et repartir de la gare - Transports en commun">Transports en commun</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/acces-gare/velo_moto/" title="Comment venir et repartir de la gare - Vélos et motos">Vélos et motos</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/acces-gare/taxis/" title="Comment venir et repartir de la gare - Taxis">Taxis</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/acces-gare/nouveaux_modes/" title="Comment venir et repartir de la gare - Nouveaux modes">Nouveaux modes</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/acces-gare/voiture/" title="Comment venir et repartir de la gare - Voiture">Voiture</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/acces-gare/aller_a/" title="Comment venir et repartir de la gare - Services publics et sites touristiques">Services publics et sites touristiques</a></li>
+	<li class="accueil border_top2"><a href="http://www.gares-en-mouvement.com/fr/frxag/accueil/">Accueil gare</a></li>
+<li class="active_menu"><a href="http://www.gares-en-mouvement.com/fr/frxag/votre-gare/" title="Votre gare (page actuelle)">Votre gare</a></li>
+<li>Les horaires en temps r&eacute;el <ul class="tvs_sub border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frxag/horaires-temps-reel/dep/" title="Les horaires en temps r&eacute;el  - d&eacute;parts trains">D&eacute;parts trains</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frxag/horaires-temps-reel/arr/" title="Les horaires en temps r&eacute;el  - arriv&eacute;es trains">Arriv&eacute;es trains</a></li>
 </ul></li>
-<li>Les horaires en temps r&eacute;el <ul class="tvs_sub border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frlpd/horaires-temps-reel/dep/" title="Les horaires en temps r&eacute;el  - d&eacute;parts trains">D&eacute;parts trains</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/horaires-temps-reel/arr/" title="Les horaires en temps r&eacute;el  - arriv&eacute;es trains">Arriv&eacute;es trains</a></li>
+<li>Commerces<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frxag/commerces/autour_gare/" title="Commerces - autour de la gare">Autour de la gare</a></li>
 </ul></li>
-<li>Commerces<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frlpd/commerces/alimentation/" title="Commerces - Alimentation">Alimentation</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/commerces/banque/" title="Commerces - Banque">Banque</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/commerces/loisirs/" title="Commerces - Loisirs - Voyages">Loisirs - Voyages</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/commerces/mode/" title="Commerces - Mode">Mode</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/commerces/presse/" title="Commerces - Presse">Presse</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/commerces/sante/" title="Commerces - Hygiène - Santé - Beauté">Hygiène - Santé - Beauté</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/commerces/autour_gare/" title="Commerces - autour de la gare">Autour de la gare</a></li>
+<li>Services en gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frxag/services-en-gare/service/" title="Services en gare - Services">Services</a></li>
 </ul></li>
-<li>Services en gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frlpd/services-en-gare/accueil/" title="Services en gare - Accueils">Accueils</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/services-en-gare/service/" title="Services en gare - Services">Services</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/services-en-gare/vente/" title="Services en gare - Ventes">Ventes</a></li>
+<li>Autour de la gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frxag/autour-de-la-gare/proximite/" title="Autour de la gare - a proximit&eacute;">A proximit&eacute;</a></li>
+<li><a href="http://www.gares-en-mouvement.com/fr/frxag/autour-de-la-gare/ville/" title="Autour de la gare - vers la ville">Vers la ville</a></li>
 </ul></li>
-<li>Plans<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frlpd/plans/visite-virtuelle/" title="Plans - Visite virtuelle guid&eacute;e">Visite virtuelle guid&eacute;e</a></li>
-</ul></li>
-<li class="border_bottom">Autour de la gare<ul class="tvs_sub2 border_menu"><li><a href="http://www.gares-en-mouvement.com/fr/frlpd/autour-de-la-gare/proximite/" title="Autour de la gare - a proximit&eacute;">A proximit&eacute;</a></li>
-<li><a href="http://www.gares-en-mouvement.com/fr/frlpd/autour-de-la-gare/ville/" title="Autour de la gare - vers la ville">Vers la ville</a></li>
-</ul></li>
+<li class="border_bottom"><a href="http://www.gares-en-mouvement.com/fr/frxag/pmr/">Accessibilit&eacute;</a></li>
 	
     </ul>
 
@@ -257,15 +241,15 @@ R&eacute;guli&egrave;rement, des nouvelles gares sont consultables sur le site :
         <div id="content" class="border">
             <div id="page_content_resize_true">
             	<div class="content_left">
-                <h2>Horaires d'ouverture de la gare</h2><div class="ouverture_courant_true"><ul class="ouverture_heure"><li>du lundi au dimanche de 04:50 à 00:45</li><li class="feries">jours fériés de 04:50 à 00:45</li></ul></div><br /><hr /><h2>Adresse</h2><p><p>5, Place Charles B&eacute;raudier 69003 Lyon. Coordonn&eacute;es GPS de la d&eacute;pose minute : 45&deg;45'42.7"N,4&deg;51'33.9"E.</p></p><p><strong>R&eacute;gion : </strong>Rhône-Alpes<br /></p><p><strong>D&eacute;partement : </strong>Rhône<br /></p><p><strong>Coordonn&eacute;es GPS : </strong>45.760281,4.859801</p><hr /><h2>Chef de gare voyageurs</h2><p>Bruno Davin</p><hr /><h2>Directeur de gare</h2><p>Thierry Grosbois</p><hr /><!-- infos -->
-				<h2>Informations</h2><p>36 35 (0,34 <abbr title="euros">&euro;</abbr>/<abbr title="minute">mn</abbr>)</p><div class="wifi">Cette gare est &eacute;quip&eacute;e d'une borne Wifi.</div><div class="defibrillateur">Cette gare est &eacute;quip&eacute;e d'un d&eacute;fibrillateur :<br />En face du service accueil, dans le hall de la gare + à proximité de l'entrée Rhône<br /></div>                </div><!-- fin div content_left -->
+                <h2>Horaires d'ouverture de la gare</h2><div class="ouverture_courant_true"><ul class="ouverture_heure"><li>du lundi au vendredi de 04:30 à 23:30</li><li>du samedi au dimanche de 05:30 à 23:30</li><li class="feries">jours fériés de 05:30 à 23:30</li></ul></div><br /><hr /><h2>Adresse</h2><p>Rue de la digue 34300 Agde</p><p><strong>R&eacute;gion : </strong>Languedoc-Roussillon<br /></p><p><strong>D&eacute;partement : </strong>Hérault<br /></p><p><strong>Coordonn&eacute;es GPS : </strong>43.317424, 3.466125</p><hr /><h2>Chef de gare voyageurs</h2><p>Monique Sangayrac</p><hr /><h2>Directeur de gare</h2><p>Sabrina Boucey</p><hr /><!-- infos -->
+				<h2>Informations</h2><p>36 35 (0,34 <abbr title="euros">&euro;</abbr>/<abbr title="minute">mn</abbr>)</p>                </div><!-- fin div content_left -->
                 <div class="content_right">
                                 </div><!-- fin div content_right -->
 				   
 			<div class="cls"></div>	            
             </div><!-- fin div page_content_resize_true --> 
             
-            <div id="print"><a href="http://www.gares-en-mouvement.com/fr/frlpd/impression/">Imprimer</a></div>
+            <div id="print"><a href="http://www.gares-en-mouvement.com/fr/frxag/impression/">Imprimer</a></div>
         </div><!-- fin div content -->
     </div><!-- fin div content_wrapper -->
     <div id="pub">
@@ -314,7 +298,7 @@ Profitez de gares-en-mouvement sur votre mobile gr&acirc;ce &agrave; l'applicati
     </div><!-- fin div sncf -->
 	<div id="outil">
 				<ul class="footer">
-						<li class="li_br"><a href="http://www.gares-en-mouvement.com/fr/frlpd/aide/">Aide</a></li><li class="li_br"><a href="http://www.gares-en-mouvement.com/fr/frlpd/mentions/">Mentions l&#233;gales</a></li><li><a accesskey="6" href="http://www.gares-en-mouvement.com/fr/frlpd/plan-du-site/">Plan du site</a></li>					</ul>
+						<li class="li_br"><a href="http://www.gares-en-mouvement.com/fr/frxag/aide/">Aide</a></li><li class="li_br"><a href="http://www.gares-en-mouvement.com/fr/frxag/mentions/">Mentions l&#233;gales</a></li><li><a accesskey="6" href="http://www.gares-en-mouvement.com/fr/frxag/plan-du-site/">Plan du site</a></li>					</ul>
 					<br />
 					<ul class="footer">
 					<li class="li_br"><a href="http://aide.voyages-sncf.com/sites/aide.voyages-sncf.com/files/imce/pdf/Fiche_Contactez-nous.pdf?rfrr=FAQ%3AAideTrain%3Asuite-mon-achat%3Areclamation-et-demande-de-remboursement_body_formulaire%20de%20r%C3%A9clamation" target="_blank" title="Formulaire CONTACTEZ-NOUS (PDF, 25Ko, nouvelle fen&ecirc;tre)">Formulaire CONTACTEZ-NOUS</a> </li>
@@ -330,16 +314,16 @@ Profitez de gares-en-mouvement sur votre mobile gr&acirc;ce &agrave; l'applicati
                         <ul class="carousel_ul carousel_off"><li class="li_br"><a href="http://www.intercites.sncf.com" title="INTERCIT&Eacute;S (nouvelle fen&ecirc;tre)" target="_blank">INTERCIT&Eacute;S</a></li><li class="li_br"><a href="http://www.eurostar.com" title="Eurostar (nouvelle fen&ecirc;tre)" target="_blank">Eurostar</a></li><li class="li_br"><a href="http://www.idtgv.com" title="iDTGV (nouvelle fen&ecirc;tre)" target="_blank">iDTGV</a></li><li class="li_br"><a href="http://www.tgv-lyria.com" title="TGV Lyria (nouvelle fen&ecirc;tre)" target="_blank">TGV Lyria</a></li><li class="li_br"><a href="http://www.ter-sncf.com" title="TER (nouvelle fen&ecirc;tre)" target="_blank">TER</a></li><li class="li_br"><a href="http://www.tgv.com" title="TGV (nouvelle fen&ecirc;tre)" target="_blank">TGV</a></li><li class="li_br"><a href="http://www.thalys.com" title="Thalys (nouvelle fen&ecirc;tre)" target="_blank">Thalys</a></li><li class="li_br"><a href="http://www.transilien.com" title="Transilien (nouvelle fen&ecirc;tre)" target="_blank">Transilien</a></li><li class="li_br"><a href="http://www.velo.sncf.com" title="Vélo SNCF (nouvelle fen&ecirc;tre)" target="_blank">Vélo SNCF</a></li><li class="li_br"><a href="http://www.thello.com/" title="Thello (nouvelle fen&ecirc;tre)" target="_blank">Thello</a></li>                        </ul>                    
 					</noscript>
 					<ul class="carousel_ul" style="display:none;">
-						<li><a href="http://www.idtgv.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/03_logo_idtgv.gif" alt="iDTGV" title="iDTGV (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
-<li><a href="http://www.intercites.sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/01_logo_intercites.gif" alt="INTERCIT&Eacute;S" title="INTERCIT&Eacute;S (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
-<li><a href="http://www.eurostar.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/02_logo_eurostar.gif" alt="Eurostar" title="Eurostar (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
-<li><a href="http://www.transilien.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/08_logo_transilien.gif" alt="Transilien" title="Transilien (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
-<li><a href="http://www.ter-sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/05_logo_ter.gif" alt="TER" title="TER (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+						<li><a href="http://www.ter-sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/05_logo_ter.gif" alt="TER" title="TER (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
 <li><a href="http://www.velo.sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/09_logo_velo.gif" alt="Vélo SNCF" title="Vélo SNCF (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
-<li><a href="http://www.ter-sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/05_logo_ter.gif" alt="TER" title="TER (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
-<li><a href="http://www.velo.sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/09_logo_velo.gif" alt="Vélo SNCF" title="Vélo SNCF (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
-<li><a href="http://www.tgv.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/06_logo_tgv.gif" alt="TGV" title="TGV (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.tgv.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/06_logo_tgv.gif" alt="TGV" title="TGV (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.transilien.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/08_logo_transilien.gif" alt="Transilien" title="Transilien (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.tgv-lyria.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/04_logo_lyria.gif" alt="TGV Lyria" title="TGV Lyria (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
+<li><a href="http://www.intercites.sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/01_logo_intercites.gif" alt="INTERCIT&Eacute;S" title="INTERCIT&Eacute;S (nouvelle fen&ecirc;tre)" width="75" height="25" /></a></li>
 <li><a href="http://www.tgv-lyria.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/04_logo_lyria.gif" alt="TGV Lyria" title="TGV Lyria (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.intercites.sncf.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/01_logo_intercites.gif" alt="INTERCIT&Eacute;S" title="INTERCIT&Eacute;S (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.idtgv.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/03_logo_idtgv.gif" alt="iDTGV" title="iDTGV (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
+<li><a href="http://www.thello.com/"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/10_logo_thello.gif" alt="Thello" title="Thello (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
 <li><a href="http://www.thalys.com"  target="_blank"><img src="http://www.gares-en-mouvement.com/resources/images/carrousel/07_logo_thalys.gif" alt="Thalys" title="Thalys (nouvelle fen&ecirc;tre)" width="75" height="25"/></a></li>
 					</ul>
 				</div><!-- fin div carousel_inner -->
