@@ -1,6 +1,6 @@
 # Gares (en-mouvement)
 
-[![Build Status](https://travis-ci.org/paulRbr/gares.svg)](https://travis-ci.org/paulRbr/gares) [![Gem Version](https://badge.fury.io/rb/gares.svg)](http://badge.fury.io/rb/gares)
+[![Build Status](https://travis-ci.org/paulRbr/gares.svg)](https://travis-ci.org/paulRbr/gares) [![Gem Version](https://badge.fury.io/rb/gares.svg)](http://badge.fury.io/rb/gares) [![Coverage Status](https://coveralls.io/repos/paulRbr/gares/badge.svg)](https://coveralls.io/r/paulRbr/gares)
 
 ## Description
 

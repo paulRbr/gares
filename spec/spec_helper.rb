@@ -8,7 +8,8 @@
 # no changes to the gares-en-mouvement.com interface have affected the parser.
 ###
 
-require 'rspec'
+require 'coveralls'
+Coveralls.wear!
 
 $LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
 require 'gares'
