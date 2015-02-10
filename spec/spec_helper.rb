@@ -31,7 +31,7 @@ unless ENV['LIVE_TEST']
     require 'rubygems'
     require 'fakeweb'
 
-    FakeWeb.allow_net_connect = false
+    FakeWeb.allow_net_connect = %r[^https?://coveralls.io]
     GARES_SAMPLES.each do |url, response|
       FakeWeb.register_uri(:get, url, response: read_fixture(response))
     end
