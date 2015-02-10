@@ -17,13 +17,16 @@ Gares currently features the following:
 
 ### Gare:
 
-    g = Gares::Gare.new("frabt")
+    g = Gares::Gare.new("frlpd")
 
     g.name
-    #=> "Abancourt"
+    #=> "Lyon Part Dieu"
+
+    g.wifi?
+    #=> true
 
     g.services.first
-    #=> "Borne Automatique"
+    #=> "Services à la clientèle"
 
 ### Searching:
 
@@ -31,6 +34,13 @@ Gares currently features the following:
 
     g.gares.size
     #=> 7
+    
+    # or
+    
+    gares = Gares::Gare.search("lyon")
+    
+    gares.last.name
+    #=> "Paris Gare de Lyon"
 
 ## Installation
 
