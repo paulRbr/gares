@@ -11,7 +11,7 @@ The Gares gem allows you to easy access publicly available data from gares-en-mo
 Gares currently features the following:
 
 * Search for a gare
-* Retrieve complete gare information
+* Retrieve gare information
 
 ## Examples
 
