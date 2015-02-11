@@ -19,7 +19,11 @@ def read_fixture(path)
 end
 
 GARES_SAMPLES = {
-  'http://www.gares-en-mouvement.com/fr/frabt/services-en-gare/vente/' => 'frabt',
+  'http://www.gares-en-mouvement.com/fr/frqxb/services-en-gare/vente/' => 'frqxb-services-vente',
+  'http://www.gares-en-mouvement.com/fr/frqxb/services-en-gare/service/' => 'frqxb-services',
+  'http://www.gares-en-mouvement.com/fr/frabt/services-en-gare/vente/' => 'frabt-services-vente',
+  'http://www.gares-en-mouvement.com/fr/frlpd/services-en-gare/vente/' => 'frlpd-services-vente',
+  'http://www.gares-en-mouvement.com/fr/frlpd/services-en-gare/service/' => 'frlpd-services',
   'http://www.gares-en-mouvement.com/fr/frxag/votre-gare' => 'frxag',
   'http://www.gares-en-mouvement.com/fr/frlpd/votre-gare' => 'frlpd',
   'http://www.gares-en-mouvement.com/fr/frhco/votre-gare' => 'frhco',

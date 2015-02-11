@@ -1,0 +1,12 @@
+HTTP/1.1 301 Moved Permanently
+Date: Wed, 11 Feb 2015 12:49:29 GMT
+Server: Apache
+Set-Cookie: PHPSESSID=9c62cccb68371df56d118ad5d8647353; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Pragma: no-cache
+Location: http://www.gares-en-mouvement.com/fr/frabt/accueil/
+Vary: Accept-Encoding,User-Agent
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+Content-Language: fr
+

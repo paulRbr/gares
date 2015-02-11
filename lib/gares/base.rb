@@ -17,7 +17,13 @@ module Gares
     end
 
     def services
-      @services ||= Services.new(@slug).all
+      @services ||= Services.new(@slug)
+      @services.all
+    end
+
+    def sales
+      @sales ||= Sales.new(@slug)
+      @sales.all
     end
 
     def horaires
@@ -35,6 +41,10 @@ module Gares
     # Whether the gare is equipped with wifi or not
     def wifi?
       !document.at('div.wifi').nil?
+    end
+
+    def has_borne?
+      sales.any? { |sales_service| sales_service =~ /bornes?.libre.service/i }
     end
 
     # Returns a string containing the name

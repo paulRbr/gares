@@ -1,8 +1,5 @@
 module Gares
   class GareList
-    def gares
-      @gares ||= parse_gares
-    end
 
     private
 
