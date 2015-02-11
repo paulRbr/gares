@@ -25,6 +25,9 @@ Gares currently features the following:
     g.wifi?
     #=> true
 
+    g.has_borne?
+    #=> true
+    
     g.services.first
     #=> "Services à la clientèle"
 
