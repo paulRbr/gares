@@ -27,9 +27,12 @@ Gares currently features the following:
 
     g.has_borne?
     #=> true
-    
+
     g.services.first
     #=> "Services à la clientèle"
+
+    [g.lat, g.long]
+    #=> [45.760281, 4.859801]
 
 ### Searching:
 
@@ -37,12 +40,13 @@ Gares currently features the following:
 
     g.gares.size
     #=> 7
-    
+
     # or
-    
+
     gares = Gares::Gare.search("lyon")
-    
-    gares.last.name
+    gare = gares.last
+
+    gare.name
     #=> "Paris Gare de Lyon"
 
 ## Installation

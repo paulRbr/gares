@@ -22,6 +22,14 @@ describe Gares::Gare do
       expect(name).to eql('Lyon Part Dieu')
     end
 
+    it 'should find the geolocation coordinates' do
+      lat = @gare.lat
+      long = @gare.long
+
+      expect(lat).to eql(45.760281)
+      expect(long).to eql(4.859801)
+    end
+
     it 'should have opening hours' do
       horaires = @gare.horaires
 

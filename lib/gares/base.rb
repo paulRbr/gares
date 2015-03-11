@@ -3,6 +3,9 @@ module Gares
   class Base
     attr_accessor :slug, :name
 
+    GPS_COORD = 'Coordonnées GPS : '
+    NAME = 'En direct de '
+
     # Initialize a new Gare object with it's gare-en-mouvemnt id (as a String)
     #
     #   gare = Gares::Gare.new("frabt")
@@ -14,6 +17,14 @@ module Gares
     def initialize(slug, name = nil)
       @slug = slug
       @name = name if name
+    end
+
+    def lat
+      coordinates.first.to_f
+    end
+
+    def long
+      coordinates.last.to_f
     end
 
     def services
@@ -52,11 +63,16 @@ module Gares
       if @name && !force_refresh
         @name
       else
-        @name = document.at('h1').inner_html.gsub(/En direct de /, '') rescue nil
+        @name = document.at('h1').inner_html.gsub(NAME, '') rescue nil
       end
     end
 
     private
+
+    def coordinates
+      @coordinates ||= document.xpath("//p/strong[contains(text(), '#{GPS_COORD}')]").first.parent.text
+        .gsub(GPS_COORD, '').split(',')
+    end
 
     # Returns a new Nokogiri document for parsing.
     def document
