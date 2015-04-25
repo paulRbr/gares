@@ -13,5 +13,27 @@ namespace :fixtures do
       end
 
     end
+    TRAINS_SAMPLES.each do |train|
+      post_fixture = "post-#{train.values.first}"
+      get_fixture = "get-#{train.values.first}"
+      train_number = train.keys.first
+      next if !ONLY.empty? and !ONLY.include?(post_fixture)
+      page = `curl -is 'http://www.sncf.com/sncf/train' --data 'numeroTrain=#{train_number}&date=25%2F04%2F2015'`
+
+      File.open(File.expand_path(File.dirname(__FILE__) + "/../spec/fixtures/#{post_fixture}"), 'w') do |f|
+        f.write(page)
+      end
+
+      cookies = page.force_encoding('ISO-8859-1').encode('UTF-8').split("\n").map do |line|
+        if md = line.match(/Set-Cookie: (.*?);/)
+            md.captures.first
+        end
+      end.compact
+      page = `curl -is 'http://www.sncf.com/en/horaires-info-trafic/train/resultats' -H 'Cookie: #{cookies.join(";")}'`
+
+      File.open(File.expand_path(File.dirname(__FILE__) + "/../spec/fixtures/#{get_fixture}"), 'w') do |f|
+        f.write(page)
+      end
+    end
   end
 end

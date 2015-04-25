@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'nokogiri', '~> 1.6'
   s.add_dependency 'hashie', '~> 3.4'
   s.add_dependency 'unidecoder', '~> 1.1'
+  s.add_dependency 'httparty', '~> 0.13'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'
