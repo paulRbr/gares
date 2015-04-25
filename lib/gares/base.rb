@@ -6,13 +6,13 @@ module Gares
     GPS_COORD = 'Coordonnées GPS : '
     NAME = 'En direct de '
 
-    # Initialize a new Gare object with it's gare-en-mouvemnt id (as a String)
+    # Initialize a new Station object with it's gare-en-mouvemnt id (as a String)
     #
-    #   gare = Gares::Gare.new("frabt")
+    #   station = Gares::Station.new("frabt")
     #
-    # Gares::Gare objects are lazy loading, meaning that no HTTP request
-    # will be performed when a new object is created. Only when you use an
-    # accessor that needs the remote data, a HTTP request is made (once).
+    # Gares::Station objects are lazy loaded, meaning that no HTTP request
+    # will be performed when a new object is created. An HTTP request is made (once)
+    # Only when you use an accessor that needs the remote data.
     #
     def initialize(slug, name = nil)
       @slug = slug
@@ -76,7 +76,7 @@ module Gares
 
     # Returns a new Nokogiri document for parsing.
     def document
-      @document ||= Nokogiri::HTML(Gares::Gare.find_by_slug(@slug))
+      @document ||= Nokogiri::HTML(Gares::Station.find_by_slug(@slug))
     end
 
     # Use HTTParty to fetch the raw HTML for this gare.
@@ -86,7 +86,7 @@ module Gares
 
     # Convenience method for search
     def self.search(query)
-      Gares::Search.new(query).gares
+      Gares::Search.new(query).stations
     end
-  end # Gare
+  end # Base
 end # Gares

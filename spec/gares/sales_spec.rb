@@ -1,6 +1,6 @@
 describe Gares::Sales do
 
-  context 'with a valid gare' do
+  context 'with a valid station' do
 
     subject(:sales) { Gares::Sales.new('frqxb') }
 

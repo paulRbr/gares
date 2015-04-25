@@ -1,25 +1,26 @@
 module Gares
-  # Search Gares-en-mouvement for a gare name
-  class Search < GareList
+  # Search Gares-en-mouvement for a station name
+  class Search < StationList
     attr_reader :query
 
+    # This is a file containing minimal information (name and slug) of all stations of gares-en-mouvement.com
     GARES_LIST_URL = "https://www.kimonolabs.com/api/7jys32dy?apikey=lsOO4tNm78cH9JxqWg9gAk9l4nYaou9j&kimmodify=1"
 
-    # Initialize a new Gares search with the specified query
+    # Initialize a new Station search with the specified query
     #
     #   search = Gares::Search.new("Aix")
     #
-    # Gares::Search is lazy loading, meaning that unless you access the +gares+
-    # attribute, no query is made to gares-en-mouvement.com.
+    # Gares::Search is lazy loaded, meaning that unless you access the +stations+
+    # attribute, no remomte query is made.
     #
     def initialize(query)
       @query = query
     end
 
-    # Returns an array of Gares::Gare objects for easy search result yielded.
+    # Returns an array of Gares::Station objects in order to easily search result yielded.
     # If the +query+ was an exact match, a single element array will be returned.
-    def gares
-      @gares ||= (exact_match? ? parse_gare : parse_gares)
+    def stations
+      @stations ||= (exact_match? ? parse_station : parse_stations)
     end
 
     private
@@ -29,16 +30,18 @@ module Gares
     end
 
     def result
-      @result ||= document.results.collection1.map(&:station).select { |gare| gare.name.to_ascii =~ /#{@query.split(" ").join(".*")}/i }
+      @result ||= document.results.collection1.map(&:station).select do |station|
+        station.name.to_ascii =~ /#{@query.split(" ").join(".*")}/i
+      end
     end
 
     def self.query
       open(GARES_LIST_URL)
     end
 
-    def parse_gare
-      gare = result.first
-      [Gares::Gare.new(gare.slug, gare.name)]
+    def parse_station
+      station = result.first
+      [Gares::Station.new(station.slug, station.name)]
     end
 
     def exact_match?

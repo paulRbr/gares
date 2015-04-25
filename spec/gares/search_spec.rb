@@ -11,45 +11,45 @@ describe Gares::Search do
     end
 
     it 'should find 5 results' do
-      expect(@search.gares.size).to eql(7)
+      expect(@search.stations.size).to eql(7)
     end
 
-    it 'should return Gares::Gare objects only' do
-      expect(@search.gares).to all(be_an(Gares::Gare))
+    it 'should return Gares::Station objects only' do
+      expect(@search.stations).to all(be_an(Gares::Station))
     end
 
     it 'should not return gares with no name' do
-      @search.gares.each { |gare| expect(gare.name).to_not be_blank }
+      @search.stations.each { |gare| expect(gare.name).to_not be_blank }
     end
 
     it 'should return only the name of the result' do
-      expect(@search.gares.first.name).to eql('Aix en Provence')
+      expect(@search.stations.first.name).to eql('Aix en Provence')
     end
   end
 
   context 'with an exact match' do
     it 'should not raise an exception' do
       expect do
-        @search = Gares::Search.new('Paris Austerlitz').gares
+        @search = Gares::Search.new('Paris Austerlitz').stations
       end.not_to raise_error
     end
 
     it 'should return the gare slug correctly' do
       @search = Gares::Search.new('Paris Austerlitz')
-      expect(@search.gares.first.slug).to eql('frpaz')
+      expect(@search.stations.first.slug).to eql('frpaz')
     end
   end
 
   context 'with a fuzzy match' do
     it 'should not raise an exception' do
       expect do
-        @search = Gares::Search.new('CULMONT CHALINDREY').gares
+        @search = Gares::Search.new('CULMONT CHALINDREY').stations
       end.not_to raise_error
     end
 
     it 'should return the gare slug correctly' do
       @search = Gares::Search.new('CULMONT CHALINDREY')
-      expect(@search.gares.first.slug).to eql('frccy')
+      expect(@search.stations.first.slug).to eql('frccy')
     end
   end
 end

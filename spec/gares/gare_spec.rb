@@ -6,14 +6,13 @@ require 'spec_helper'
 #
 #     http://www.gares-en-mouvement.com/fr/frlpd/votre-gare/
 #
-
-describe Gares::Gare do
+describe Gares::Station do
 
   describe 'valid gare' do
 
     before(:each) do
       # Get gare de Lyon Part-Dieu
-      @gare = Gares::Gare.new('frlpd')
+      @gare = Gares::Station.new('frlpd')
     end
 
     it 'should find the name' do
@@ -53,7 +52,7 @@ describe Gares::Gare do
     context 'a gare without wifi nor defibrillator' do
       before(:each) do
         # Get gare de Agde
-        @gare = Gares::Gare.new('frxag')
+        @gare = Gares::Station.new('frxag')
       end
 
       it { expect(@gare.wifi?).to be(false) }
@@ -63,7 +62,7 @@ describe Gares::Gare do
     context 'a gare with no sales services' do
       before(:each) do
         # Get gare de Agde
-        @gare = Gares::Gare.new('frxag')
+        @gare = Gares::Station.new('frxag')
       end
 
       it { expect(@gare.has_borne?).to be(false) }
@@ -73,7 +72,7 @@ describe Gares::Gare do
   describe 'with name that has utf-8 characters' do
     # Belleville sur Sâone
     before(:each) do
-      @gare = Gares::Gare.search('Saone').first
+      @gare = Gares::Station.search('Saone').first
     end
 
     it 'should give the proper name' do

@@ -9,7 +9,7 @@ module Gares
     private
 
     def document
-      @document ||= Nokogiri::HTML(Gares::Gare.find_by_slug(
+      @document ||= Nokogiri::HTML(Gares::Station.find_by_slug(
         @slug, :"services-en-gare/vente/"))
     end
   end
