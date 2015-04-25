@@ -51,5 +51,12 @@ describe Gares::Search do
       @search = Gares::Search.new('CULMONT CHALINDREY')
       expect(@search.stations.first.slug).to eql('frccy')
     end
+
+    context 'with a "st" searching for "saint"' do
+      it 'should return the gare slug correctly' do
+        @search = Gares::Search.new('ST ETIENNE CHATEAUCREUX')
+        expect(@search.stations.first.slug).to eql('frhhd')
+      end
+    end
   end
 end
