@@ -5,6 +5,7 @@
 ## Description
 
 The Gares gem allows you to easily access publicly available data from gares-en-mouvement.com.
+It can also retrieve data from sncf.com for live train information.
 
 ## Features
 
@@ -12,6 +13,7 @@ Gares currently features the following:
 
 * Search for a station
 * Retrieve station information
+* Search for a train to get live information about it
 
 ## Examples
 
@@ -34,6 +36,8 @@ Gares currently features the following:
     [g.lat, g.long]
     #=> [45.760281, 4.859801]
 
+See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulrbr/gares/master/Gares/Base) for all available data on a station.
+
 ### Searching:
 
     g = Gares::Search.new("Aix")
@@ -48,6 +52,30 @@ Gares currently features the following:
 
     station.name
     #=> "Paris Gare de Lyon"
+
+### Train information:
+
+    train = Gares::Train.new(11641, Time.now)
+
+    train.departure.station
+    #=> #<Gares::Station:0x000f0000000000 @slug="frpst", @name="Paris Est">
+
+    train.departure.departure_date
+    #=> 2015-04-25 06:42:00 +0200
+
+    train.stops.size
+    #=> 12
+
+    train.delayed?
+    #=> false
+
+    train.arrival.station.name
+    #=> "Culmont - Chalindrey"
+
+    train.arrival.platform
+    #=> "B"
+
+See the [`Gares::Train` class documentation](http://www.rubydoc.info/github/paulrbr/gares/master/Gares/Train) for all available data on a train.
 
 ## Installation
 
@@ -84,6 +112,8 @@ If you want to run against actual data, it's better to just update
 the fixture files once with up-to-date content:
 
     $ rake fixtures:refresh
+
+__Warning: this will probably break some tests, in particular the live train information tests.__
 
 When you run the test suite now, it will use the updated fixture files.
 

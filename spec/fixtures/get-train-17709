@@ -1,0 +1,713 @@
+HTTP/1.1 200 OK
+Content-Type: text/html;charset=UTF-8
+X-UA-Compatible: IE=edge
+Date: Sat, 25 Apr 2015 08:14:44 GMT
+Content-Length: 32571
+Connection: keep-alive
+Set-Cookie: SNC_city=SDN_PRD6; path=/; domain=.sncf.com
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="ltr" data-placeholder-focus="false">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>List of trains - Traffic &amp; timetable updates | SNCF</title>
+      <link rel="canonical" href="http://www.sncf.com/en/horaires-info-trafic/train/resultats" />
+<meta name="revisit-after" content="1 day" />
+<link rel="shortcut icon" href="/theme/favicon.ico" type="image/x-icon" />
+<link href="http://www.sncf.com/fr/info-trafic" rel="canonical" />
+<meta http-equiv="Content-Language" content="en" />  <link type="text/css" rel="stylesheet" media="all" href="/ressources/menu_icons/menu_icons_en.css?1" />
+<link type="text/css" rel="stylesheet" media="all" href="/ressources/css/css_fa8eef945cc8331059f2b2fe01e8b03b.css" />
+<link type="text/css" rel="stylesheet" media="all" href="/ressources/css/css_ec8154e529f1ae274507ee7da445a16c.css" />
+<link type="text/css" rel="stylesheet" media="print" href="/ressources/css/css_37cfb2f93b571bec4cf2ecfe43124557.css" />
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sncfninesixty/styles/ie6.css?1" />
+<![endif]-->
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sncfninesixty/styles/ie7-and-below.css?1" />
+<![endif]-->
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sncfninesixty/styles/ie8.css?1" />
+<![endif]-->
+<!--[if gte IE 9]>
+<link type="text/css" rel="stylesheet" media="all" href="/sites/all/themes/sncfninesixty/styles/ie9-and-above.css?1" />
+<![endif]-->
+  <link href="/css/Generic-transac.css" media="all" type="text/css" rel="stylesheet" />
+<link href="/css/itineraries.css" media="all" type="text/css" rel="stylesheet" /><link href="/css/train.css" media="all" type="text/css" rel="stylesheet" /> 
+    <script type="text/javascript" src="/ressources/js/js_89f43c3221c41b67e6924fff9b6a7908.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOutgoing": 1, "trackMailto": 1, "trackDownload": 1, "trackDownloadExtensions": "7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip" }, "sncfcom_search_hours": { "list": { "form_start": "1", "form_end": "3" }, "calendar": { "form_start": "1", "form_end": "90" } }, "user_connected": false, "user_rights": { "1": "anonymous user" }, "user_valid": false, "site_language": "en", "site_country": null, "sncfcom_feature_id_chartes": { "nid": "32510" }, "radio": { "height": "400", "width": "632" }, "sncfcom_satisfaction": { "campaigns": [ { "sid": "1", "page": "/fr/contacts/foire-aux-questions", "height_delta": "0", "width_delta": "0", "campaign_url": "", "count_url": "" }, { "sid": "2", "page": "/fr/promotions-billets-train", "height_delta": "317", "width_delta": "25", "campaign_url": "http://www.monavis.sncf.com/website/4v0voyconet0BChH0/form/86/100?responsive=0\x26toolbar=0", "count_url": "http://jcvd.myfeelback.com/indicator/monavis_feedback_dircom?campaign=86\x26formsubmissiontag=Like" }, { "sid": "3", "page": "/fr/gare-", "height_delta": "230", "width_delta": "17", "campaign_url": "http://www.monavis.sncf.com/website/4v0vosh9h4RHM3cUM/form/85/99?responsive=0\x26toolbar=0", "count_url": "http://jcvd.myfeelback.com/indicator/monavis_feedback_dircom?campaign=85\x26formsubmissiontag=Like" }, { "sid": "4", "page": "/fr/itineraire/resultats", "height_delta": "318", "width_delta": "10", "campaign_url": "http://www.monavis.sncf.com/website/4v0voobke4qGav23I/form/84/98?responsive=0\x26toolbar=0", "count_url": "http://jcvd.myfeelback.com/indicator/monavis_feedback_dircom?campaign=84\x26formsubmissiontag=Like" } ] }, "sncfcom_tagcarrier_widget": "", "addthis": { "config_default": { "services_compact": "email,facebook,twitter,google_plusone_share,linkedin,viadeo,more", "ui_language": "en", "ui_click": true, "ui_508_compliant": false, "ui_use_css": true, "data_ga_tracker": "UA-1308810-1", "data_track_clickback": true, "pubid": "xa-4e2cfd1147868c4e" }, "share_default": null, "localize": { "share_caption": "Share with friends" } }, "campaigns_tracking": { "ttl": 90, "cname": "snc_links_id" } });
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var popupradio_autoplay = true;
+//--><!]]>
+</script>
+  <script src="/js/Generic-transac.js" type="text/javascript"></script>
+<script src="/js/itineraries.js" type="text/javascript"></script>
+<script src="/js/ga_dynamic.js" type="text/javascript"></script>
+<script src="/js/map-links.js" type="text/javascript"></script> 
+  </head>
+
+<body class="not-front not-logged-in page-node node-type-transac-page no-sidebars sncfcom-b2c sncfcom-colors-cb0044 i18n-en not-js">
+
+  
+          <ul id="skip-links"><li><a href="#navbar-wrapper">Go to main menu</a></li><li><a href="#left-menu">Go to secondary menu</a></li><li><a href="#content">Go to content</a></li><li><a href="#footer">Go to footer</a></li></ul>        
+      
+          <div id='bubble_print' class='out'>Print this page</div><div id='bubble_share' class='out'>Share this page</div>    
+    
+  <div id="navbar-wrapper">
+      <div id="navbar">
+                  <div id="sncf-barre-galactique" class="grid_d">
+
+      <div id="primary-menu">
+      <ul class="links"><li class="menu-12124 active-trail first"><a href="/en/passengers" title=" (Active section)"><span><span>Passengers</span></span></a></li>
+<li class="menu-12126"><a href="/en/businesses-communities"><span><span>Businesses & Communities</span></span></a></li>
+<li class="menu-15545 last"><a href="/en/group"><span><span>SNCF Group</span></span></a></li>
+</ul>    </div>
+  
+  <div class="barre_right">
+
+          <div id="radio-menu">
+        <a href="#" class="open_radio"><span class="bold">SNCF</span> LA RADIO</a>
+      </div>
+        
+    
+          <div id="menu-langue">
+        <div><span>en</span></div><ul class="links" title="Change language"><li class="menu-1521 first"><a href="/voyageurs"><span class="js">Français</span><span class="no-js">Fr</span></a></li>
+<li class="menu-1522"><a href="/en/passengers"><span class="js">English</span><span class="no-js">En</span></a></li>
+<li class="menu-1523 last"><a href="/de/fahrgaste"><span class="js">Deutsch</span><span class="no-js">De</span></a></li>
+</ul>      </div>
+    
+  </div>
+
+</div>              </div>
+  </div>
+  <div id="navbar-spacer"></div>
+  
+  <div class="container_d">
+		
+  
+  <div class="grid_a" id="sidebar-left">
+    <div id="left-menu">
+              <div class="telecommand"><div class="arrow"></div><div class="content"><div class="logo"><a href="/en/passengers" title="Logo SNCF"><img src="/theme/images/logo-sncf.png" alt="Logo SNCF" title="Logo SNCF" width="131" height="76" /></a></div><ul><li class="menu-17388 active "><div class="text"><span><span>Tickets &amp; <span class="sncfcom-colors-automatic">train status</span></span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-17393 no-icon first "><a href="http://en.voyages-sncf.com/en/" class=" " title="" target=""><span><span>Reservations</span></span></a></li><li class="menu-17389 active no-icon last "><a href="/en/sub-home/17389" class="sub-panel-form sub-form_infos_trafic has_sub-home sub-home-mlid-17389 " title="Open &quot;Timetables &amp; real-time traffic updates&quot; in a floating panel" target=""><span><span class='double_line'>Timetables &amp; real-time <br /><span class="sncfcom-colors-automatic">traffic updates</span></span></span></a></li></ul></div></li><li class="menu-58934 "><div class="text"><span><span>Passenger services</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58935 first "><a href="/en/sub-home/58935" class=" has_sub-home sub-home-mlid-58935 " title="" target=""><span><span>All <span class="sncfcom-colors-automatic">passengers</span></span></span></a></li><li class="menu-58942 "><a href="/en/sub-home/58942" class=" has_sub-home sub-home-mlid-58942 " title="" target=""><span><span>Business <span class="sncfcom-colors-automatic">travel</span></span></span></a></li><li class="menu-58943 "><a href="/en/sub-home/58943" class=" has_sub-home sub-home-mlid-58943 " title="" target=""><span><span>Disability <span class="sncfcom-colors-automatic">access</span></span></span></a></li><li class="menu-58944 last "><a href="/en/sub-home/58944" class=" has_sub-home sub-home-mlid-58944 " title="" target=""><span><span>Group <span class="sncfcom-colors-automatic">travel</span></span></span></a></li></ul></div></li><li class="menu-58939 "><div class="text"><span><span>Trains &amp; coaches</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58945 first "><a href="/en/sub-home/58945" class=" has_sub-home sub-home-mlid-58945 " title="" target=""><span><span>French <span class="sncfcom-colors-automatic">regions</span></span></span></a></li><li class="menu-58946 "><a href="/en/trains/transilien" class=" " title="" target=""><span><span>Paris <span class="sncfcom-colors-automatic">region</span></span></span></a></li><li class="menu-58947 "><a href="/en/sub-home/58947" class=" has_sub-home sub-home-mlid-58947 " title="" target=""><span><span>France</span></span></a></li><li class="menu-58948 last "><a href="/en/sub-home/58948" class=" has_sub-home sub-home-mlid-58948 " title="" target=""><span><span>Europe</span></span></a></li></ul></div></li><li class="menu-58940 "><div class="text"><span><span>Fares &amp; cards</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-17377 first "><a href="/en/special-deals" class=" " title="" target=""><span><span>Special Deals</span></span></a></li><li class="menu-58949 "><a href="/en/sub-home/58949" class=" has_sub-home sub-home-mlid-58949 " title="" target=""><span><span>Cards &amp; <span class="sncfcom-colors-automatic">discounts</span></span></span></a></li><li class="menu-58950 "><a href="/en/sub-home/58950" class=" has_sub-home sub-home-mlid-58950 " title="" target=""><span><span>Special <span class="sncfcom-colors-automatic">fares</span></span></span></a></li><li class="menu-58951 last "><a href="/en/sub-home/58951" class=" has_sub-home sub-home-mlid-58951 " title="" target=""><span><span>Loyalty <span class="sncfcom-colors-automatic">programmes</span></span></span></a></li></ul></div></li><li class="menu-58941 "><div class="text"><span><span>Customer relations</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58990 first "><a href="/en/sub-home/58990" class=" has_sub-home sub-home-mlid-58990 " title="" target=""><span><span>Talk to us <span class="sncfcom-colors-automatic">on line</span></span></span></a></li><li class="menu-58952 "><a href="/en/sub-home/58952" class=" has_sub-home sub-home-mlid-58952 " title="" target=""><span><span>Contact <span class="sncfcom-colors-automatic">us</span></span></span></a></li><li class="menu-58953 "><a href="/en/sub-home/58953" class=" has_sub-home sub-home-mlid-58953 " title="" target=""><span><span>Our <span class="sncfcom-colors-automatic">commitments</span></span></span></a></li><li class="menu-58954 last "><a href="/en/sub-home/58954" class=" has_sub-home sub-home-mlid-58954 " title="" target=""><span><span class='double_line'>After-sales service <br /><span class="sncfcom-colors-automatic">&amp; Ombudsman</span></span></span></a></li></ul></div></li></ul></div></div>            
+          </div>
+  </div>
+
+  
+  <div class="grid_c container_content_12" id="content">
+
+  <div id="sncf-logo-print" class="grid_12"><img src="/theme/images/logo.png" alt ="" /></div>  
+  
+  
+  <div class="content_text">
+    <div class="breadcrumb grid_10"><ul><li>Passengers</li> / <li>Tickets & train status</li> / <li>Timetables & real-time  traffic updates</li> / <li title="Active page" class="last">Résultat de recherche : fiche train (en)</li></ul></div><div class="action-links grid_2">&nbsp;<span>&nbsp;  <a class="print" target="_blank" href="/en/jprint/train/resultats">
+  </a>
+<a role="button" class="addthis_button share" href="/en/horaires-info-trafic/train/resultats#">Share this page</a></span></div><div id="node-32510" class=" node clear-block">
+
+
+
+    <div class="content">
+    <div id="block-itineraires" class="transac-block transac-header">
+   
+    <div class="container_12">
+      <h1 class="grid_9">
+Timetables & real-time        <br/><span class="sncfcom-colors-automatic">traffic updates</span>
+      </h1>
+      <div id="description" class="grid_8">
+        <h2>
+Your          <span class="sncfcom-colors-automatic">
+search          </span>
+        </h2>
+        
+        <p class="search_summary">
+          Train no. : <strong>17709</strong><br/>
+          Travel date : 
+          <strong> Saturday 25 April </strong>
+        </p>
+        
+        <div class="search_modify">
+          <a href="/sncf/train/displayForm" id="lien-modifiere" class="sncfcom-colors-action-automatic">
+Modify your search          </a>
+        </div>
+           
+      </div> 
+    </div>
+    
+  
+  <div class="clear"></div>  
+
+<div id="detailed-results">     
+	<div id="has_results">		
+		<div id="result-container">		
+			<ul class="itinerary-details">		
+					
+								<li class="itinerary-abstract">
+					<div class="cell duration">Duration <strong>3h32</strong></div>
+					<div class="cell connection">
+Direct journey				   	</div>
+              		<div class="cell itinerary-message ">
+                		<span class="middle"></span>
+              		</div>   
+              		<div class="cell emissions">
+                		<div class="co2-value"> : 10.8 kg </div>
+              		</div>
+		   			<hr class="clear" />
+				</li>
+				
+					<li class="itinerary-train">
+			    		<ul>
+			      			<li class="train-details">
+		        				<table>
+	          						<tr>
+										<td class="train TRN">
+			            					<div class="middle">
+			               						TRAIN TER no.
+			               						<strong class="map-links-loc-train">
+			               							<a href="/sncf/train?numeroTrain=17709&date=25/04/2015&heure=&fromRedirect=true">17709</a>
+		               							</strong>
+		               							<br/>
+			               						Destination : Marseille St Charles
+  										</td>
+  										<td class="booking ">
+							            	<div class="middle">
+      										</div>
+  										</td>
+							          	<td class="services-on-board needed">
+							        			<span class="title">On board:</span>
+							        				<a target="_blank" href="http://www.sncf.com/en/services/cars-motorcycles-bicycles" title="Bicycle transport">
+								        				<span class="service-picto VEL"></span>
+                              						</a>	
+						          		</td>
+      								</tr>
+		        				</table>
+		      				</li>		      		
+		      				
+  			      			<li class="train-info ">
+                        <div class="punctuality" id="block-ponctuality">
+                          <a class="ponctuality-button ">Punctuality</a>
+                          <input type="hidden" name="numeroTrain" value="17709" />
+                          <input type="hidden" name="destination" value="FRMSC" />
+                          <input type="hidden" name="codeEquipement" value="TER" />
+                          <input type="hidden" name="origine" value="LYON PART DIEU" />
+                          <input type="hidden" name="destination" value="MARSEILLE ST CHARLES" />
+                        </div>
+                    	 <a href="/en/geolocation?data-map-livemap-infotexts=RT|17709&data-map-livemap-unmatched=true&data-map-zoom=13&data-map-livemap-unmatched=true" class="real-time link-maps train_17709" target="_blank"><div class="picto"></div>Track this train in real time</a>
+                			<div class="train-punctuality-details ajax-error-ponctuality hide">
+                  			<div class="info_txt">This service is temporarily unavailable. Please come back later.</div>
+                  			<a href="#" class="close">X</a>
+                			</div>
+                		</li>
+                  
+                		</ul>
+              			<hr class="clear" />
+					</li>                                  	      					 			     			 		
+			 		
+					<li class="row itinerary-stations">      
+						<table class="timetable  ">
+    							<tr class="itinerary-space">
+    								    <td class="one"></td>
+                        <td class="two new-schedule"></td>
+                        <td class="three"></td>
+                        <td class="four"></td>
+                        <td class="five"></td>
+                        <td class="six"></td>
+    							</tr>    
+		      				<tr class="itinerary-header">
+	                	<th class="duration">Timetables</th>
+	                	<th class="duration new-schedule"></th>
+			        			<th class="line"><div class="vertical-hr"></div></th>
+			        			<th class="stations">Stops</th>
+			        			<th class="track">Platform</th>
+			        			<th class="info">Information</th>
+		      				</tr>
+				      		<tr class="itinerary-hr first">
+				        		<td colspan="6"><hr /></td>
+				      		</tr>      		
+						
+							
+							
+									
+							
+								<tr class=" itinerary-start  first  left   ">
+									<td class="time">
+											09H18
+									</td>
+									<td class="time new-schedule">
+											09H28
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Lyon Part Dieu" >
+												<div class="station">LYON PART DIEU</div>
+											</a>
+											
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed departure 10MIN</div>
+													<div class="motif">
+														Due to: Incident identification in progress
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop   left   ">
+									<td class="time">
+											09H38<br/>09H40
+									</td>
+									<td class="time new-schedule">
+											09H48<br/>09H50
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Vienne" >
+												<div class="station">VIENNE</div>
+											</a>
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop   left   ">
+									<td class="time">
+											09H53<br/>09H55
+									</td>
+									<td class="time new-schedule">
+											10H03<br/>10H05
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">LE PEAGE DE ROUSSILLON</div>										
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop   left   ">
+									<td class="time">
+											10H14<br/>10H15
+									</td>
+									<td class="time new-schedule">
+											10H24<br/>10H25
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">TAIN</div>										
+											<div class="stop-duration">(1-minute stop)</div>
+									</td>
+									<td class="track">
+											B
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop   next-stop   ">
+									<td class="time">
+											10H26<br/>10H29
+									</td>
+									<td class="time new-schedule">
+											10H36<br/>10H39
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">VALENCE VILLE</div>										
+											<div class="stop-duration">(3-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											10H49<br/>10H51
+									</td>
+									<td class="time new-schedule">
+											10H59<br/>11H01
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">MONTELIMAR GARE SNCF</div>										
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											11H02<br/>11H04
+									</td>
+									<td class="time new-schedule">
+											11H12<br/>11H14
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Pierrelatte" >
+												<div class="station">PIERRELATTE</div>
+											</a>
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											11H12<br/>11H13
+									</td>
+									<td class="time new-schedule">
+											11H22<br/>11H23
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">BOLLENE LA CROISIERE</div>										
+											<div class="stop-duration">(1-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											11H23<br/>11H25
+									</td>
+									<td class="time new-schedule">
+											11H33<br/>11H35
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Orange" >
+												<div class="station">ORANGE</div>
+											</a>
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											11H38<br/>11H41
+									</td>
+									<td class="time new-schedule">
+											11H48<br/>11H51
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Avignon Centre" >
+												<div class="station">AVIGNON CENTRE</div>
+											</a>
+											<div class="stop-duration">(3-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											11H58<br/>12H00
+									</td>
+									<td class="time new-schedule">
+											12H08<br/>12H10
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Arles" >
+												<div class="station">ARLES</div>
+											</a>
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											12H16<br/>12H18
+									</td>
+									<td class="time new-schedule">
+											12H26<br/>12H28
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Miramas" >
+												<div class="station">MIRAMAS</div>
+											</a>
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-stop     ">
+									<td class="time">
+											12H34<br/>12H36
+									</td>
+									<td class="time new-schedule">
+											12H44<br/>12H46
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">VITROLLES AEROPORT MARSEILLE</div>										
+											<div class="stop-duration">(2-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-end  last    ">
+									<td class="time">
+											12H50
+									</td>
+									<td class="time new-schedule">
+											13H00
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											<a href="/sncf/gare?libelleGare=Marseille St Charles" >
+												<div class="station">MARSEILLE ST CHARLES</div>
+											</a>
+											
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info delay">
+													<div class="titre">Delayed arrival 10MIN</div>
+													<div class="motif">
+														Due to: Train preparation problem
+													</div>
+									</td>
+								</tr>
+				      
+									<tr class="itinerary-hr last">
+				            <td colspan="6"> </td>
+                	</tr>
+						</table>
+					</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<hr class="clear" />    
+ </div>   
+  </div>
+
+  </div>
+  </div>
+
+  
+      <div class="grid_c alpha omega" id="footer">
+        <div class="footer_content">
+          
+<div id="forgotten_password_block">
+  <a id="lb-close" tabindex="2">Fermer la popin</a>
+  <div class="forgotten_password identity">
+    <h3>Mot de passe oublié ?</h3>
+    <hr class="clear-border" />
+    <span class="identity-message">Indiquez l'adresse électronique utilisée lors de la création<br /> de votre compte. Un courriel vous sera envoyé pour définir<br /> votre mot de passe.</span>
+    <div class="form-item mail">
+      <label for="forgotten_password_email">Adresse électronique :</label>
+      <div class="message_fpw sncfcom-colors-error-automatic sncfcom-colors-automatic"></div>
+      <input type="text" maxlength="60" size="60" name="email_link" id="forgotten_password_email" value="" />
+    </div>
+    <div class="form-item">
+      <input type="submit" name="op" id="edit-send-mail-retrieve-password" value="Envoyer" class="form-submit sncfcom-colors-action-automatic sncfcom-colors-internal-caps-automatic" />
+    </div>
+    <div class="response-forgotten-password sncfcom-colors-automatic"></div>
+  </div>
+</div>
+<div id="block-sncfcom_navigation-footer" class="block block-sncfcom_navigation">
+
+  <div class="content">
+    
+<h2 class="grid_3 omega">Quick access : </h2>
+<div id="quick-access" class="grid_10 alpha omega"><ul class="menu"><li class="leaf first"><a href="/en/education/schools">Teachers</a></li>
+<li class="leaf last"><a href="/en/meet-sncf/finance/news">Finance</a></li>
+</ul></div>
+
+<hr class="clear border grid_12 no-margin" />
+
+<div id="universes" class="grid_12"><ul class="menu"><li class="grid_4 first "><span><span>Passengers</span></span><ul class="menu"><li><a href="/en/reductions/lowest-fares">Travel at the lowest fares</a></li><li><a href="/en/services/mobile-apps-old">Mobile apps</a></li><li><a href="/en/services/after-sales-services">After-sales service</a></li></ul></li><li class="grid_4 "><span><span>Business and local communities</span></span><ul class="menu"><li><a href="/en/sub-home/15515">For business</a></li><li><a href="/en/sub-home/15518">For local communities</a></li><li><a href="/en/railway-companies">Railway Companies</a></li></ul></li><li class="grid_4 last "><span><span>SNCF Group</span></span><ul class="menu"><li><a href="/en/businesses/global-presence">Our global presence</a></li><li><a href="/en/our-commitments/sncf-foundation">SNCF Foundation</a></li></ul></li></ul></div>
+
+<div id="radio-link" class="grid_4"><a href="http://laradio.sncf.com" target="_blank"><span class="bold">SNCF</span> LA RADIO</a></div>
+<div id="about" class="grid_8"><ul class="menu"><li class="leaf first"><a href="/en/footer/legal-notice">Legal notice</a></li>
+<li class="leaf last"><a href="http://sncf.com/cil/registre/">Contact for IT &amp; civil liberties issues</a></li>
+</ul></div>
+
+<hr class="clear" />  </div>
+</div>
+        </div>
+      </div>
+
+    </div> 
+    <div class="clear"></div>
+
+  </div> 
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1308810-17"]);_gaq.push(["b._setAccount", "UA-1308810-1"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+
+</body>
+</html>
+ 
