@@ -29,7 +29,7 @@ module Gares
     end
 
     def result
-      @result ||= document.results.collection1.map(&:station).select { |gare| gare.name.to_ascii =~ /#{@query}/i }
+      @result ||= document.results.collection1.map(&:station).select { |gare| gare.name.to_ascii =~ /#{@query.split(" ").join(".*")}/i }
     end
 
     def self.query
