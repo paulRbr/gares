@@ -68,6 +68,21 @@ module Gares
       sales.any? { |sales_service| sales_service =~ /bornes?.libre.service/i }
     end
 
+    # deprecated
+    def slug
+      sncf_id.downcase
+    end
+
+    # deprecated
+    def lat
+      latitude
+    end
+
+    # deprecated
+    def long
+      longitude
+    end
+
     private
 
     # Returns a new Nokogiri document for parsing.
