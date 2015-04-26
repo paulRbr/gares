@@ -7,7 +7,7 @@ module Gares
     GARES_LIST_URL = "https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv"
 
     # List of keywords to ignore while searching
-    IGNORE_KEYWORDS = ["ST", "GARE", "SNCF"]
+    IGNORE_KEYWORDS = ["ST", "SAINT", "GARE", "SNCF"]
     # Initialize a new Station search with the specified query
     #
     #   search = Gares::Search.new("Aix")
@@ -33,7 +33,7 @@ module Gares
     end
 
     def result
-      keywords = @query.split(" ").select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
+      keywords = @query.split(/[ -]/).select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
       @result ||= data.select do |station|
         station.send(@by) && station.send(@by).to_ascii =~ /#{keywords.join(".*")}/i
       end

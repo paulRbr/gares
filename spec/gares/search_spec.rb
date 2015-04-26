@@ -74,6 +74,11 @@ describe Gares::Search do
         @stations = Gares::Station.search('MONTELIMAR GARE SNCF')
         expect(@stations.first.sncf_id.downcase).to eql('frmtl')
       end
+
+      it 'should return the gare sncf_id.downcase correctly' do
+        @stations = Gares::Station.search('MONTPELLIER SAINT-ROCH')
+        expect(@stations.first.sncf_id.downcase).to eql('frmpl')
+      end
     end
   end
 end
