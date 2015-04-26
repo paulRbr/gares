@@ -1,39 +1,49 @@
 module Gares
   # Represents something on gare-en-mouvement.com
-  class Base
-    attr_accessor :slug, :name
+  class Base < Hashie::Dash
+    property :id
+    property :name
+    property :slug
+    property :sncf_id
+    property :longitude
+    property :latitude
+    property :uic
+    property :uic8_sncf
+    property :parent_station_id
+    property :is_city
+    property :country
+    property :is_main_station
+    property :time_zone
+    property :is_suggestable
+    property :sncf_is_enabled
+    property :idtgv_id
+    property :idtgv_is_enabled
+    property :db_id
+    property :db_is_enabled
+    property :idbus_id
+    property :idbus_is_enabled
+    property :ouigo_id
+    property :ouigo_is_enabled
+    property :trenitalia_id
+    property :trenitalia_is_enabled
+    property :ntv_id
+    property :ntv_is_enabled
+    property :'info:fr'
+    property :'info:en'
+    property :'info:de'
+    property :'info:it'
+    property :same_as
 
-    GPS_COORD = 'Coordonnées GPS : '
+
     NAME = 'En direct de '
 
-    # Initialize a new Station object with it's gare-en-mouvemnt id (as a String)
-    #
-    #   station = Gares::Station.new("frabt")
-    #
-    # Gares::Station objects are lazy loaded, meaning that no HTTP request
-    # will be performed when a new object is created. An HTTP request is made (once)
-    # Only when you use an accessor that needs the remote data.
-    #
-    def initialize(slug, name = nil)
-      @slug = slug
-      @name = name if name
-    end
-
-    def lat
-      coordinates.first.to_f
-    end
-
-    def long
-      coordinates.last.to_f
-    end
-
     def services
-      @services ||= Services.new(@slug)
+      @services ||= Services.new(sncf_id: sncf_id)
       @services.all
     end
 
     def sales
-      @sales ||= Sales.new(@slug)
+      @sales ||= Sales.new(sncf_id: sncf_id)
       @sales.all
     end
 
@@ -58,35 +68,26 @@ module Gares
       sales.any? { |sales_service| sales_service =~ /bornes?.libre.service/i }
     end
 
-    # Returns a string containing the name
-    def name(force_refresh = false)
-      if @name && !force_refresh
-        @name
-      else
-        @name = document.at('h1').inner_html.gsub(NAME, '') rescue nil
-      end
-    end
-
     private
-
-    def coordinates
-      @coordinates ||= document.xpath("//p/strong[contains(text(), '#{GPS_COORD}')]").first.parent.text
-        .gsub(GPS_COORD, '').split(',')
-    end
 
     # Returns a new Nokogiri document for parsing.
     def document
-      @document ||= Nokogiri::HTML(Gares::Station.find_by_slug(@slug))
+      @document ||= Nokogiri::HTML(self.class.external_data(sncf_id))
     end
 
     # Use HTTParty to fetch the raw HTML for this gare.
-    def self.find_by_slug(slug, page = :"votre-gare")
-      open("http://www.gares-en-mouvement.com/fr/#{slug}/#{page}")
+    def self.external_data(sncf_id, page = :"votre-gare")
+      open("http://www.gares-en-mouvement.com/fr/#{sncf_id.downcase}/#{page}")
     end
 
-    # Convenience method for search
+    # Convenience method for search (by name)
     def self.search(query)
       Gares::Search.new(query).stations
+    end
+
+    # Convenience method for search_by_sncf_id
+    def self.search_by_sncf_id(query)
+      Gares::Search.new(query, :sncf_id).stations
     end
   end # Base
 end # Gares

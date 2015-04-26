@@ -22,7 +22,7 @@ Gares currently features the following:
     g = Gares::Station.new("frlpd")
 
     g.name
-    #=> "Lyon Part Dieu"
+    #=> "Lyon Part-Dieu"
 
     g.wifi?
     #=> true
@@ -33,7 +33,7 @@ Gares currently features the following:
     g.services.first
     #=> "Services à la clientèle"
 
-    [g.lat, g.long]
+    [g.latitude, g.longitude]
     #=> [45.760281, 4.859801]
 
 See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulrbr/gares/master/Gares/Base) for all available data on a station.
@@ -43,7 +43,7 @@ See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulr
     g = Gares::Search.new("Aix")
 
     g.stations.size
-    #=> 7
+    #=> 28
 
     # or
 
@@ -51,14 +51,14 @@ See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulr
     station = stations.last
 
     station.name
-    #=> "Paris Gare de Lyon"
+    #=> "Aéroport-Lyon-Saint-Exupéry"
 
 ### Train information:
 
     train = Gares::Train.new(11641, Time.now)
 
     train.departure.station
-    #=> #<Gares::Station:0x000f0000000000 @slug="frpst", @name="Paris Est">
+    #=> #<Gares::Station:0x000f0000000000 @name="Paris-Gare-de-l’Est", ...>
 
     train.departure.departure_date
     #=> 2015-04-25 06:42:00 +0200
@@ -70,7 +70,7 @@ See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulr
     #=> false
 
     train.arrival.station.name
-    #=> "Culmont - Chalindrey"
+    #=> "Culmont-Chalindrey"
 
     train.arrival.platform
     #=> "B"
@@ -132,3 +132,5 @@ _This gem is not endorsed or affiliated with gares-en-mouvement.com, nor SNCF, I
 ## License
 
 See [MIT-LICENSE](https://github.com/paulrbr/gares/blob/master/MIT-LICENSE)
+
+Station database [ODbL LICENSE](https://raw.githubusercontent.com/capitainetrain/stations/master/LICENCE.txt)

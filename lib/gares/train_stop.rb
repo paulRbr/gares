@@ -74,9 +74,22 @@ module Gares
       raw_name = node.at('td.stations div.station').inner_html.strip
       stations = Station.search(raw_name)
       @station = if stations.size > 1
+        raw_name.gsub!(/[ -]/, '.')
+        exact_match  = /^#{raw_name}$/i
+        begin_match  = /^#{raw_name}/i
+        end_match    = /#{raw_name}$/
+        middle_match = /#{raw_name}/i
         stations.find do |station|
-          name = /(^#{raw_name}$|^#{raw_name} | #{raw_name}$| #{raw_name} )/i
-          station.name.match(name)
+          station.name.match(exact_match)
+        end ||
+        stations.find do |station|
+          station.name.match(begin_match)
+        end ||
+        stations.find do |station|
+          station.name.match(end_match)
+        end ||
+        stations.find do |station|
+          station.name.match(middle_match)
         end
       else
         stations.first

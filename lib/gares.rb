@@ -6,6 +6,7 @@ require 'rubygems'
 require 'nokogiri'
 require 'json'
 require 'hashie'
+require 'smarter_csv'
 require 'unidecoder'
 require 'httparty'
 

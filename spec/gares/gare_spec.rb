@@ -12,21 +12,21 @@ describe Gares::Station do
 
     before(:each) do
       # Get gare de Lyon Part-Dieu
-      @gare = Gares::Station.new('frlpd')
+      @gare = Gares::Station.search_by_sncf_id('frlpd').first
     end
 
     it 'should find the name' do
       name = @gare.name
 
-      expect(name).to eql('Lyon Part Dieu')
+      expect(name).to eql('Lyon Part-Dieu')
     end
 
     it 'should find the geolocation coordinates' do
-      lat = @gare.lat
-      long = @gare.long
+      lat = @gare.latitude
+      long = @gare.longitude
 
-      expect(lat).to eql(45.760281)
-      expect(long).to eql(4.859801)
+      expect(lat).to eql(45.760568)
+      expect(long).to eql(4.859991)
     end
 
     it 'should have opening hours' do
@@ -49,23 +49,20 @@ describe Gares::Station do
       expect(sales.first).to_not be_blank
     end
 
-    context 'a gare without wifi nor defibrillator' do
+    context 'Station of Agde' do
       before(:each) do
         # Get gare de Agde
-        @gare = Gares::Station.new('frxag')
+        @gare = Gares::Station.search_by_sncf_id('frxag').first
       end
 
-      it { expect(@gare.wifi?).to be(false) }
-      it { expect(@gare.defibrillator?).to be(false) }
-    end
-
-    context 'a gare with no sales services' do
-      before(:each) do
-        # Get gare de Agde
-        @gare = Gares::Station.new('frxag')
+      describe 'a gare without wifi nor defibrillator' do
+        it { expect(@gare.wifi?).to be(false) }
+        it { expect(@gare.defibrillator?).to be(false) }
       end
 
-      it { expect(@gare.has_borne?).to be(false) }
+      describe 'a gare with no sales services' do
+        it { expect(@gare.has_borne?).to be(false) }
+      end
     end
   end
 
@@ -76,7 +73,7 @@ describe Gares::Station do
     end
 
     it 'should give the proper name' do
-      expect(@gare.name).to eql('Belleville sur Sâone')
+      expect(@gare.name).to eql('Port-sur-Saône')
     end
   end
 end

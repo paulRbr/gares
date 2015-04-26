@@ -24,8 +24,8 @@ describe Gares::Train do
     it "has a departure station" do
       expect(subject.departure.departure_date).to eq(Time.parse('2015-04-25 09:18:00'))
       expect(subject.departure.real_departure_date).to eq(Time.parse('2015-04-25 09:28:00'))
-      expect(subject.departure.station.name).to eq('Lyon Part Dieu')
-      expect(subject.departure.station.lat).to eql(45.760281)
+      expect(subject.departure.station.name).to eq('Lyon Part-Dieu')
+      expect(subject.departure.station.latitude).to eql(45.760568)
       expect(subject.departure.platform).to eq('--')
 
       expect(subject.departure.delayed?).to be(true)
@@ -35,17 +35,17 @@ describe Gares::Train do
       expect(subject.stops.size).to eq(12)
       expect(subject.stops.first.station.name).to eq('Vienne')
 
-      expect(subject.stops[2].station.name).to eq('Tain l\'Hermitage Tournon')
+      expect(subject.stops[2].station.name).to eq('Tain')
       expect(subject.stops[2].platform).to eq('B')
       expect(subject.stops[2].minutes_of_delay).to eq(10)
 
-      expect(subject.stops.last.station.name).to eq('Vitrolles Aéroport Marseille Provence')
+      expect(subject.stops.last.station.name).to eq('Vitrolles Aéroport Marseille-Provence TER')
     end
 
     it "has a arrival station" do
       expect(subject.arrival.arrival_date).to eq(Time.parse('2015-04-25 12:50:00'))
       expect(subject.arrival.real_arrival_date).to eq(Time.parse('2015-04-25 13:00:00'))
-      expect(subject.arrival.station.name).to eq('Marseille St Charles')
+      expect(subject.arrival.station.name).to eq('Marseille St-Charles')
       expect(subject.arrival.platform).to eq('--')
     end
   end
@@ -71,15 +71,15 @@ describe Gares::Train do
     it "has a departure station" do
       expect(subject.departure.departure_date).to eq(Time.parse('2015-04-25 06:42:00'))
       expect(subject.departure.real_departure_date).to be_nil
-      expect(subject.departure.station.name).to eq('Paris Est')
+      expect(subject.departure.station.name).to eq('Paris-Gare-de-l’Est')
       expect(subject.departure.platform).to eq('--')
 
       expect(subject.departure.delayed?).to be(false)
     end
 
-    it "has stops" do
+    it "has stops", focus: true do
       expect(subject.stops.size).to eq(7)
-      expect(subject.stops.first.station.name).to eq('Nogent sur Seine')
+      expect(subject.stops.first.station.name).to eq('Nogent-sur-Seine')
 
       expect(subject.stops[2].station.name).to eq('Troyes')
 
@@ -89,7 +89,7 @@ describe Gares::Train do
     it "has a arrival station" do
       expect(subject.arrival.arrival_date).to eq(Time.parse('2015-04-25 09:45:00'))
       expect(subject.arrival.real_arrival_date).to be_nil
-      expect(subject.arrival.station.name).to eq('Culmont - Chalindrey')
+      expect(subject.arrival.station.name).to eq('Culmont-Chalindrey')
       expect(subject.arrival.platform).to eq('--')
     end
   end

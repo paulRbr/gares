@@ -9,8 +9,7 @@ module Gares
     private
 
     def document
-      @document ||= Nokogiri::HTML(Gares::Station.find_by_slug(
-        @slug, :"services-en-gare/service/"))
+      @document ||= Nokogiri::HTML(self.class.external_data(sncf_id, :"services-en-gare/service/"))
     end
   end
 end

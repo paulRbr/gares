@@ -33,7 +33,7 @@ GARES_SAMPLES = {
   'http://www.gares-en-mouvement.com/fr/frxag/votre-gare' => 'frxag',
   'http://www.gares-en-mouvement.com/fr/frlpd/votre-gare' => 'frlpd',
   'http://www.gares-en-mouvement.com/fr/frhco/votre-gare' => 'frhco',
-  'https://www.kimonolabs.com/api/7jys32dy?apikey=lsOO4tNm78cH9JxqWg9gAk9l4nYaou9j&kimmodify=1' => 'search'
+  'https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv' => 'stations.csv'
 }
 
 # Sample fixtures for Trains

@@ -10,8 +10,8 @@ describe Gares::Search do
       expect(@search.query).to eql('Aix')
     end
 
-    it 'should find 5 results' do
-      expect(@search.stations.size).to eql(7)
+    it 'should find 28 results' do
+      expect(@search.stations.size).to eql(28)
     end
 
     it 'should return Gares::Station objects only' do
@@ -23,7 +23,7 @@ describe Gares::Search do
     end
 
     it 'should return only the name of the result' do
-      expect(@search.stations.first.name).to eql('Aix en Provence')
+      expect(@search.stations.first.name).to eql('Roubaix')
     end
   end
 
@@ -34,9 +34,9 @@ describe Gares::Search do
       end.not_to raise_error
     end
 
-    it 'should return the gare slug correctly' do
+    it 'should return the gare sncf_id.downcase correctly' do
       @search = Gares::Search.new('Paris Austerlitz')
-      expect(@search.stations.first.slug).to eql('frpaz')
+      expect(@search.stations.first.sncf_id.downcase).to eql('frpaz')
     end
   end
 
@@ -47,15 +47,32 @@ describe Gares::Search do
       end.not_to raise_error
     end
 
-    it 'should return the gare slug correctly' do
+    it 'should return the gare sncf_id.downcase correctly' do
       @search = Gares::Search.new('CULMONT CHALINDREY')
-      expect(@search.stations.first.slug).to eql('frccy')
+      expect(@search.stations.first.sncf_id.downcase).to eql('frccy')
     end
 
     context 'with a "st" searching for "saint"' do
-      it 'should return the gare slug correctly' do
+      it 'should return the gare sncf_id.downcase correctly' do
         @search = Gares::Search.new('ST ETIENNE CHATEAUCREUX')
-        expect(@search.stations.first.slug).to eql('frhhd')
+        expect(@search.stations.first.sncf_id.downcase).to eql('frhhd')
+      end
+    end
+
+    context 'with a multi-terms search' do
+      it 'should return the gare sncf_id.downcase correctly' do
+        @search = Gares::Search.new('BAR SUR AUBE')
+        expect(@search.stations.first.sncf_id.downcase).to eql('frapx')
+      end
+
+      it 'should return the gare sncf_id.downcase correctly' do
+        @search = Gares::Search.new('NOGENT SUR SEINE')
+        expect(@search.stations.first.sncf_id.downcase).to eql('frapm')
+      end
+
+      it 'should return the gare sncf_id.downcase correctly' do
+        @stations = Gares::Station.search('MONTELIMAR GARE SNCF')
+        expect(@stations.first.sncf_id.downcase).to eql('frmtl')
       end
     end
   end

@@ -3,11 +3,11 @@ module Gares
   class Search < StationList
     attr_reader :query
 
-    # This is a file containing minimal information (name and slug) of all stations of gares-en-mouvement.com
-    GARES_LIST_URL = "https://www.kimonolabs.com/api/7jys32dy?apikey=lsOO4tNm78cH9JxqWg9gAk9l4nYaou9j&kimmodify=1"
+    # This is the stations database from capitainetrain.com
+    GARES_LIST_URL = "https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv"
 
     # List of keywords to ignore while searching
-    IGNORE_KEYWORDS = ["ST"]
+    IGNORE_KEYWORDS = ["ST", "GARE", "SNCF"]
     # Initialize a new Station search with the specified query
     #
     #   search = Gares::Search.new("Aix")
@@ -15,8 +15,9 @@ module Gares
     # Gares::Search is lazy loaded, meaning that unless you access the +stations+
     # attribute, no remomte query is made.
     #
-    def initialize(query)
+    def initialize(query, field = :name)
       @query = query
+      @by = field
     end
 
     # Returns an array of Gares::Station objects in order to easily search result yielded.
@@ -27,24 +28,23 @@ module Gares
 
     private
 
-    def document
-      @document ||= Hashie::Mash.new(JSON.load(Gares::Search.query))
+    def data
+      @data ||= self.class.query.map { |raw_station| Gares::Station.new(raw_station) }
     end
 
     def result
-      keywords = @query.split(" ").select { |keyword| !IGNORE_KEYWORDS.include?(keyword) }
-      @result ||= document.results.collection1.map(&:station).select do |station|
-        station.name.to_ascii =~ /#{keywords.join(".*")}/i
+      keywords = @query.split(" ").select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
+      @result ||= data.select do |station|
+        station.send(@by) && station.send(@by).to_ascii =~ /#{keywords.join(".*")}/i
       end
     end
 
     def self.query
-      open(GARES_LIST_URL)
+      @data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
     end
 
     def parse_station
-      station = result.first
-      [Gares::Station.new(station.slug, station.name)]
+      [result.first]
     end
 
     def exact_match?
