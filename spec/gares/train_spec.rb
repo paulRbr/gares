@@ -93,4 +93,24 @@ describe Gares::Train do
       expect(subject.arrival.platform).to eq('--')
     end
   end
+
+  describe 'a multi-itinerary train' do
+    let (:train_number) { 6815 }
+    let (:date) { Time.parse("2015-04-25") }
+
+    before do
+      # See tasks/fixtures.rake to change dataset
+      fake_response_for_train(train_number)
+    end
+
+    subject do
+      Gares::Train.new(train_number, date)
+    end
+
+    it "selects always the first itinerary", focus: true do
+      expect(subject.departure.station.name).to eq("Dijon Ville")
+      expect(subject.stops.first.station.name).to eq("Chalon-sur-Saône")
+      expect(subject.arrival.station.name).to eq("Nice Ville")
+    end
+  end
 end

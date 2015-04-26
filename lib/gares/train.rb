@@ -42,19 +42,41 @@ module Gares
 
     private
 
+    def itinerary_available?
+      document.css('ul.itinerary-details').size > 0
+    end
+
     # Returns a new Nokogiri document for parsing.
     def document
-      @document ||= Nokogiri::HTML(self.class.request_sncf(@number, @date))
+      if !@document
+        @document = Nokogiri::HTML(self.class.request_sncf(@number, @date))
+        if !itinerary_available?
+          @document = Nokogiri::HTML(self.class.request_sncf_itinerary(0))
+        end
+      end
+      @document
     end
 
     def self.request_sncf(number, date)
       uri = URI.parse("http://www.sncf.com/sncf/train")
       response = Net::HTTP.post_form(uri, {"numeroTrain" => number, "date" => date.strftime("%d/%m/%Y")})
-      cookies = response.get_fields('Set-Cookie').map { |cookie| cookie.split(";").first }.join(";")
+      @cookies = response.get_fields('Set-Cookie').map { |cookie| cookie.split(";").first }.join(";")
 
       uri = URI.parse("http://www.sncf.com/en/horaires-info-trafic/train/resultats")
       req = Net::HTTP::Get.new(uri.path)
-      req.add_field("Cookie", cookies)
+      req.add_field("Cookie", @cookies)
+      Net::HTTP.new(uri.host, uri.port).start { |http| http.request(req) }.body
+    end
+
+    def self.request_sncf_itinerary(index)
+      uri = URI.parse("http://www.sncf.com/sncf/train/displayDetailTrain?idItineraire=#{index}")
+      req = Net::HTTP::Get.new(uri)
+      req.add_field("Cookie", @cookies) if @cookies
+      Net::HTTP.new(uri.host, uri.port).start { |http| http.request(req) }.body
+
+      uri = URI.parse("http://www.sncf.com/en/horaires-info-trafic/train/resultats?#{index}")
+      req = Net::HTTP::Get.new(uri)
+      req.add_field("Cookie", @cookies) if @cookies
       Net::HTTP.new(uri.host, uri.port).start { |http| http.request(req) }.body
     end
 

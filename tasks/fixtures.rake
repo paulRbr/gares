@@ -34,6 +34,23 @@ namespace :fixtures do
       File.open(File.expand_path(File.dirname(__FILE__) + "/../spec/fixtures/#{get_fixture}"), 'w') do |f|
         f.write(page)
       end
+
+      MULTI_TRAINS_SAMPLES.find { |one| one.keys.first == train_number }.values.first.each_with_index do |fixture, idx|
+        get_fixture = "get-#{fixture}"
+        get_fixture_data = "#{get_fixture}-data"
+        page = `curl -is 'http://www.sncf.com/sncf/train/displayDetailTrain?idItineraire=#{idx}' -H 'Cookie: #{cookies.join(";")}'`
+
+        File.open(File.expand_path(File.dirname(__FILE__) + "/../spec/fixtures/#{get_fixture}"), 'w') do |f|
+          f.write(page)
+        end
+
+        page = `curl -is 'http://www.sncf.com/en/horaires-info-trafic/train/resultats?#{idx}' -H 'Cookie: #{cookies.join(";")}'`
+
+        File.open(File.expand_path(File.dirname(__FILE__) + "/../spec/fixtures/#{get_fixture_data}"), 'w') do |f|
+          f.write(page)
+        end
+
+      end
     end
   end
 end

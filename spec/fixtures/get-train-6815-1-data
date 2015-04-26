@@ -1,8 +1,8 @@
 HTTP/1.1 200 OK
 Content-Type: text/html;charset=UTF-8
 X-UA-Compatible: IE=edge
-Date: Sun, 26 Apr 2015 20:19:36 GMT
-Content-Length: 21606
+Date: Sun, 26 Apr 2015 20:19:40 GMT
+Content-Length: 22174
 Connection: keep-alive
 Set-Cookie: SNC_city=SDN_PRD6; path=/; domain=.sncf.com
 
@@ -141,147 +141,167 @@ Modify your search          </a>
     </div>
     
   
-    <hr class="clear border grid_12" />
-    <div id="result-container" class="grid_12 dedoublonnage">
-      
-      <p id ="trains-doublons">Several trains match your search:</p>         
-      <ul class="result-itineraries">
-          <li class="result-itinerary">        
-<ul>
-  <li class="itinerary-content ">
-    <input type="hidden" name="heure-depart" value="1429971360000" />
-    <input type="hidden" name="nb-correspondance" value="0" />
-    <input type="hidden" name="duree-trajet" value="381" />
-    <ul>
-      <li class="itinerary-abstract">
-        <div class="cell duration">Duration <strong>6h21</strong></div>
-        <div class="cell connection">
-Direct journey    	</div>
-        <div class="cell itinerary-message ">
-          <span class="middle">
-            
-          </span>
-        </div>
-        <div class="cell emissions">
-        	<div class="co2-value"> : 2.7 kg </div>
-        </div>
-        <hr class="clear" />
-      </li>
-      <li class="row">      
-        <table class="timetable ">
-          <tr class="itinerary-header">
-            <th class="duration">
-Timetables    		</th>
-            <th class="duration new-schedule">
-    		</th>
-            <th class="line"></th>
-            <th class="stations">Journey</th>
-            <th class="type">Type</th>
-            <th class="info">Information</th>
-          </tr>
-						<tr class="itinerary-start  first ">
-							<td class="time ">16H16</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations"><div class="station">DIJON VILLE</div></td>
+    <div class="clear"></div>  
+<div id="detailed-results">     
+	<div id="has_results">		
+		<div id="result-container">		
+			<ul class="itinerary-details">		
+					
+								<li class="itinerary-abstract">
+					<div class="cell duration">Duration <strong>0h45</strong></div>
+					<div class="cell connection">
+Direct journey				   	</div>
+              		<div class="cell itinerary-message ">
+                		<span class="middle"></span>
+              		</div>   
+              		<div class="cell emissions">
+                		<div class="co2-value">n.a. </div>
+              		</div>
+		   			<hr class="clear" />
+				</li>
+				
+					<li class="itinerary-train">
+			    		<ul>
+			      			<li class="train-details">
+		        				<table>
+	          						<tr>
+										<td class="train TRN">
+			            					<div class="middle">
+			               						INTERCITÉS no.
+			               						<strong class="map-links-loc-train">
+			               							<a href="/sncf/train?numeroTrain=6815&date=25/04/2015&heure=&fromRedirect=true">6815</a>
+		               							</strong>
+		               							<br/>
+			               						Destination : Zweisimmen
+  										</td>
+  										<td class="booking ">
+							            	<div class="middle">
+      										</div>
+  										</td>
+							          	<td class="services-on-board ">
+						          		</td>
+      								</tr>
+		        				</table>
+		      				</li>		      		
+		      				
+  			      			<li class="train-info ">
+                    	 <a href="/en/geolocation?data-map-livemap-infotexts=RT|6815&data-map-livemap-unmatched=true&data-map-zoom=13&data-map-livemap-unmatched=true" class="real-time link-maps train_6815" target="_blank"><div class="picto"></div>Track this train in real time</a>
+                			<div class="train-punctuality-details ajax-error-ponctuality hide">
+                  			<div class="info_txt">This service is temporarily unavailable. Please come back later.</div>
+                  			<a href="#" class="close">X</a>
+                			</div>
+                		</li>
+                  
+                		</ul>
+              			<hr class="clear" />
+					</li>                                  	      					 			     			 		
+			 		
+					<li class="row itinerary-stations">      
+						<table class="timetable  ">
+    							<tr class="itinerary-space">
+    								    <td class="one"></td>
+                        <td class="two new-schedule"></td>
+                        <td class="three"></td>
+                        <td class="four"></td>
+                        <td class="five"></td>
+                        <td class="six"></td>
+    							</tr>    
+		      				<tr class="itinerary-header">
+	                	<th class="duration">Timetables</th>
+	                	<th class="duration new-schedule"></th>
+			        			<th class="line"><div class="vertical-hr"></div></th>
+			        			<th class="stations">Stops</th>
+			        			<th class="track">Platform</th>
+			        			<th class="info">Information</th>
+		      				</tr>
+				      		<tr class="itinerary-hr first">
+				        		<td colspan="6"><hr /></td>
+				      		</tr>      		
+						
 							
-							<td class="type TRN  center" rowspan="2" >
-							  <div class="train-type">TGV</div>
-							  <div class="train-number">no.<strong>6815</strong></div>
-							</td>
 							
-							<td class="info center " rowspan="2">
-								<span class="titre">
-										On time
-								</span>
-								
-							</td>
-						</tr>
-						<tr class="itinerary-end  last ">
-							<td class="time ">22H37</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations">
-								<div class="station">NICE VILLE</div>
-							</td>
-						</tr>
-        </table>
-          <a href="/sncf/train/displayDetailTrain?idItineraire=0" class="plus" action="train/displayDetailTrain?idItineraire=0">+</a>
-      </li>
-    </ul>  
-  </li>
-</ul>
-          </li>       
-          <li class="result-itinerary">        
-<ul>
-  <li class="itinerary-content ">
-    <input type="hidden" name="heure-depart" value="1429945920000" />
-    <input type="hidden" name="nb-correspondance" value="0" />
-    <input type="hidden" name="duree-trajet" value="45" />
-    <ul>
-      <li class="itinerary-abstract">
-        <div class="cell duration">Duration <strong>0h45</strong></div>
-        <div class="cell connection">
-Direct journey    	</div>
-        <div class="cell itinerary-message ">
-          <span class="middle">
-            
-          </span>
-        </div>
-        <div class="cell emissions">
-        	<div class="co2-value">n.a. </div>
-        </div>
-        <hr class="clear" />
-      </li>
-      <li class="row">      
-        <table class="timetable ">
-          <tr class="itinerary-header">
-            <th class="duration">
-Timetables    		</th>
-            <th class="duration new-schedule">
-    		</th>
-            <th class="line"></th>
-            <th class="stations">Journey</th>
-            <th class="type">Type</th>
-            <th class="info">Information</th>
-          </tr>
-						<tr class="itinerary-start  first ">
-							<td class="time ">09H12</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations"><div class="station">SPIEZ</div></td>
+									
 							
-							<td class="type TRN  center" rowspan="2" >
-							  <div class="train-type">INTERCITÉS</div>
-							  <div class="train-number">no.<strong>6815</strong></div>
-							</td>
+								<tr class=" itinerary-start  first  left   ">
+									<td class="time">
+											09H12
+									</td>
+									<td class="time new-schedule">
+											
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">SPIEZ</div>										
+											
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info ">
+													<div class="titre">On time</div>
+									</td>
+								</tr>
+				      
+						
 							
-							<td class="info center " rowspan="2">
-								<span class="titre">
-										On time
-								</span>
-								
-							</td>
-						</tr>
-						<tr class="itinerary-end  last ">
-							<td class="time ">09H57</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations">
-								<div class="station">ZWEISIMMEN</div>
-							</td>
-						</tr>
-        </table>
-          <a href="/sncf/train/displayDetailTrain?idItineraire=1" class="plus" action="train/displayDetailTrain?idItineraire=1">+</a>
-      </li>
-    </ul>  
-  </li>
-</ul>
-          </li>       
-      </ul>
-    </div>
-  
-    
+							
+									
+							
+								<tr class=" itinerary-stop   left   ">
+									<td class="time">
+											09H22<br/>09H23
+									</td>
+									<td class="time new-schedule">
+											
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">OEY-DIEMTIGEN</div>										
+											<div class="stop-duration">(1-minute stop)</div>
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info ">
+													<div class="titre">On time</div>
+									</td>
+								</tr>
+				      
+						
+							
+							
+									
+							
+								<tr class=" itinerary-end  last  left   ">
+									<td class="time">
+											09H57
+									</td>
+									<td class="time new-schedule">
+											
+									</td>
+									<td class="line"><hr class="min-height" /></td>  
+									<td class="stations">
+											  <div class="station">ZWEISIMMEN</div>										
+											
+									</td>
+									<td class="track">
+											--
+									</td>
+									<td class="info ">
+													<div class="titre">On time</div>
+									</td>
+								</tr>
+				      
+									<tr class="itinerary-hr last">
+				            <td colspan="6"> </td>
+                	</tr>
+						</table>
+					</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<hr class="clear" />    
  </div>   
   </div>
 

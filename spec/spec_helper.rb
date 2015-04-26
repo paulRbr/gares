@@ -41,7 +41,11 @@ TRAINS_SAMPLES = [
   { 17709 => 'train-17709' },
   { 11641 => 'train-11641' },
   { 17495 => 'train-17495' },
-  { 6815  => 'train-6815'  }, # Multi-itinerary
+  { 6815  => 'train-6815'  }, # Multi-itinerary see MULTI_TRAINS_SAMPLES
+]
+
+MULTI_TRAINS_SAMPLES = [
+  { 6815  => ['train-6815-0', 'train-6815-1'] },
 ]
 
 unless ENV['LIVE_TEST']
@@ -63,10 +67,18 @@ def fake_response_for_train(number)
   unless ENV['LIVE_TEST']
     begin
       response = TRAINS_SAMPLES.find { |sample| sample.keys.first == number }.values.first
+      multi_responses = MULTI_TRAINS_SAMPLES.find { |sample| sample.keys.first == number }
+      multi_responses = multi_responses.nil? ? [] : multi_responses.values.first
       sncf_result_url = 'http://www.sncf.com/en/horaires-info-trafic/train/resultats'
       FakeWeb.register_uri(:get, sncf_result_url, response: read_fixture("get-#{response}"))
       sncf_post_url = 'http://www.sncf.com/sncf/train'
       FakeWeb.register_uri(:post, sncf_post_url, response: read_fixture("post-#{response}"))
+      multi_responses.each_with_index do |multi_response, idx|
+        sncf_get_multi_url = "http://www.sncf.com/sncf/train/displayDetailTrain?idItineraire=#{idx}"
+        FakeWeb.register_uri(:get, sncf_get_multi_url, response: read_fixture("get-#{multi_response}"))
+        sncf_get_data_url = "http://www.sncf.com/en/horaires-info-trafic/train/resultats?#{idx}"
+        FakeWeb.register_uri(:get, sncf_get_data_url, response: read_fixture("get-#{multi_response}-data"))
+      end
     rescue LoadError
       puts 'Could not load FakeWeb, these tests will hit gares-en-mouvement.com'
       puts 'You can run `gem install fakeweb` to stub out the responses.'
