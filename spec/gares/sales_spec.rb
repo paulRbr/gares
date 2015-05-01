@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe Gares::Sales do
 
   context 'with a valid station' do

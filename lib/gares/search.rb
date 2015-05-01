@@ -15,7 +15,10 @@ module Gares
     # Gares::Search is lazy loaded, meaning that unless you access the +stations+
     # attribute, no remomte query is made.
     #
+    # Search can by done via the :name or :sncf_id field given in parameter.
+    # Defaults to the :name field.
     def initialize(query, field = :name)
+      fail UnsupportedIndex unless %w(name sncf_id).include?(field.to_s)
       @query = query
       @by = field
     end
@@ -28,19 +31,38 @@ module Gares
 
     private
 
-    def data
-      @@data ||= self.class.query.map { |raw_station| Gares::Station.new(raw_station) }
+    def result
+      @raw_result ||= case @by
+      when :name
+        keywords = @query.to_ascii.split(/[ -]/).select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
+        regexp_query = keywords.join(".*")
+        self.class.data(@by).select do |index, v|
+          index && index =~ /#{regexp_query}/i
+        end
+      when :sncf_id
+        { @query.downcase => self.class.data(@by)[@query.downcase] }
+      end
+
+      @result ||= @raw_result.map { |_, raw_station| Gares::Station.new(raw_station) }
     end
 
-    def result
-      keywords = @query.to_ascii.split(/[ -]/).select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
-      @result ||= data.select do |station|
-        station.send(@by) && station.send(@by).to_ascii =~ /#{keywords.join(".*")}/i
+    # Read stations.csv file into memory
+    # @param index either :name or :sncf_id
+    # @return [Hash<String, Hash>] list of stations indexed in a Hash
+    def self.data(index)
+      @@raw_data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
+      case index
+      when :name
+        @@data_by_name ||= index_data(@@raw_data, index)
+      when :sncf_id
+        @@data_by_sncf_id ||= index_data(@@raw_data, index)
       end
     end
 
-    def self.query
-      @@data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
+    def self.index_data(data, by)
+      data.map do |raw_station|
+        [raw_station[by].to_ascii.downcase, raw_station] if raw_station[by] && raw_station[:uic]
+      end.compact.to_h
     end
 
     def parse_station
