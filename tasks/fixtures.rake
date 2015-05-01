@@ -35,7 +35,8 @@ namespace :fixtures do
         f.write(page)
       end
 
-      MULTI_TRAINS_SAMPLES.find { |one| one.keys.first == train_number }.values.first.each_with_index do |fixture, idx|
+      multi_train_sample = MULTI_TRAINS_SAMPLES.find { |one| one.keys.first == train_number } || {"" => []}
+      multi_train_sample.values.first.each_with_index do |fixture, idx|
         get_fixture = "get-#{fixture}"
         get_fixture_data = "#{get_fixture}-data"
         page = `curl -is 'http://www.sncf.com/sncf/train/displayDetailTrain?idItineraire=#{idx}' -H 'Cookie: #{cookies.join(";")}'`
