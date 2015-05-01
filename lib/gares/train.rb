@@ -54,6 +54,9 @@ module Gares
           @document = Nokogiri::HTML(self.class.request_sncf_itinerary(0))
         end
       end
+      if @document.at('#no_results')
+        fail TrainNotFound, @document.at('#no_results b').inner_html
+      end
       @document
     end
 

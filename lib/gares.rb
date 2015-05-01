@@ -10,6 +10,7 @@ require 'smarter_csv'
 require 'unidecoder'
 require 'httparty'
 
+require 'gares/errors'
 require 'gares/base'
 require 'gares/station'
 require 'gares/station_list'

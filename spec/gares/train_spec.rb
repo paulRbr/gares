@@ -3,6 +3,27 @@
 require 'spec_helper'
 
 describe Gares::Train do
+
+  subject do
+    Gares::Train.new(train_number, date)
+  end
+
+  describe 'no results' do
+
+    let (:train_number) { 12345 }
+    let (:date) { Time.parse("2015-04-25") }
+
+    before do
+      # See tasks/fixtures.rake to change dataset
+      fake_response_for_train(train_number)
+    end
+
+    it "raises an error for any method called on it" do
+      expect { subject.departure }.to raise_error
+    end
+
+  end
+
   describe 'a delayed train' do
 
     let (:train_number) { 17709 }

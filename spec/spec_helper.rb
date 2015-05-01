@@ -41,6 +41,7 @@ TRAINS_SAMPLES = [
   { 17709 => 'train-17709' },
   { 11641 => 'train-11641' },
   { 17495 => 'train-17495' },
+  { 12345 => 'train-12345' },
   { 6815  => 'train-6815'  }, # Multi-itinerary see MULTI_TRAINS_SAMPLES
 ]
 
