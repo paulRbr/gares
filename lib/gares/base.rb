@@ -34,9 +34,6 @@ module Gares
     property :'info:it'
     property :same_as
 
-
-    NAME = 'En direct de '
-
     def services
       @services ||= Services.new(sncf_id: sncf_id)
       @services.all

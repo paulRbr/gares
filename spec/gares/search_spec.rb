@@ -3,15 +3,15 @@ require 'spec_helper'
 describe Gares::Search do
   context 'with multiple search results' do
     before(:each) do
-      @search = Gares::Search.new('Aix')
+      @search = Gares::Search.new('étienne')
     end
 
     it 'should remember the query' do
-      expect(@search.query).to eql('Aix')
+      expect(@search.query).to eql('étienne')
     end
 
     it 'should find 28 results' do
-      expect(@search.stations.size).to eql(28)
+      expect(@search.stations.size).to eql(14)
     end
 
     it 'should return Gares::Station objects only' do
@@ -23,7 +23,7 @@ describe Gares::Search do
     end
 
     it 'should return only the name of the result' do
-      expect(@search.stations.first.name).to eql('Roubaix')
+      expect(@search.stations.first.name).to eql('St-Étienne-du-Rouvray')
     end
   end
 

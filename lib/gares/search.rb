@@ -29,18 +29,18 @@ module Gares
     private
 
     def data
-      @data ||= self.class.query.map { |raw_station| Gares::Station.new(raw_station) }
+      @@data ||= self.class.query.map { |raw_station| Gares::Station.new(raw_station) }
     end
 
     def result
-      keywords = @query.split(/[ -]/).select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
+      keywords = @query.to_ascii.split(/[ -]/).select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
       @result ||= data.select do |station|
         station.send(@by) && station.send(@by).to_ascii =~ /#{keywords.join(".*")}/i
       end
     end
 
     def self.query
-      @data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
+      @@data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
     end
 
     def parse_station
