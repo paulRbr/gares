@@ -1,4 +1,5 @@
 module Gares
+  # @deprecated
   class Services < Base
 
     def all

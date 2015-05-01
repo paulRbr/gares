@@ -34,34 +34,46 @@ module Gares
     property :'info:it'
     property :same_as
 
+    # @deprecated
     def services
+      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
       @services ||= Services.new(sncf_id: sncf_id)
       @services.all
     end
 
+    # @deprecated
     def sales
+      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
       @sales ||= Sales.new(sncf_id: sncf_id)
       @sales.all
     end
 
+    # @deprecated
     def horaires
+      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
       document.search('ul.ouverture_heure li').
           map { |horaire| horaire.inner_html } rescue []
     end
     alias opening_hours horaires
 
     # Whether the gare has a defibrillator or not
+    # @deprecated
     def defibrillateur?
+      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
       !document.at('div.defibrillateur').nil?
     end
     alias defibrillator? defibrillateur?
 
     # Whether the gare is equipped with wifi or not
+    # @deprecated
     def wifi?
+      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
       !document.at('div.wifi').nil?
     end
 
+    # @deprecated
     def has_borne?
+      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
       sales.any? { |sales_service| sales_service =~ /bornes?.libre.service/i }
     end
 
@@ -88,6 +100,7 @@ module Gares
     end
 
     # Use HTTParty to fetch the raw HTML for this gare.
+    # @deprecated
     def self.external_data(sncf_id, page = :"votre-gare")
       open("http://www.gares-en-mouvement.com/fr/#{sncf_id.downcase}/#{page}")
     end
