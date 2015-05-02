@@ -2,7 +2,7 @@ require "net/http"
 require "uri"
 
 module Gares
-  # Represents something a train from http://www.sncf.com/fr/horaires-info-trafic/train
+  # Represents a train from http://www.sncf.com/fr/horaires-info-trafic/train
   class Train
     attr_accessor :date, :number
 

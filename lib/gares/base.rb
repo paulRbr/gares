@@ -35,25 +35,27 @@ module Gares
     property :same_as
     property :has_bls
 
+    OPEN_DATA_SNCF = "https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=%s"
+
+    GARES_SNCF = "http://www.gares-sncf.com/fr/train-times/%s/%s/gl"
+
+    def initialize(*args)
+      super(*args)
+    end
+
     # @deprecated
     def services
       warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-      @services ||= Services.new(sncf_id: sncf_id)
-      @services.all
     end
 
     # @deprecated
     def sales
       warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-      @sales ||= Sales.new(sncf_id: sncf_id)
-      @sales.all
     end
 
     # @deprecated
     def horaires
       warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-      document.search('ul.ouverture_heure li').
-          map { |horaire| horaire.inner_html } rescue []
     end
     alias opening_hours horaires
 
@@ -61,7 +63,6 @@ module Gares
     # @deprecated
     def defibrillateur?
       warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-      !document.at('div.defibrillateur').nil?
     end
     alias defibrillator? defibrillateur?
 
@@ -69,7 +70,6 @@ module Gares
     # @deprecated
     def wifi?
       warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-      !document.at('div.wifi').nil?
     end
 
     # @deprecated
@@ -77,32 +77,54 @@ module Gares
       has_bls == "t"
     end
 
-    # deprecated
+    # @deprecated
     def slug
+      warn "[DEPRECATION] favor the 'sncf_id' method instead of 'slug'."
       sncf_id.downcase
     end
 
-    # deprecated
+    # @deprecated
     def lat
+      warn "[DEPRECATION] favor the 'latitude' method instead of 'lat'."
       latitude
     end
 
-    # deprecated
+    # @deprecated
     def long
+      warn "[DEPRECATION] favor the 'longitude' method instead of 'long'."
       longitude
+    end
+
+    def departures
+      if tvs
+        @departures ||= self.class.external_gares_sncf(tvs)
+      end
+    end
+
+    def arrivals
+      if tvs
+        @arrivals ||= self.class.external_gares_sncf(tvs, :arrival)
+      end
+    end
+
+    def tvs
+      if uic8_sncf
+        @tvs ||= self.class.open_data_sncf(uic8_sncf, 'tvs')
+      end
     end
 
     private
 
-    # Returns a new Nokogiri document for parsing.
-    def document
-      @document ||= Nokogiri::HTML(self.class.external_data(sncf_id))
+    def self.open_data_sncf(uic8_sncf, field)
+      @open_data ||= JSON.parse(open(OPEN_DATA_SNCF % ("%010d" % uic8_sncf).to_s).read)['records']
+      unless @open_data.empty?
+        @open_data.first['fields'][field]
+      end
     end
 
-    # Use HTTParty to fetch the raw HTML for this gare.
-    # @deprecated
-    def self.external_data(sncf_id, page = :"votre-gare")
-      open("http://www.gares-en-mouvement.com/fr/#{sncf_id.downcase}/#{page}")
+    def self.external_gares_sncf(tvs, direction = :departure)
+      @gares_sncf ||= {}
+      @gares_sncf[direction] ||= JSON.parse(open(GARES_SNCF % [direction, tvs]).read)['trains']
     end
 
     # Convenience method for search (by name)

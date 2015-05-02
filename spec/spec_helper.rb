@@ -16,9 +16,6 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter[
 ]
 SimpleCov.start
 
-$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
-require 'gares'
-
 def read_fixture(path)
   File.read(File.expand_path(File.join(File.dirname(__FILE__), 'fixtures', path)))
 end
@@ -33,7 +30,11 @@ GARES_SAMPLES = {
   'http://www.gares-en-mouvement.com/fr/frxag/votre-gare' => 'frxag',
   'http://www.gares-en-mouvement.com/fr/frlpd/votre-gare' => 'frlpd',
   'http://www.gares-en-mouvement.com/fr/frhco/votre-gare' => 'frhco',
-  'https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv' => 'stations.csv'
+  'https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv' => 'stations.csv',
+  'https://raw.githubusercontent.com/paulrbr/stations/stations-with-bls/stations.csv' => 'bls.csv',
+  'https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=0087723197' => '87723197.json',
+  'http://www.gares-sncf.com/fr/train-times/arrival/LYD/gl' => 'LYD-arrivals.json',
+  'http://www.gares-sncf.com/fr/train-times/departure/LYD/gl' => 'LYD-departures.json'
 }
 
 # Sample fixtures for Trains
@@ -86,3 +87,7 @@ def fake_response_for_train(number)
     end
   end
 end
+
+# Now that we mocked http requests, load the gem
+$LOAD_PATH.unshift(File.dirname(__FILE__) + '/../lib')
+require 'gares'

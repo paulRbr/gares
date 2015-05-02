@@ -23,6 +23,10 @@ describe Gares::Station do
       expect(subject.slug).to eql(subject.sncf_id.downcase)
     end
 
+    it 'should find the TVS number' do
+      expect(subject.tvs).to eql('LYD')
+    end
+
     it 'should find the geolocation coordinates' do
       expect(subject.latitude).to eql(45.760568)
       expect(subject.longitude).to eql(4.859991)
@@ -31,18 +35,25 @@ describe Gares::Station do
       expect(subject.long).to eql(subject.longitude)
     end
 
-    it 'should have opening hours' do
-      expect(subject.horaires.first).to eql('du lundi au dimanche de 04:50 à 00:45')
+    it 'has a list of departure trains' do
+      expect(subject.departures.size).to eq(20)
+      expect(subject.departures.first['origdest']).to eq('BRUXELLES')
+      expect(subject.departures.first['heure']).to eq('05:50')
     end
 
-    it 'should have a list of services' do
-      expect(subject.services).to be_an(Array)
-      expect(subject.services.first).to_not be_blank
+    it 'has a list of arrivals' do
+      expect(subject.arrivals.last['origdest']).to eq('CHAMBERY')
+      expect(subject.arrivals.last['voie']).to eq('')
+      expect(subject.arrivals.last['num']).to eq('18542')
     end
 
-    it 'should have a list of sales services' do
-      expect(subject.sales).to be_an(Array)
-      expect(subject.sales.first).to_not be_blank
+    it 'has deprecated methods' do
+      allow_any_instance_of(Kernel).to receive(:warn)
+      subject.wifi?
+      subject.defibrillateur?
+      subject.horaires
+      subject.sales
+      subject.services
     end
 
     context 'Station of Agde' do
@@ -51,12 +62,7 @@ describe Gares::Station do
         Gares::Station.search_by_sncf_id('frxag').first
       end
 
-      describe 'a gare without wifi nor defibrillator' do
-        it { expect(subject.wifi?).to be(false) }
-        it { expect(subject.defibrillator?).to be(false) }
-      end
-
-      describe 'a gare with no sales services' do
+      describe 'a gare with a BLS' do
         it { expect(subject.has_borne?).to be(true) }
       end
     end

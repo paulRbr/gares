@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 02 May 2015 18:11:46 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-RateLimit-Remaining: 4954
+Access-Control-Allow-Headers: Authorization, X-Requested-With, Origin, ODS-API-Analytics-App, ODS-Widgets-Version
+Content-Language: fr
+Access-Control-Max-Age: 1000
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Vary: Accept-Language, Cookie, Host
+X-RateLimit-Limit: 5000
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+X-RateLimit-Reset: 1430611200
+X-UA-Compatible: IE=edge
+
+{"nhits": 1, "parameters": {"dataset": ["referentiel-gares-voyageurs"], "q": "0087723197", "rows": 10, "format": "json"}, "records": [{"datasetid": "referentiel-gares-voyageurs", "recordid": "2b09e1b10aa14b82a8febc5269a07231d5359108", "fields": {"departement": "Rh\u00f4ne", "commune": "Lyon", "uic": "0087723197", "code_postal": "69003", "code_gare": "00534", "region": "Rh\u00f4ne-Alpes", "tvs": "LYD", "departement_commune": "69-123", "agence_gare": "AG Centre Est Rh\u00f4ne Alpin", "nombre_plateformes": "1", "niveau_de_service": "3", "segment_drg": "a", "region_sncf": "REGION RHONE-ALPES", "intitule_gare": "Lyon Part Dieu"}, "record_timestamp": "2015-02-09T10:19:37.908942"}]}
