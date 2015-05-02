@@ -98,7 +98,7 @@ describe Gares::Train do
       expect(subject.departure.delayed?).to be(false)
     end
 
-    it "has stops", focus: true do
+    it "has stops" do
       expect(subject.stops.size).to eq(7)
       expect(subject.stops.first.station.name).to eq('Nogent-sur-Seine')
 

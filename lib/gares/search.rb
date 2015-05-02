@@ -1,13 +1,16 @@
+require 'trie'
+
 module Gares
   # Search Gares-en-mouvement for a station name
   class Search < StationList
+    @@trie = nil
+    mattr_reader :trie
+
     attr_reader :query
 
     # This is the stations database from capitainetrain.com
     GARES_LIST_URL = "https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv"
 
-    # List of keywords to ignore while searching
-    IGNORE_KEYWORDS = ["ST", "SAINT", "GARE", "SNCF"]
     # Initialize a new Station search with the specified query
     #
     #   search = Gares::Search.new("Aix")
@@ -29,41 +32,46 @@ module Gares
       @stations ||= (exact_match? ? parse_station : parse_stations)
     end
 
+    def self.find(str)
+      trie.find_prefix(str)
+    end
+
     private
 
     def result
-      @raw_result ||= case @by
-      when :name
-        keywords = @query.to_ascii.split(/[ -]/).select { |keyword| !IGNORE_KEYWORDS.include?(keyword.upcase) }
-        regexp_query = keywords.join(".*")
-        self.class.data(@by).select do |index, v|
-          index && index =~ /#{regexp_query}/i
+      query = self.class.simplify(@query)
+      if @raw_results.nil?
+        @raw_results = self.class.find(query).values
+        # try first keyword if nothing found
+        @raw_results = @raw_results.empty? ? self.class.find(query.split(" ").first).values : @raw_results
+      end
+      @result ||= @raw_results.map { |raw_station| Gares::Station.new(raw_station) }
+    end
+
+    def self.simplify(str)
+      str.to_ascii.downcase
+        .gsub(/\bsaint\b/, "st")
+        .gsub(/[^a-z]/, " ")
+        .gsub(/\s+/, " ")
+        .strip
+    end
+
+    # Read stations.csv file into memory into a Trie data structure
+    def self.load_data
+      if @@trie.nil?
+        raw_data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
+        trie = Trie.new
+
+        raw_data.each do |raw_station|
+          next if raw_station[:name].nil? || raw_station[:sncf_id].nil? || raw_station[:uic].nil?
+          trie.insert(simplify(raw_station[:name]), raw_station)
+          trie.insert(simplify(raw_station[:sncf_id]), raw_station)
         end
-      when :sncf_id
-        { @query.downcase => self.class.data(@by)[@query.downcase] }
-      end
 
-      @result ||= @raw_result.map { |_, raw_station| Gares::Station.new(raw_station) }
-    end
-
-    # Read stations.csv file into memory
-    # @param index either :name or :sncf_id
-    # @return [Hash<String, Hash>] list of stations indexed in a Hash
-    def self.data(index)
-      @@raw_data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
-      case index
-      when :name
-        @@data_by_name ||= index_data(@@raw_data, index)
-      when :sncf_id
-        @@data_by_sncf_id ||= index_data(@@raw_data, index)
+        @@trie = trie
       end
     end
-
-    def self.index_data(data, by)
-      data.map do |raw_station|
-        [raw_station[by].to_ascii.downcase, raw_station] if raw_station[by] && raw_station[:uic]
-      end.compact.to_h
-    end
+    load_data
 
     def parse_station
       [result.first]

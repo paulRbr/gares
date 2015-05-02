@@ -24,6 +24,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'smarter_csv', '~> 1.0'
   s.add_dependency 'unidecoder', '~> 1.1'
   s.add_dependency 'httparty', '~> 0.13'
+  s.add_dependency 'trie'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'

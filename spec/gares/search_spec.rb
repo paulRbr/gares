@@ -4,15 +4,15 @@ describe Gares::Search do
   describe "search by station name" do
     context 'with multiple search results' do
       subject do
-        Gares::Search.new('étienne')
+        Gares::Search.new('saint étienne')
       end
 
       it 'should remember the query' do
-        expect(subject.query).to eql('étienne')
+        expect(subject.query).to eql('saint étienne')
       end
 
-      it 'should find 28 results' do
-        expect(subject.stations.size).to eql(12)
+      it 'should find 11 results' do
+        expect(subject.stations.size).to eql(11)
       end
 
       it 'should return Gares::Station objects only' do
@@ -32,7 +32,7 @@ describe Gares::Search do
       subject { Gares::Station.search('Saone').first }
 
       it 'should give the proper name' do
-        expect(subject.name).to eql('Port-sur-Saône')
+        expect(subject.name).to eql('Saône')
       end
     end
 
@@ -82,7 +82,7 @@ describe Gares::Search do
 
         it 'should return the gare sncf_id.downcase correctly' do
           subject = Gares::Station.search('MONTELIMAR GARE SNCF')
-          expect(subject.first.sncf_id.downcase).to eql('frxmk')
+          expect(subject.first.sncf_id.downcase).to eql('frmtl')
         end
 
         it 'should return the gare sncf_id.downcase correctly' do
