@@ -9,7 +9,7 @@ module Gares
     attr_reader :query
 
     # This is the stations database from capitainetrain.com
-    GARES_LIST_URL = "https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv"
+    GARES_LIST_URL = "https://raw.githubusercontent.com/paulrbr/stations/stations-with-bls/stations.csv"
 
     # Initialize a new Station search with the specified query
     #

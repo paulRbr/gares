@@ -57,7 +57,7 @@ describe Gares::Station do
       end
 
       describe 'a gare with no sales services' do
-        it { expect(subject.has_borne?).to be(false) }
+        it { expect(subject.has_borne?).to be(true) }
       end
     end
   end

@@ -33,6 +33,7 @@ module Gares
     property :'info:de'
     property :'info:it'
     property :same_as
+    property :has_bls
 
     # @deprecated
     def services
@@ -73,8 +74,7 @@ module Gares
 
     # @deprecated
     def has_borne?
-      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-      sales.any? { |sales_service| sales_service =~ /bornes?.libre.service/i }
+      has_bls == "t"
     end
 
     # deprecated
