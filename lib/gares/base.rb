@@ -1,5 +1,5 @@
 module Gares
-  # Represents something on gare-en-mouvement.com
+  # Represents a station on gares-sncf.com
   class Base < Hashie::Dash
     property :id
     property :name
@@ -38,35 +38,6 @@ module Gares
     OPEN_DATA_SNCF = "https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=%s"
 
     GARES_SNCF = "http://www.gares-sncf.com/fr/train-times/%s/%s/gl"
-
-    # @deprecated
-    def services
-      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-    end
-
-    # @deprecated
-    def sales
-      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-    end
-
-    # @deprecated
-    def horaires
-      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-    end
-    alias opening_hours horaires
-
-    # Whether the gare has a defibrillator or not
-    # @deprecated
-    def defibrillateur?
-      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-    end
-    alias defibrillator? defibrillateur?
-
-    # Whether the gare is equipped with wifi or not
-    # @deprecated
-    def wifi?
-      warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
-    end
 
     # Whether this station has a "borne" (yellow self-service ticket machine)
     # @return [Boolean]

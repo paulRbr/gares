@@ -1,11 +1,11 @@
 # By default if you have the FakeWeb gem installed when the specs are
 # run they will hit recorded responses.  However, if you don't have
 # the FakeWeb gem installed or you set the environment variable
-# LIVE_TEST then the tests will hit the live site gares-en-mouvement.com.
+# LIVE_TEST then the tests will hit the live site gares-sncf.com and sncf.com.
 #
 # Having both methods available for testing allows you to quickly
 # refactor and add features, while also being able to make sure that
-# no changes to the gares-en-mouvement.com interface have affected the parser.
+# no changes to the gares-sncf.com interface have affected the parser.
 ###
 
 require 'simplecov'
@@ -22,14 +22,6 @@ end
 
 # Fixtures for Gares
 GARES_SAMPLES = {
-  'http://www.gares-en-mouvement.com/fr/frqxb/services-en-gare/vente/' => 'frqxb-services-vente',
-  'http://www.gares-en-mouvement.com/fr/frqxb/services-en-gare/service/' => 'frqxb-services',
-  'http://www.gares-en-mouvement.com/fr/frabt/services-en-gare/vente/' => 'frabt-services-vente',
-  'http://www.gares-en-mouvement.com/fr/frlpd/services-en-gare/vente/' => 'frlpd-services-vente',
-  'http://www.gares-en-mouvement.com/fr/frlpd/services-en-gare/service/' => 'frlpd-services',
-  'http://www.gares-en-mouvement.com/fr/frxag/votre-gare' => 'frxag',
-  'http://www.gares-en-mouvement.com/fr/frlpd/votre-gare' => 'frlpd',
-  'http://www.gares-en-mouvement.com/fr/frhco/votre-gare' => 'frhco',
   'https://raw.githubusercontent.com/capitainetrain/stations/master/stations.csv' => 'stations.csv',
   'https://raw.githubusercontent.com/paulrbr/stations/stations-with-bls/stations.csv' => 'bls.csv',
   'https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=0087723197' => '87723197.json',
@@ -60,7 +52,7 @@ unless ENV['LIVE_TEST']
       FakeWeb.register_uri(:get, url, response: read_fixture(response))
     end
   rescue LoadError
-    puts 'Could not load FakeWeb, these tests will hit gares-en-mouvement.com'
+    puts 'Could not load FakeWeb, these tests will hit gares-sncf.com and sncf.com'
     puts 'You can run `gem install fakeweb` to stub out the responses.'
   end
 end
@@ -82,7 +74,7 @@ def fake_response_for_train(number)
         FakeWeb.register_uri(:get, sncf_get_data_url, response: read_fixture("get-#{multi_response}-data"))
       end
     rescue LoadError
-      puts 'Could not load FakeWeb, these tests will hit gares-en-mouvement.com'
+      puts 'Could not load FakeWeb, these tests will hit gares-sncf.com and sncf.com'
       puts 'You can run `gem install fakeweb` to stub out the responses.'
     end
   end

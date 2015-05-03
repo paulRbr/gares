@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Paul Bonaud']
   s.email       = ['paul+gh@bonaud.fr']
   s.homepage    = 'http://github.com/paulrbr/gares'
-  s.summary     = %q(Easily access the publicly available information on gares-en-mouvement.com.)
-  s.description = %q(Easily use Ruby or the command line to find information on gares-en-mouvement.com.)
+  s.summary     = %q(Easily access the publicly available information on gares-sncf.com and sncf.com.)
+  s.description = %q(Easily use Ruby or the command line to find information on gares-sncf.com and sncf.com.)
 
   s.rubyforge_project = 'gares'
 

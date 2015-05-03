@@ -2,8 +2,6 @@ require 'spec_helper'
 
 # This test uses "Lyon Part-Dieu" as a testing sample:
 #
-#     http://www.gares-en-mouvement.com/fr/frlpd/votre-gare/
-#
 describe Gares::Station do
 
   describe 'valid gare' do
@@ -24,7 +22,7 @@ describe Gares::Station do
     end
 
     it 'should find the TVS number' do
-      expect(subject.tvs).to eql('LYD')
+      expect(subject.send(:tvs)).to eql('LYD')
     end
 
     it 'should find the geolocation coordinates' do
@@ -47,15 +45,6 @@ describe Gares::Station do
       expect(subject.arrivals.last.voie).to eq('')
       expect(subject.arrivals.last.platform).to eq(subject.arrivals.last.voie)
       expect(subject.arrivals.last.num).to eq(18542)
-    end
-
-    it 'has deprecated methods' do
-      allow_any_instance_of(Kernel).to receive(:warn)
-      subject.wifi?
-      subject.defibrillateur?
-      subject.horaires
-      subject.sales
-      subject.services
     end
 
     context 'Station of Agde' do

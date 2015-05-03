@@ -1,5 +1,5 @@
 namespace :fixtures do
-  desc "Refresh spec fixtures with fresh data from gares-en-mouvement.com"
+  desc "Refresh spec fixtures with fresh data from gares-sncf.com and sncf.com"
   task :refresh do
     require File.expand_path(File.dirname(__FILE__) + "/../spec/spec_helper")
 
