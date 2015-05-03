@@ -10,7 +10,7 @@ describe Gares::Station do
 
     subject do
       # Get gare de Lyon Part-Dieu
-      Gares::Station.search_by_sncf_id('frlpd').first
+      Gares::Station.find_by_sncf_id('frlpd')
     end
 
     it 'should find the name' do
@@ -59,7 +59,7 @@ describe Gares::Station do
     context 'Station of Agde' do
       subject do
         # Get gare de Agde
-        Gares::Station.search_by_sncf_id('frxag').first
+        Gares::Station.find_by_sncf_id('frxag')
       end
 
       describe 'a gare with a BLS' do

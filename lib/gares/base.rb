@@ -133,8 +133,8 @@ module Gares
     end
 
     # Convenience method for search_by_sncf_id
-    def self.search_by_sncf_id(query)
-      Gares::Search.new(query, :sncf_id).stations
+    def self.find_by_sncf_id(query)
+      Gares::Search.new(query, :sncf_id).stations.first
     end
   end # Base
 end # Gares
