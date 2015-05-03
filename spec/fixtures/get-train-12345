@@ -1,8 +1,8 @@
 HTTP/1.1 200 OK
 Content-Type: text/html;charset=UTF-8
 X-UA-Compatible: IE=edge
-Date: Sun, 26 Apr 2015 20:19:36 GMT
-Content-Length: 21606
+Date: Fri, 01 May 2015 10:35:36 GMT
+Content-Length: 17178
 Connection: keep-alive
 Set-Cookie: SNC_city=SDN_PRD6; path=/; domain=.sncf.com
 
@@ -96,7 +96,7 @@ var popupradio_autoplay = true;
   
   <div class="grid_a" id="sidebar-left">
     <div id="left-menu">
-              <div class="telecommand"><div class="arrow"></div><div class="content"><div class="logo"><a href="/en/passengers" title="Logo SNCF"><img src="/theme/images/logo-sncf.png" alt="Logo SNCF" title="Logo SNCF" width="131" height="76" /></a></div><ul><li class="menu-17388 active "><div class="text"><span><span>Tickets &amp; <span class="sncfcom-colors-automatic">train status</span></span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-17393 no-icon first "><a href="http://en.voyages-sncf.com/en/" class=" " title="" target=""><span><span>Reservations</span></span></a></li><li class="menu-17389 active no-icon last "><a href="/en/sub-home/17389" class="sub-panel-form sub-form_infos_trafic has_sub-home sub-home-mlid-17389 " title="Open &quot;Timetables &amp; real-time traffic updates&quot; in a floating panel" target=""><span><span class='double_line'>Timetables &amp; real-time <br /><span class="sncfcom-colors-automatic">traffic updates</span></span></span></a></li></ul></div></li><li class="menu-58934 "><div class="text"><span><span>Passenger services</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58935 first "><a href="/en/sub-home/58935" class=" has_sub-home sub-home-mlid-58935 " title="" target=""><span><span>All <span class="sncfcom-colors-automatic">passengers</span></span></span></a></li><li class="menu-58942 "><a href="/en/sub-home/58942" class=" has_sub-home sub-home-mlid-58942 " title="" target=""><span><span>Business <span class="sncfcom-colors-automatic">travel</span></span></span></a></li><li class="menu-58943 "><a href="/en/sub-home/58943" class=" has_sub-home sub-home-mlid-58943 " title="" target=""><span><span>Disability <span class="sncfcom-colors-automatic">access</span></span></span></a></li><li class="menu-58944 last "><a href="/en/sub-home/58944" class=" has_sub-home sub-home-mlid-58944 " title="" target=""><span><span>Group <span class="sncfcom-colors-automatic">travel</span></span></span></a></li></ul></div></li><li class="menu-58939 "><div class="text"><span><span>Trains &amp; coaches</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58945 first "><a href="/en/sub-home/58945" class=" has_sub-home sub-home-mlid-58945 " title="" target=""><span><span>French <span class="sncfcom-colors-automatic">regions</span></span></span></a></li><li class="menu-58946 "><a href="/en/trains/transilien" class=" " title="" target=""><span><span>Paris <span class="sncfcom-colors-automatic">region</span></span></span></a></li><li class="menu-58947 "><a href="/en/sub-home/58947" class=" has_sub-home sub-home-mlid-58947 " title="" target=""><span><span>France</span></span></a></li><li class="menu-58948 last "><a href="/en/sub-home/58948" class=" has_sub-home sub-home-mlid-58948 " title="" target=""><span><span>Europe</span></span></a></li></ul></div></li><li class="menu-58940 "><div class="text"><span><span>Fares &amp; cards</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-17377 first "><a href="/en/special-deals" class=" " title="" target=""><span><span>Special Deals</span></span></a></li><li class="menu-58949 "><a href="/en/sub-home/58949" class=" has_sub-home sub-home-mlid-58949 " title="" target=""><span><span>Cards &amp; <span class="sncfcom-colors-automatic">discounts</span></span></span></a></li><li class="menu-58950 "><a href="/en/sub-home/58950" class=" has_sub-home sub-home-mlid-58950 " title="" target=""><span><span>Special <span class="sncfcom-colors-automatic">fares</span></span></span></a></li><li class="menu-58951 last "><a href="/en/sub-home/58951" class=" has_sub-home sub-home-mlid-58951 " title="" target=""><span><span>Loyalty <span class="sncfcom-colors-automatic">programmes</span></span></span></a></li></ul></div></li><li class="menu-58941 "><div class="text"><span><span>Customer relations</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58990 first "><a href="/en/sub-home/58990" class=" has_sub-home sub-home-mlid-58990 " title="" target=""><span><span>Talk to us <span class="sncfcom-colors-automatic">on line</span></span></span></a></li><li class="menu-58952 "><a href="/en/sub-home/58952" class=" has_sub-home sub-home-mlid-58952 " title="" target=""><span><span>Contact <span class="sncfcom-colors-automatic">us</span></span></span></a></li><li class="menu-58953 "><a href="/en/sub-home/58953" class=" has_sub-home sub-home-mlid-58953 " title="" target=""><span><span>Our <span class="sncfcom-colors-automatic">commitments</span></span></span></a></li><li class="menu-58954 last "><a href="/en/sub-home/58954" class=" has_sub-home sub-home-mlid-58954 " title="" target=""><span><span class='double_line'>After-sales service <br /><span class="sncfcom-colors-automatic">&amp; Ombudsman</span></span></span></a></li></ul></div></li></ul></div></div>            
+              <div class="telecommand"><div class="arrow"></div><div class="content"><div class="logo"><a href="/en/passengers" title="Logo SNCF"><img src="/theme/images/logo-sncf.png" alt="Logo SNCF" title="Logo SNCF" width="131" height="76" /></a></div><ul><li class="menu-17388 active "><div class="text"><span><span>Tickets &amp; <span class="sncfcom-colors-automatic">train status</span></span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-17393 no-icon first "><a href="http://en.voyages-sncf.com/en/" class=" " title="" target=""><span><span>Reservations</span></span></a></li><li class="menu-67100 no-icon last "><a href="http://www.infolignes.com/index.php?lang=en" class=" " title="" target=""><span><span class='double_line'>Timetables &amp; real-time <br />traffic updates</span></span></a></li></ul></div></li><li class="menu-58934 "><div class="text"><span><span>Passenger services</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58935 first "><a href="/en/sub-home/58935" class=" has_sub-home sub-home-mlid-58935 " title="" target=""><span><span>All <span class="sncfcom-colors-automatic">passengers</span></span></span></a></li><li class="menu-58942 "><a href="/en/sub-home/58942" class=" has_sub-home sub-home-mlid-58942 " title="" target=""><span><span>Business <span class="sncfcom-colors-automatic">travel</span></span></span></a></li><li class="menu-58943 "><a href="/en/sub-home/58943" class=" has_sub-home sub-home-mlid-58943 " title="" target=""><span><span>Disability <span class="sncfcom-colors-automatic">access</span></span></span></a></li><li class="menu-58944 last "><a href="/en/sub-home/58944" class=" has_sub-home sub-home-mlid-58944 " title="" target=""><span><span>Group <span class="sncfcom-colors-automatic">travel</span></span></span></a></li></ul></div></li><li class="menu-58939 "><div class="text"><span><span>Trains &amp; coaches</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58945 first "><a href="/en/sub-home/58945" class=" has_sub-home sub-home-mlid-58945 " title="" target=""><span><span>French <span class="sncfcom-colors-automatic">regions</span></span></span></a></li><li class="menu-58946 "><a href="/en/trains/transilien" class=" " title="" target=""><span><span>Paris <span class="sncfcom-colors-automatic">region</span></span></span></a></li><li class="menu-58947 "><a href="/en/sub-home/58947" class=" has_sub-home sub-home-mlid-58947 " title="" target=""><span><span>France</span></span></a></li><li class="menu-58948 last "><a href="/en/sub-home/58948" class=" has_sub-home sub-home-mlid-58948 " title="" target=""><span><span>Europe</span></span></a></li></ul></div></li><li class="menu-58940 "><div class="text"><span><span>Fares &amp; cards</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-17377 first "><a href="/en/special-deals" class=" " title="" target=""><span><span>Special Deals</span></span></a></li><li class="menu-58949 "><a href="/en/sub-home/58949" class=" has_sub-home sub-home-mlid-58949 " title="" target=""><span><span>Cards &amp; <span class="sncfcom-colors-automatic">discounts</span></span></span></a></li><li class="menu-58950 "><a href="/en/sub-home/58950" class=" has_sub-home sub-home-mlid-58950 " title="" target=""><span><span>Special <span class="sncfcom-colors-automatic">fares</span></span></span></a></li><li class="menu-58951 last "><a href="/en/sub-home/58951" class=" has_sub-home sub-home-mlid-58951 " title="" target=""><span><span>Loyalty <span class="sncfcom-colors-automatic">programmes</span></span></span></a></li></ul></div></li><li class="menu-58941 "><div class="text"><span><span>Customer relations</span></span></div><div class="submenu"><ul class="tc-content-2"><li class="menu-58990 first "><a href="/en/sub-home/58990" class=" has_sub-home sub-home-mlid-58990 " title="" target=""><span><span>Talk to us <span class="sncfcom-colors-automatic">on line</span></span></span></a></li><li class="menu-58952 "><a href="/en/sub-home/58952" class=" has_sub-home sub-home-mlid-58952 " title="" target=""><span><span>Contact <span class="sncfcom-colors-automatic">us</span></span></span></a></li><li class="menu-58953 "><a href="/en/sub-home/58953" class=" has_sub-home sub-home-mlid-58953 " title="" target=""><span><span>Our <span class="sncfcom-colors-automatic">commitments</span></span></span></a></li><li class="menu-58954 last "><a href="/en/sub-home/58954" class=" has_sub-home sub-home-mlid-58954 " title="" target=""><span><span class='double_line'>After-sales service <br /><span class="sncfcom-colors-automatic">&amp; Ombudsman</span></span></span></a></li></ul></div></li></ul></div></div>            
           </div>
   </div>
 
@@ -127,7 +127,7 @@ search          </span>
         </h2>
         
         <p class="search_summary">
-          Train no. : <strong>6815</strong><br/>
+          Train no. : <strong>12345</strong><br/>
           Travel date : 
           <strong> Saturday 25 April </strong>
         </p>
@@ -141,144 +141,16 @@ Modify your search          </a>
     </div>
     
   
-    <hr class="clear border grid_12" />
-    <div id="result-container" class="grid_12 dedoublonnage">
-      
-      <p id ="trains-doublons">Several trains match your search:</p>         
-      <ul class="result-itineraries">
-          <li class="result-itinerary">        
-<ul>
-  <li class="itinerary-content ">
-    <input type="hidden" name="heure-depart" value="1429971360000" />
-    <input type="hidden" name="nb-correspondance" value="0" />
-    <input type="hidden" name="duree-trajet" value="381" />
-    <ul>
-      <li class="itinerary-abstract">
-        <div class="cell duration">Duration <strong>6h21</strong></div>
-        <div class="cell connection">
-Direct journey    	</div>
-        <div class="cell itinerary-message ">
-          <span class="middle">
-            
-          </span>
-        </div>
-        <div class="cell emissions">
-        	<div class="co2-value"> : 2.7 kg </div>
-        </div>
-        <hr class="clear" />
-      </li>
-      <li class="row">      
-        <table class="timetable ">
-          <tr class="itinerary-header">
-            <th class="duration">
-Timetables    		</th>
-            <th class="duration new-schedule">
-    		</th>
-            <th class="line"></th>
-            <th class="stations">Journey</th>
-            <th class="type">Type</th>
-            <th class="info">Information</th>
-          </tr>
-						<tr class="itinerary-start  first ">
-							<td class="time ">16H16</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations"><div class="station">DIJON VILLE</div></td>
-							
-							<td class="type TRN  center" rowspan="2" >
-							  <div class="train-type">TGV</div>
-							  <div class="train-number">no.<strong>6815</strong></div>
-							</td>
-							
-							<td class="info center " rowspan="2">
-								<span class="titre">
-										On time
-								</span>
-								
-							</td>
-						</tr>
-						<tr class="itinerary-end  last ">
-							<td class="time ">22H37</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations">
-								<div class="station">NICE VILLE</div>
-							</td>
-						</tr>
-        </table>
-          <a href="/sncf/train/displayDetailTrain?idItineraire=0" class="plus" action="train/displayDetailTrain?idItineraire=0">+</a>
-      </li>
-    </ul>  
-  </li>
-</ul>
-          </li>       
-          <li class="result-itinerary">        
-<ul>
-  <li class="itinerary-content ">
-    <input type="hidden" name="heure-depart" value="1429945920000" />
-    <input type="hidden" name="nb-correspondance" value="0" />
-    <input type="hidden" name="duree-trajet" value="45" />
-    <ul>
-      <li class="itinerary-abstract">
-        <div class="cell duration">Duration <strong>0h45</strong></div>
-        <div class="cell connection">
-Direct journey    	</div>
-        <div class="cell itinerary-message ">
-          <span class="middle">
-            
-          </span>
-        </div>
-        <div class="cell emissions">
-        	<div class="co2-value">n.a. </div>
-        </div>
-        <hr class="clear" />
-      </li>
-      <li class="row">      
-        <table class="timetable ">
-          <tr class="itinerary-header">
-            <th class="duration">
-Timetables    		</th>
-            <th class="duration new-schedule">
-    		</th>
-            <th class="line"></th>
-            <th class="stations">Journey</th>
-            <th class="type">Type</th>
-            <th class="info">Information</th>
-          </tr>
-						<tr class="itinerary-start  first ">
-							<td class="time ">09H12</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations"><div class="station">SPIEZ</div></td>
-							
-							<td class="type TRN  center" rowspan="2" >
-							  <div class="train-type">INTERCITÉS</div>
-							  <div class="train-number">no.<strong>6815</strong></div>
-							</td>
-							
-							<td class="info center " rowspan="2">
-								<span class="titre">
-										On time
-								</span>
-								
-							</td>
-						</tr>
-						<tr class="itinerary-end  last ">
-							<td class="time ">09H57</td>
-							<td class="time new-schedule"></td>
-							<td class="line"></td>  
-							<td class="stations">
-								<div class="station">ZWEISIMMEN</div>
-							</td>
-						</tr>
-        </table>
-          <a href="/sncf/train/displayDetailTrain?idItineraire=1" class="plus" action="train/displayDetailTrain?idItineraire=1">+</a>
-      </li>
-    </ul>  
-  </li>
-</ul>
-          </li>       
-      </ul>
+    <div id="results" class="grid_12">
+      <div id="no_results">
+        <hr class="border" />
+        <h2>
+no            <span class="sncfcom-colors-automatic">
+results            </span>
+        </h2>
+        <div class="sncfcom-colors-automatic"><b>We’re sorry. There are no results for your search.</b></div>
+        <div class="details">Please change your search criteria.</div>
+      </div>     
     </div>
   
     

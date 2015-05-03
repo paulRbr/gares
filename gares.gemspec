@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors     = ['Paul Bonaud']
   s.email       = ['paul+gh@bonaud.fr']
   s.homepage    = 'http://github.com/paulrbr/gares'
-  s.summary     = %q(Easily access the publicly available information on gares-en-mouvement.com.)
-  s.description = %q(Easily use Ruby or the command line to find information on gares-en-mouvement.com.)
+  s.summary     = %q(Easily access the publicly available information on gares-sncf.com and sncf.com.)
+  s.description = %q(Easily use Ruby or the command line to find information on gares-sncf.com and sncf.com.)
 
   s.rubyforge_project = 'gares'
 
@@ -21,8 +21,10 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'nokogiri', '~> 1.6'
   s.add_dependency 'hashie', '~> 3.4'
+  s.add_dependency 'smarter_csv', '~> 1.0'
   s.add_dependency 'unidecoder', '~> 1.1'
   s.add_dependency 'httparty', '~> 0.13'
+  s.add_dependency 'trie'
 
   s.add_development_dependency 'rake'
   s.add_development_dependency 'rspec'

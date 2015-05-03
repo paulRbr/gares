@@ -4,37 +4,39 @@
 
 ## Description
 
-The Gares gem allows you to easily access publicly available data from gares-en-mouvement.com.
-It can also retrieve data from sncf.com for live train information.
+The Gares gem allows you to easily access publicly available data from gares-sncf.com.
+It can also retrieve data from sncf.com for live train information. Train station information comes from the public [CapitaineTrain database](https://github.com/capitainetrain/stations).
 
 ## Features
 
 Gares currently features the following:
 
-* Search for a station
-* Retrieve station information
-* Search for a train to get live information about it
+* Search for a train station by name or sncf_id
+* Retrieve station information such as:
+  * Whether it has a self-service ticket machine
+  * Next departing / arriving trains with live information (platform numbers, delay)
+* Retrieve a specific train live information given its number and its date
 
 ## Examples
 
 ### Station:
 
-    g = Gares::Station.new("frlpd")
+    g = Gares::Station.find_by_sncf_id("frlpd")
 
     g.name
-    #=> "Lyon Part Dieu"
-
-    g.wifi?
-    #=> true
+    #=> "Lyon Part-Dieu"
 
     g.has_borne?
     #=> true
 
-    g.services.first
-    #=> "Services à la clientèle"
+    [g.latitude, g.longitude]
+    #=> [45.760568, 4.859991]
 
-    [g.lat, g.long]
-    #=> [45.760281, 4.859801]
+    g.departuring_trains.first
+    #=> #<Gares::Train heure="05:50" num=9852 type="TGV" origdest=#<Gares::Station name="Bruxelles" ...> ...>
+
+    g.departuring_trains.first.platform
+    #=> "K"
 
 See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulrbr/gares/master/Gares/Base) for all available data on a station.
 
@@ -43,22 +45,29 @@ See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulr
     g = Gares::Search.new("Aix")
 
     g.stations.size
-    #=> 7
+    #=> 28
 
-    # or
+    # or directly a class method on the Gares::Station object
 
     stations = Gares::Station.search("lyon")
     station = stations.last
 
     station.name
-    #=> "Paris Gare de Lyon"
+    #=> "Lyon St-Exupéry TGV"
 
-### Train information:
+    # or by sncf_id
+
+    station = Gares::Station.find_by_sncf_id("frjdq")
+
+    station.name
+    #=> "Lyon St-Exupéry TGV"
+
+### Train live information:
 
     train = Gares::Train.new(11641, Time.now)
 
     train.departure.station
-    #=> #<Gares::Station:0x000f0000000000 @slug="frpst", @name="Paris Est">
+    #=> #<Gares::Station @name="Paris-Gare-de-l’Est" ...>
 
     train.departure.departure_date
     #=> 2015-04-25 06:42:00 +0200
@@ -70,7 +79,7 @@ See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulr
     #=> false
 
     train.arrival.station.name
-    #=> "Culmont - Chalindrey"
+    #=> "Culmont-Chalindrey"
 
     train.arrival.platform
     #=> "B"
@@ -89,10 +98,10 @@ Or if you want to use it in a project add this to your `Gemfile`:
 
 As this gem uses external content from gare-en-mouvement.com and sncf.com, the test suite uses a set of
 pre-defined fixture files in `spec/fixtures`. These fixtures are
-copies of gares-en-mouvement.com and sncf.com pages used in tests.
+copies of gares-sncf.com and sncf.com pages used in tests.
 
 Run bundle install to install all dependencies, including fakeweb, which
-will serve the fixture files instead of doing actual requests to gares-en-mouvement.com or sncf.com.
+will serve the fixture files instead of doing actual requests to gares-sncf.com or sncf.com.
 
     $ bundle install
 
@@ -100,7 +109,7 @@ Next, simple run `rake` to run the entire test suite.
 
 ### Running against real data
 
-It's possible to run the test suite directly against gares-en-mouvement.com or sncf.com. This has
+It's possible to run the test suite directly against gares-sncf.com or sncf.com. This has
 two disadvantages:
 
  1. Tests will be slow
@@ -122,13 +131,15 @@ When you run the test suite now, it will use the updated fixture files.
 Neither I, nor any developer who contributed to this project, accept any kind of
 liability for your use of this library.
 
-gares-en-mouvement.com and sncf.com certainly does not permit use of its data by third parties without their consent.
+gares-sncf.com and sncf.com certainly does not permit use of its data by third parties without their consent.
 
 Using this library for anything other than limited personal use may result
-in an IP ban to the gares-en-mouvement.com or sncf.com website.
+in an IP ban to the gares-sncf.com or sncf.com website.
 
-_This gem is not endorsed or affiliated with gares-en-mouvement.com, nor SNCF, Inc._
+_This gem is not endorsed or affiliated with gares-sncf.com, nor SNCF Inc, nor Capitaine Train._
 
 ## License
 
-See [MIT-LICENSE](https://github.com/paulrbr/gares/blob/master/MIT-LICENSE)
+Code licensed under [MIT-LICENSE](https://github.com/paulrbr/gares/blob/master/MIT-LICENSE)
+
+Stations database [ODbL LICENSE](https://raw.githubusercontent.com/capitainetrain/stations/master/LICENCE.txt)

@@ -1,13 +1,16 @@
+require 'trie'
+
 module Gares
   # Search Gares-en-mouvement for a station name
   class Search < StationList
+    @@trie = nil
+    mattr_reader :trie
+
     attr_reader :query
 
-    # This is a file containing minimal information (name and slug) of all stations of gares-en-mouvement.com
-    GARES_LIST_URL = "https://www.kimonolabs.com/api/7jys32dy?apikey=lsOO4tNm78cH9JxqWg9gAk9l4nYaou9j&kimmodify=1"
+    # This is the stations database from capitainetrain.com
+    GARES_LIST_URL = "https://raw.githubusercontent.com/paulrbr/stations/stations-with-bls/stations.csv"
 
-    # List of keywords to ignore while searching
-    IGNORE_KEYWORDS = ["ST"]
     # Initialize a new Station search with the specified query
     #
     #   search = Gares::Search.new("Aix")
@@ -15,8 +18,12 @@ module Gares
     # Gares::Search is lazy loaded, meaning that unless you access the +stations+
     # attribute, no remomte query is made.
     #
-    def initialize(query)
+    # Search can by done via the :name or :sncf_id field given in parameter.
+    # Defaults to the :name field.
+    def initialize(query, field = :name)
+      fail UnsupportedIndex unless %w(name sncf_id).include?(field.to_s)
       @query = query
+      @by = field
     end
 
     # Returns an array of Gares::Station objects in order to easily search result yielded.
@@ -25,26 +32,49 @@ module Gares
       @stations ||= (exact_match? ? parse_station : parse_stations)
     end
 
+    def self.find(str)
+      trie.find_prefix(str)
+    end
+
     private
 
-    def document
-      @document ||= Hashie::Mash.new(JSON.load(Gares::Search.query))
+    def result
+      query = self.class.simplify(@query)
+      if @raw_results.nil?
+        @raw_results = self.class.find(query).values
+        # try first keyword if nothing found
+        @raw_results = @raw_results.empty? ? self.class.find(query.split(" ").first).values : @raw_results
+      end
+      @result ||= @raw_results.map { |raw_station| Gares::Station.new(raw_station) }
     end
 
-    def result
-      keywords = @query.split(" ").select { |keyword| !IGNORE_KEYWORDS.include?(keyword) }
-      @result ||= document.results.collection1.map(&:station).select do |station|
-        station.name.to_ascii =~ /#{keywords.join(".*")}/i
+    def self.simplify(str)
+      str.to_ascii.downcase
+        .gsub(/\bsaint\b/, "st")
+        .gsub(/[^a-z]/, " ")
+        .gsub(/\s+/, " ")
+        .strip
+    end
+
+    # Read stations.csv file into memory into a Trie data structure
+    def self.load_data
+      if @@trie.nil?
+        raw_data ||= SmarterCSV.process(open(GARES_LIST_URL), col_sep: ";")
+        trie = Trie.new
+
+        raw_data.each do |raw_station|
+          next if raw_station[:name].nil? || raw_station[:sncf_id].nil? || raw_station[:uic].nil?
+          trie.insert(simplify(raw_station[:name]), raw_station)
+          trie.insert(simplify(raw_station[:sncf_id]), raw_station)
+        end
+
+        @@trie = trie
       end
     end
-
-    def self.query
-      open(GARES_LIST_URL)
-    end
+    load_data
 
     def parse_station
-      station = result.first
-      [Gares::Station.new(station.slug, station.name)]
+      [result.first]
     end
 
     def exact_match?
