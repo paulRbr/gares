@@ -55,7 +55,7 @@ module Gares
     end
 
     def delayed?
-      (retard && !retard.blank?) || ([departure] + stops + [arrival]).any?(&:delayed?)
+      retard || ([departure] + stops + [arrival]).any?(&:delayed?)
     end
 
     def platform
