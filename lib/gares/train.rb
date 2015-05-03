@@ -3,41 +3,63 @@ require "uri"
 
 module Gares
   # Represents a train from http://www.sncf.com/fr/horaires-info-trafic/train
-  class Train
-    attr_accessor :date, :number
+  class Train < Hashie::Dash
+    property :origdest
+    property :num, required: true
+    property :date, required: true
+    property :type
+    property :picto
+    property :voie
+    property :voie_attr
+    property :heure
+    property :etat
+    property :retard
+    property :infos
 
-    # Initialize a new Train object with it's number and departure date
+    # Initialize a new Train object with at least it's number and departure date
     #
-    #   train = Gares::Train.new(6704, Time.parse('2015-04-15'))
+    #   train = Gares::Train.new(num: 6704, date: Time.parse('2015-04-15'))
     #
     # Gares::Train objects are lazy loaded, meaning that no HTTP request
-    # will be performed when a new object is created. An HTTP request is made (once)
-    # Only when you use an accessor that needs the remote data.
-    def initialize(number, date)
-      fail "Please provide a train number" unless number.is_a?(Integer)
-      fail "Please provide a departure date" unless date.is_a?(Time)
+    # will be performed when a new object is created. An HTTP request is made
+    # Only when you use an accessor that needs remote data.
+    def initialize(*arguments)
+      fail "Please provide a train number" unless arguments.first[:num].is_a?(Integer)
+      fail "Please provide a departure date" unless arguments.first[:date].is_a?(Time)
 
-      @number = number
-      @date = date
+      if arguments.first[:origdest]
+        arguments.first[:origdest] = Gares::Station.search(arguments.first[:origdest]).first
+      end
+
+      super(*arguments)
+    end
+
+    # @return [Integer] The train number
+    def number
+      num
     end
 
     # @return [TrainStop] The departure point of the train
     def departure
-      @departure ||= TrainStop.new(document.at('tr.itinerary-start'), @date)
+      @departure ||= TrainStop.new(document.at('tr.itinerary-start'), date)
     end
 
     # @return [Array<TrainStop>] A list of all stops between departure and arrival stations.
     def stops
-      @stops ||= document.css('tr.itinerary-stop').map { |stop| TrainStop.new(stop, @date) }
+      @stops ||= document.css('tr.itinerary-stop').map { |stop| TrainStop.new(stop, date) }
     end
 
     # @return [TrainStop] The arrival point of the train
     def arrival
-      @arrival ||= TrainStop.new(document.at('tr.itinerary-end'), @date)
+      @arrival ||= TrainStop.new(document.at('tr.itinerary-end'), date)
     end
 
     def delayed?
-      ([departure] + stops + [arrival]).any?(&:delayed?)
+      (retard && !retard.blank?) || ([departure] + stops + [arrival]).any?(&:delayed?)
+    end
+
+    def platform
+      voie
     end
 
     private
@@ -49,7 +71,7 @@ module Gares
     # Returns a new Nokogiri document for parsing.
     def document
       if !@document
-        @document = Nokogiri::HTML(self.class.request_sncf(@number, @date))
+        @document = Nokogiri::HTML(self.class.request_sncf(number, date))
         if !itinerary_available?
           @document = Nokogiri::HTML(self.class.request_sncf_itinerary(0))
         end

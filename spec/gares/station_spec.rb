@@ -37,14 +37,16 @@ describe Gares::Station do
 
     it 'has a list of departure trains' do
       expect(subject.departures.size).to eq(20)
-      expect(subject.departures.first['origdest']).to eq('BRUXELLES')
-      expect(subject.departures.first['heure']).to eq('05:50')
+      expect(subject.departures.first.origdest.name).to eq('Bruxelles')
+      expect(subject.departures.first.heure).to eq('05:50')
+      expect(subject.departures.first.type).to eq('TGV')
     end
 
     it 'has a list of arrivals' do
-      expect(subject.arrivals.last['origdest']).to eq('CHAMBERY')
-      expect(subject.arrivals.last['voie']).to eq('')
-      expect(subject.arrivals.last['num']).to eq('18542')
+      expect(subject.arrivals.last.origdest.name).to eq('Chambéry Challes-les-Eaux')
+      expect(subject.arrivals.last.voie).to eq('')
+      expect(subject.arrivals.last.platform).to eq(subject.arrivals.last.voie)
+      expect(subject.arrivals.last.num).to eq(18542)
     end
 
     it 'has deprecated methods' do

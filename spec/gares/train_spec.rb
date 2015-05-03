@@ -5,7 +5,7 @@ require 'spec_helper'
 describe Gares::Train do
 
   subject do
-    Gares::Train.new(train_number, date)
+    Gares::Train.new(num: train_number, date: date)
   end
 
   describe 'no results' do
@@ -35,7 +35,7 @@ describe Gares::Train do
     end
 
     subject do
-      Gares::Train.new(train_number, date)
+      Gares::Train.new(num: train_number, date: date)
     end
 
     it "is delayed" do
@@ -82,7 +82,7 @@ describe Gares::Train do
     end
 
     subject do
-      Gares::Train.new(train_number, date)
+      Gares::Train.new(num: train_number, date: date)
     end
 
     it "is delayed" do
@@ -125,7 +125,7 @@ describe Gares::Train do
     end
 
     subject do
-      Gares::Train.new(train_number, date)
+      Gares::Train.new(num: train_number, date: date)
     end
 
     it "selects always the first itinerary", focus: true do

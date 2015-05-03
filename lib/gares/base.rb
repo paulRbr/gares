@@ -39,10 +39,6 @@ module Gares
 
     GARES_SNCF = "http://www.gares-sncf.com/fr/train-times/%s/%s/gl"
 
-    def initialize(*args)
-      super(*args)
-    end
-
     # @deprecated
     def services
       warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
@@ -72,7 +68,8 @@ module Gares
       warn "[DEPRECATION] since gares-en-mouvement.com does not exist anymore."
     end
 
-    # @deprecated
+    # Whether this station has a "borne" (yellow self-service ticket machine)
+    # @return [Boolean]
     def has_borne?
       has_bls == "t"
     end
@@ -95,36 +92,63 @@ module Gares
       longitude
     end
 
-    def departures
+    # List of the next departing trains from this station.
+    # @param refresh [Boolean] whether to fetch fresh data from gares-sncf.com or not.
+    # @return [Array<Train>]
+    def departures(refresh = false)
       if tvs
-        @departures ||= self.class.external_gares_sncf(tvs)
+        trains(:departure, refresh)
       end
     end
+    alias departing_trains departures
 
-    def arrivals
+    # List of the next arriving trains in this station.
+    # @param refresh [Boolean] whether to fetch fresh data from gares-sncf.com or not.
+    # @return [Array<Train>]
+    def arrivals(refresh = false)
       if tvs
-        @arrivals ||= self.class.external_gares_sncf(tvs, :arrival)
+        trains(:arrival, refresh)
       end
     end
-
-    def tvs
-      if uic8_sncf
-        @tvs ||= self.class.open_data_sncf(uic8_sncf, 'tvs')
-      end
-    end
+    alias arriving_trains arrivals
 
     private
 
-    def self.open_data_sncf(uic8_sncf, field)
-      @open_data ||= JSON.parse(open(OPEN_DATA_SNCF % ("%010d" % uic8_sncf).to_s).read)['records']
-      unless @open_data.empty?
-        @open_data.first['fields'][field]
+    def tvs
+      if uic8_sncf
+        @tvs ||= self.class.open_data_sncf(uic8_sncf, :tvs)
       end
     end
 
-    def self.external_gares_sncf(tvs, direction = :departure)
+    def trains(direction = :departure, refresh = false)
+      variable = "@#{direction}".to_sym
+      if tvs && (refresh || instance_variable_get(variable).nil?)
+        raw_trains = self.class.external_gares_sncf(tvs, direction, refresh)
+        all_trains = raw_trains.map do |raw_train|
+          raw_train[:num] = raw_train[:num].to_i
+          raw_train[:date] = Time.now
+          Gares::Train.new(raw_train)
+        end
+        instance_variable_set(variable, all_trains)
+      end
+      instance_variable_get(variable)
+    end
+
+    def self.open_data_sncf(uic8_sncf, field)
+      @open_data ||= {}
+      @open_data[uic8_sncf] ||= JSON.parse(open(OPEN_DATA_SNCF % ("%010d" % uic8_sncf).to_s).read, :symbolize_names => true)[:records]
+      unless @open_data[uic8_sncf].empty?
+        @open_data[uic8_sncf].first[:fields][field]
+      end
+    end
+
+    def self.external_gares_sncf(tvs, direction = :departure, refresh = false)
       @gares_sncf ||= {}
-      @gares_sncf[direction] ||= JSON.parse(open(GARES_SNCF % [direction, tvs]).read)['trains']
+      @gares_sncf[tvs] ||= {}
+      if refresh || @gares_sncf.nil? || @gares_sncf[direction].nil?
+        @gares_sncf[tvs][direction] = JSON.parse(open(GARES_SNCF % [direction, tvs]).read, :symbolize_names => true)[:trains]
+      end
+      @gares_sncf[tvs][direction]
     end
 
     # Convenience method for search (by name)
