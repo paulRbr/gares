@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 08 May 2015 14:21:22 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-RateLimit-Remaining: 4960
+Access-Control-Allow-Headers: Authorization, X-Requested-With, Origin, ODS-API-Analytics-App, ODS-Widgets-Version
+Content-Language: fr
+Access-Control-Max-Age: 1000
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Vary: Accept-Language, Cookie, Host
+X-RateLimit-Limit: 5000
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+X-RateLimit-Reset: 1431129600
+X-UA-Compatible: IE=edge
+
+{"nhits": 1, "parameters": {"dataset": ["referentiel-gares-voyageurs"], "q": "0087271007", "rows": 10, "format": "json"}, "records": [{"datasetid": "referentiel-gares-voyageurs", "recordid": "9d286d234095e70362859cc9561e362d49bd2734", "fields": {"departement": "Paris", "commune": "Paris", "uic": "0087271007", "code_postal": "75010", "code_gare": "02561", "region": "\u00cele-de-France", "tvs": "PNO PNO_TRANS", "departement_commune": "75-056", "agence_gare": "AG Ile-de-France", "nombre_plateformes": "4", "niveau_de_service": "3", "segment_drg": "a", "region_sncf": "REGION DE PARIS-NORD", "intitule_gare": "Paris Nord"}, "record_timestamp": "2015-02-09T10:19:37.908942"}]}

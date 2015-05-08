@@ -57,5 +57,15 @@ describe Gares::Station do
         it { expect(subject.has_borne?).to be(true) }
       end
     end
+
+    context 'A station with a strange TVS number from SNCF open data - Paris Gare-du-Nord' do
+      subject do
+        Gares::Station.find_by_sncf_id('frpno')
+      end
+
+      describe 'a gare with a BLS' do
+        it { expect(subject.send(:tvs)).to eq("PNO") }
+      end
+    end
   end
 end

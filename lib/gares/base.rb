@@ -87,7 +87,7 @@ module Gares
 
     def tvs
       if uic8_sncf
-        @tvs ||= self.class.open_data_sncf(uic8_sncf, :tvs)
+        @tvs ||= self.class.open_data_sncf(uic8_sncf, :tvs).split(" ").first
       end
     end
 
