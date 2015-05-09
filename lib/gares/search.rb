@@ -42,14 +42,18 @@ module Gares
       query = self.class.simplify(@query)
       if @raw_results.nil?
         @raw_results = self.class.find(query).values
-        # try first keyword if nothing found
-        @raw_results = @raw_results.empty? ? self.class.find(query.split(" ").first).values : @raw_results
+        # try removing keywords one by one if nothing found
+        while @raw_results.empty? && !query.split(" ").empty?
+          query = query.split(" ")[0..-2].join(" ")
+          @raw_results = @raw_results.empty? ? self.class.find(query).values : @raw_results
+        end
       end
       @result ||= @raw_results.map { |raw_station| Gares::Station.new(raw_station) }
     end
 
     def self.simplify(str)
       str.to_ascii.downcase
+        .gsub(/\bgare\ssncf\b/, "")
         .gsub(/\bsaint\b/, "st")
         .gsub(/[^a-z]/, " ")
         .gsub(/\s+/, " ")
