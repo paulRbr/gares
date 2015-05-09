@@ -32,10 +32,10 @@ Gares currently features the following:
     [g.latitude, g.longitude]
     #=> [45.760568, 4.859991]
 
-    g.departuring_trains.first
+    g.departing_trains.first
     #=> #<Gares::Train heure="05:50" num=9852 type="TGV" origdest=#<Gares::Station name="Bruxelles" ...> ...>
 
-    g.departuring_trains.first.platform
+    g.departing_trains.first.platform
     #=> "K"
 
 See the [`Gares::Base` class documentation](http://www.rubydoc.info/github/paulrbr/gares/master/Gares/Base) for all available data on a station.
