@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 require 'spec_helper'
 
 # This test uses "Lyon Part-Dieu" as a testing sample:
@@ -35,16 +36,20 @@ describe Gares::Station do
 
     it 'has a list of departure trains' do
       expect(subject.departures.size).to eq(20)
-      expect(subject.departures.first.origdest.name).to eq('Bruxelles')
+      expect(subject.departures.first.arrival.name).to eq('Bruxelles')
       expect(subject.departures.first.heure).to eq('05:50')
       expect(subject.departures.first.type).to eq('TGV')
+      # Still supports deprecated field
+      expect(subject.departures.first.origdest.name).to eq('Bruxelles')
     end
 
     it 'has a list of arrivals' do
-      expect(subject.arrivals.last.origdest.name).to eq('Chambéry Challes-les-Eaux')
+      expect(subject.arrivals.last.departure.name).to eq('Chambéry Challes-les-Eaux')
       expect(subject.arrivals.last.voie).to eq('')
       expect(subject.arrivals.last.platform).to eq(subject.arrivals.last.voie)
       expect(subject.arrivals.last.num).to eq(18542)
+      # Still supports deprecated field
+      expect(subject.arrivals.last.origdest.name).to eq('Chambéry Challes-les-Eaux')
     end
 
     context 'Station of Agde' do

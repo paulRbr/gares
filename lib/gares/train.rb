@@ -4,7 +4,8 @@ require "uri"
 module Gares
   # Represents a train from http://www.sncf.com/fr/horaires-info-trafic/train
   class Train < Hashie::Dash
-    property :origdest
+    property :orig
+    property :dest
     property :num, required: true
     property :date, required: true
     property :type
@@ -24,11 +25,15 @@ module Gares
     # will be performed when a new object is created. An HTTP request is made
     # Only when you use an accessor that needs remote data.
     def initialize(*arguments)
-      fail "Please provide a train number" unless arguments.first[:num].is_a?(Integer)
-      fail "Please provide a departure date" unless arguments.first[:date].is_a?(Time)
+      attributes = arguments.first
 
-      if arguments.first[:origdest]
-        arguments.first[:origdest] = Gares::Station.search(arguments.first[:origdest]).first
+      fail "Please provide a train number" unless attributes[:num].is_a?(Integer)
+      fail "Please provide a departure date" unless attributes[:date].is_a?(Time)
+
+      if attributes[:origdest]
+        @origdest = attributes[:orig].nil? ? :orig : :dest
+        attributes[@origdest] = Gares::Station.search(attributes[:origdest]).first
+        attributes.delete(:origdest)
       end
 
       super(*arguments)
@@ -39,9 +44,13 @@ module Gares
       num
     end
 
-    # @return [TrainStop] The departure point of the train
+    # @return [Station] The departure station of the train
     def departure
-      @departure ||= TrainStop.new(document.at('tr.itinerary-start'), date)
+      if orig
+        orig
+      else
+        @departure ||= TrainStop.new(document.at('tr.itinerary-start'), date)
+      end
     end
 
     # @return [Array<TrainStop>] A list of all stops between departure and arrival stations.
@@ -49,9 +58,19 @@ module Gares
       @stops ||= document.css('tr.itinerary-stop').map { |stop| TrainStop.new(stop, date) }
     end
 
-    # @return [TrainStop] The arrival point of the train
+    # @return [Station] The arrival station of the train
     def arrival
-      @arrival ||= TrainStop.new(document.at('tr.itinerary-end'), date)
+      if dest
+        dest
+      else
+        @arrival ||= TrainStop.new(document.at('tr.itinerary-end'), date)
+      end
+    end
+
+    # @deprecated
+    def origdest
+      warn("[DEPRECATED] Warning: This method is deprecated, please use `orig` or `dest` instead of `origdest`")
+      send(@origdest)
     end
 
     def delayed?

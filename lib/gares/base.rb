@@ -98,6 +98,8 @@ module Gares
         all_trains = raw_trains.map do |raw_train|
           raw_train[:num] = raw_train[:num].to_i
           raw_train[:date] = Time.now
+          key = direction == :departure ? :orig : :dest
+          raw_train[key] = self
           Gares::Train.new(raw_train)
         end
         instance_variable_set(variable, all_trains)
