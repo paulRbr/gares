@@ -68,9 +68,19 @@ describe Gares::Station do
         Gares::Station.find_by_sncf_id('frpno')
       end
 
-      describe 'a gare with a BLS' do
+      describe 'its TVS number' do
         it { expect(subject.send(:tvs)).to eq("PNO") }
       end
     end
-  end
+
+    context 'A station which has no TVS from SNCF open data - Bruxelles-midi' do
+      subject do
+        Gares::Station.find_by_sncf_id('bebmi')
+      end
+
+      describe 'a gare with no TVS' do
+        it { expect(subject.send(:tvs)).to be_nil }
+      end
+    end
+ end
 end

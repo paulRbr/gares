@@ -1,0 +1,21 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Sat, 09 May 2015 14:06:47 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-RateLimit-Remaining: 4898
+Access-Control-Allow-Headers: Authorization, X-Requested-With, Origin, ODS-API-Analytics-App, ODS-Widgets-Version
+Content-Language: fr
+Access-Control-Max-Age: 1000
+Expires: Fri, 01 Jan 1990 00:00:00 GMT
+Vary: Accept-Language, Cookie, Host
+X-RateLimit-Limit: 5000
+Pragma: no-cache
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS
+X-RateLimit-Reset: 1431216000
+X-UA-Compatible: IE=edge
+
+{"nhits": 0, "parameters": {"dataset": ["referentiel-gares-voyageurs"], "timezone": "UTC", "q": "0088140010", "rows": 10, "format": "json"}, "records": []}

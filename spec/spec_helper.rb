@@ -26,6 +26,7 @@ GARES_SAMPLES = {
   'https://raw.githubusercontent.com/paulrbr/stations/stations-with-bls/stations.csv' => 'bls.csv',
   'https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=0087723197' => '87723197.json', # Lyon Part-Dieu
   'https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=0087271007' => '87271007.json', # Paris Gare-du-Nord
+  'https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=0088140010' => '88140010.json', # Bruxelles Midi
   'http://www.gares-sncf.com/fr/train-times/arrival/LYD/gl' => 'LYD-arrivals.json',
   'http://www.gares-sncf.com/fr/train-times/departure/LYD/gl' => 'LYD-departures.json'
 }
