@@ -48,7 +48,9 @@ module Gares
           @raw_results = @raw_results.empty? ? self.class.find(query).values : @raw_results
         end
       end
-      @result ||= @raw_results.map { |raw_station| Gares::Station.new(raw_station) }
+      @result ||= @raw_results.map do |raw_station|
+        Gares::Station.new(raw_station.select { |key| Gares::Station.properties.include?(key) })
+      end
     end
 
     def self.simplify(str)
