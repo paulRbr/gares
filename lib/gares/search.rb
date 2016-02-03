@@ -8,7 +8,7 @@ module Gares
 
     attr_reader :query
 
-    # This is the stations database from capitainetrain.com
+    # This is the stations database from captaintrain.com
     GARES_LIST_URL = "https://raw.githubusercontent.com/paulrbr/stations/stations-with-bls/stations.csv"
 
     # Initialize a new Station search with the specified query
@@ -16,7 +16,7 @@ module Gares
     #   search = Gares::Search.new("Aix")
     #
     # Gares::Search is lazy loaded, meaning that unless you access the +stations+
-    # attribute, no remomte query is made.
+    # attribute, no remote query is made.
     #
     # Search can by done via the :name or :sncf_id field given in parameter.
     # Defaults to the :name field.
