@@ -9,7 +9,7 @@ module Gares
     # Whether this station has a "borne" (yellow self-service ticket machine)
     # @return [Boolean]
     def has_borne?
-      has_bls == "t"
+      sncf_self_service_machine == "t"
     end
 
     # @deprecated
