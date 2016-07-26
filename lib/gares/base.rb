@@ -1,39 +1,6 @@
 module Gares
   # Represents a station on gares-sncf.com
-  class Base < Hashie::Dash
-    property :id
-    property :name
-    property :slug
-    property :sncf_id
-    property :longitude
-    property :latitude
-    property :uic
-    property :uic8_sncf
-    property :parent_station_id
-    property :is_city
-    property :country
-    property :is_main_station
-    property :time_zone
-    property :is_suggestable
-    property :sncf_is_enabled
-    property :idtgv_id
-    property :idtgv_is_enabled
-    property :db_id
-    property :db_is_enabled
-    property :idbus_id
-    property :idbus_is_enabled
-    property :ouigo_id
-    property :ouigo_is_enabled
-    property :trenitalia_id
-    property :trenitalia_is_enabled
-    property :ntv_id
-    property :ntv_is_enabled
-    property :'info:fr'
-    property :'info:en'
-    property :'info:de'
-    property :'info:it'
-    property :same_as
-    property :has_bls
+  class Base < Hashie::Mash
 
     OPEN_DATA_SNCF = "https://ressources.data.sncf.com/api/records/1.0/search?dataset=referentiel-gares-voyageurs&q=%s"
 
